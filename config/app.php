@@ -2,6 +2,9 @@
 
 return [
 
+    'phone_number' => env('phone_number','+234 806 888 5591'),
+    'email' => env('email','@gmail.com'),
+    'school_address' => env('school_address','Opp Jimtex Block Industry Oke Ola, Ilaro Ogun State. Yewa South 111101 Ilaro, Ogun State, Nigeria'),
     /*
     |--------------------------------------------------------------------------
     | Application Name

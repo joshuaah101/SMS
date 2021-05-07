@@ -52,13 +52,13 @@
                     <img src="{{ asset('storage/img/logo.png') }}" class="img img-fluid" width="40%" alt="School logo" />
                 </div>
                 <p>
-                    Opp Jimtex Block Industry Oke Ola, Ilaro Ogun State. Yewa South 111101 Ilaro, Ogun State, Nigeria
+                    {{ config('app.school_address') }}
                     <p class="mt-3">
                         <a href="nailto: {{ config('app.email') }}" target="{{ __('blank') }}">
-                            @gmail.com
+                           {{ config('app.email') }}
                         </a><br/>
-                        <a href="tel: +234 806 888 5591" target="{{ __('blank') }}">
-                            +234 806 888 5591
+                        <a href="tel: {{ config('app.phone_number') }}" target="{{ __('blank') }}">
+                            {{ config('app.phone_number') }}
                         </a>
                     </p>
                 </p>
