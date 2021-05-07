@@ -8,10 +8,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@600&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
         
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
         <div class="general-top-nav p-2 text-center">
@@ -92,17 +92,20 @@
             <div class="banner bg-white">
                <div class="container">
                    <div class="row">
-                       <div class="col-12 col-sm-6" style="margin-top: 4%;">
-                           <div class="text-header">
+                       <div class="col-12 col-sm-5" style="margin-top: 4%;">
+                           <div class="header-text">
                                Welcome
                            </div>
-                           <div class="text-body">
+                           <div class="body-text">
                                {{ config('app.name') }}, Ilaro
                            </div>
                            <div class="base-text text-justify">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, fugiat molestiae quam, officia cum voluptatem sint a rem quas quidem iste doloribus placeat impedit labore eius in aliquam obcaecati. Temporibus.
                         </div>
                        </div>
+                        <div class="col-12 col-sm-6 offset-sm-1 d-none d-sm-block d-flex mt-3 justify-content-center">
+                            <img src="{{ asset('storage/img/textbook.png') }}" class="img img-fluid" width="100%" alt="{{ config('app.name') }} School logo" />
+                        </div>
                    </div>
                </div>
             </div>
@@ -112,7 +115,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-col-sm-6 col-md-8">
-                        <div class="text-body">
+                        <div class="body-text">
                             History
                         </div>
                         <div class="main-underline"></div>
