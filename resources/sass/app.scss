@@ -7,6 +7,16 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+$fa-font-path:        "../webfonts";
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
 /* My modified rules */
 html{
   scroll-behavior: smooth;
@@ -117,14 +127,14 @@ a:hover {
   font-family: 'Truculenta', sans-serif;
 }
 
-.text-header{
+.header-text{
   color: #8a12b9;
   font-size: 4.9rem;
   font-weight: 700;
 }
 
-.text-body{
-  color: #111;
+.body-text{
+  color: #0078f6;
   font-size: 2.2rem;
   font-weight: 600;
 }
@@ -142,5 +152,17 @@ a:hover {
   border-radius: 5px;
   border: 2px solid #0078f6;
   box-shadow: 1px 1px 1px 2px #8a12b9;
+}
+
+.social-icons a{
+  padding: 3%;
+  border: 2px solid #0078f6;
+  color: #8a12b9;
+  border-radius: 100%;
+}
+
+.social-icons a:hover{
+  border: 2px solid #8a12b9;
+  color: #0078f6;
 }
 /* #################################### */

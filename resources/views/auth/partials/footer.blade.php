@@ -52,18 +52,22 @@
                     <img src="{{ asset('storage/img/logo.png') }}" class="img img-fluid" width="40%" alt="School logo" />
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea architecto autem aliquid modi recusandae reiciendis unde incidunt necessitatibus assumenda optio excepturi repudiandae, tempore dolor officiis quos hic! Quo, maiores ratione! 
+                    Opp Jimtex Block Industry Oke Ola, Ilaro Ogun State. Yewa South 111101 Ilaro, Ogun State, Nigeria
                     <p class="mt-3">
-                        Email: <br/>
-                        Phone:
+                        <a href="nailto: {{ config('app.email') }}" target="{{ __('blank') }}">
+                            @gmail.com
+                        </a><br/>
+                        <a href="tel: +234 806 888 5591" target="{{ __('blank') }}">
+                            +234 806 888 5591
+                        </a>
                     </p>
                 </p>
                 <div class="underline mt-2 mb-3"></div>
-                <p>
-                    <a href="" class="" target="{{ __('_blank') }}">facebook</a>
-                    <a href="" class="" target="{{ __('_blank') }}">instagram</a>
-                    <a href="" class="" target="{{ __('_blank') }}">twitter</a>
-                    <a href="" class="" target="{{ __('_blank') }}">LinkedIn</a>
+                <p class="social-icons">
+                    <a href="" class="" target="{{ __('_blank') }}" title="Like our facebook page"><i class="fab fa-facebook-square"></i></a>
+                    <a href="" class="" target="{{ __('_blank') }}" title="Follow us on instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="" target="{{ __('_blank') }}" title="Follow us on twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="" target="{{ __('_blank') }}" title="Check us out on LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </p>
             </div>
         </div>
