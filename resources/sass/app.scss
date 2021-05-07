@@ -7,16 +7,6 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-$fa-font-path:        "../webfonts";
-
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-
-@import "~@fortawesome/fontawesome-free/scss/solid";
-
-@import "~@fortawesome/fontawesome-free/scss/brands";
-
-@import "~@fortawesome/fontawesome-free/scss/regular";
-
 /* My modified rules */
 html{
   scroll-behavior: smooth;
@@ -79,13 +69,14 @@ a:hover {
 }
 
 .underline{
-  border-bottom: 2px solid #8a12b9;
-  width: 40%;
+  border-bottom: 1px solid #8a12b9;
+  width: 80%;
 }
 
-.long-hr{
-  border-bottom: 3px solid #8a12b9;
-  width: 100%;
+.main-underline{
+  border-bottom: 2px solid #8a12b9;
+  width: 20%;
+  margin-bottom: 2%;;
 }
 
 .block-links a{
@@ -122,57 +113,24 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; */
-  min-height: 450px;
+  min-height: 400px;
   font-family: 'Truculenta', sans-serif;
 }
 
-.achievement{
-  margin-top: 5%;
-}
-
-.icon::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.achievement::before {
-  font-family: "Font Awesome 5 Free"; 
-  color: #8a12b9; 
-  font-size: 1rem; 
-  font-weight: 900; 
-  content: "\f101";
-}
-
-.header-text{
+.text-header{
   color: #8a12b9;
   font-size: 4.9rem;
   font-weight: 700;
 }
 
-.body-text{
-  color: #0078f6;
+.text-body{
+  color: #111;
   font-size: 2.2rem;
   font-weight: 600;
-  font-family: 'Truculenta', sans-serif;
 }
 
 .text-blue{
   color: #0078f6;
-}
-
-.text-purple{
-  color: #8a12b9;
-}
-
-.bg-blue{
-  background-color: #0078f6;
-}
-
-.bg-purple{
-  background-color: #8a12b9;
 }
 
 .base-text{
@@ -181,19 +139,8 @@ a:hover {
 }
 
 .photo-frame{
+  border-radius: 5px;
   border: 2px solid #0078f6;
   box-shadow: 1px 1px 1px 2px #8a12b9;
-}
-
-.social-icons a{
-  padding: 3%;
-  border: 2px solid #0078f6;
-  color: #8a12b9;
-  border-radius: 100%;
-}
-
-.social-icons a:hover{
-  border: 2px solid #8a12b9;
-  color: #0078f6;
 }
 /* #################################### */

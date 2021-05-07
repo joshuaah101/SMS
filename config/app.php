@@ -2,15 +2,6 @@
 
 return [
 
-    'phone_number' => env('phone_number','+234 806 888 5591'),
-    'email' => env('email','@gmail.com'),
-    'school_address' => env('school_address','Opp Jimtex Block Industry Oke Ola, Ilaro Ogun State. Yewa South 111101 Ilaro, Ogun State, Nigeria'),
-    "nursery_logo_png" => 'img/png/nursery-logo.png',
-    "college_logo_png" => 'img/png/college-logo.png',
-    "nursery_logo_jpg" => 'img/jpg/nursery-logo.jpg',
-    "college_logo_jpg" => 'img/jpg/college-logo.jpg',
-    "principal_jpg" => 'img/jpg/principal.jpg',
-    "proper_jpg" => 'img/jpg/proper.jpg',
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -22,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Faith in Christ Group of Schools'),
+    'name' => env('APP_NAME'),
 
     /*
     |--------------------------------------------------------------------------

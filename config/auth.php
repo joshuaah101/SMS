@@ -1,10 +1,5 @@
 <?php
 
-use Modules\Alumni\Entities\Alumni;
-use Modules\Staff\Entities\Staff;
-use Modules\StdParent\Entities\StdParent;
-use Modules\Student\Entities\Student;
-
 return [
 
     /*
@@ -19,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'student',
+        'guard' => 'web',
         'passwords' => 'users',
     ],
 
@@ -45,44 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
             'hash' => false,
         ],
-        'alumni' => [
-            'driver' => 'session',
-            'provider' => 'alumnis',
-        ],
-        'alumni_api' => [
-            'driver' => 'session',
-            'provider' => 'alumnis',
-        ],
-        'staff' => [
-            'driver' => 'session',
-            'provider' => 'staffs',
-        ],
-        'staff_api' => [
-            'driver' => 'token',
-            'provider' => 'staffs',
-        ],
-        'parent' => [
-            'driver' => 'session',
-            'provider' => 'std_parents',
-        ],
-        'parent_api' => [
-            'driver' => 'token',
-            'provider' => 'std_parents',
-        ],
-        'student' => [
-            'driver' => 'session',
-            'provider' => 'students',
-        ],
-        'student_api' => [
-            'driver' => 'token',
-            'provider' => 'students',
-        ],
-
     ],
 
     /*
@@ -106,22 +69,6 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
-        ],
-        'alumnis' => [
-            'driver' => 'eloquent',
-            'model' => Alumni::class,
-        ],
-        'staffs' => [
-            'driver' => 'eloquent',
-            'model' => Staff::class,
-        ],
-        'std_parents' => [
-            'driver' => 'eloquent',
-            'model' => StdParent::class,
-        ],
-        'students' => [
-            'driver' => 'eloquent',
-            'model' => Student::class,
         ],
 
         // 'users' => [
@@ -148,24 +95,6 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
-            'table' => 'password_resets',
-            'expire' => 60,
-            'throttle' => 60,
-        ],
-        'staffs' => [
-            'provider' => 'staffs',
-            'table' => 'password_resets',
-            'expire' => 60,
-            'throttle' => 60,
-        ],
-        'std_parents' => [
-            'provider' => 'std_parents',
-            'table' => 'password_resets',
-            'expire' => 60,
-            'throttle' => 60,
-        ],
-        'students' => [
-            'provider' => 'students',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,

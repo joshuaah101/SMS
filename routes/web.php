@@ -1,5 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PagesController;
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,4 +17,12 @@
 |
 */
 
+Route::get('/', [PagesController::class , 'homepage'])->name('/');
+Route::get('/payment', [PagesController::class , 'payment'])->name('payment');
+Route::get('/portal', [PagesController::class , 'portal'])->name('portal');
+Route::get('/check-status', [PagesController::class , 'check_status'])->name('check-status');
 
+Auth::routes();
+
+
+Route::get('/home', [HomeController::class, 'index']);
