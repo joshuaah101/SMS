@@ -1,0 +1,146 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+/* My modified rules */
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: nunito;
+  font-size: 1.1rem;
+}
+
+.general-footer-upper{
+  background-color: #111;
+  color: #fff;
+  margin-top: 5%;
+}
+
+.general-footer-upper a{
+  color: #fff;
+}
+
+.general-footer-upper a:hover{
+  color: #8a12b9;
+  transition: color ease-in 1.0s;
+}
+
+.general-footer-upper .active{
+  color: #8a12b9;
+}
+
+.general-top-nav{
+  background-color: #8a12b9;
+}
+
+.general-top-nav a{
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.general-top-nav a:hover{
+  color: #232425;
+  transition: color ease-in 1.0s;
+}
+
+a {
+  color: #3490dc;
+  text-decoration: none;
+}
+a:hover {
+  color: #232425;
+  text-decoration: none;
+  transition: color ease-in 1.0s;
+}
+
+.active{
+  color: #8a12b9;
+}
+
+.general-footer-upper{
+  padding: 2%;
+}
+
+.underline{
+  border-bottom: 1px solid #8a12b9;
+  width: 80%;
+}
+
+.main-underline{
+  border-bottom: 2px solid #8a12b9;
+  width: 20%;
+  margin-bottom: 2%;;
+}
+
+.block-links a{
+  display: block;
+}
+
+.inline-links a{
+  display: inline;
+}
+
+
+/* .mapouter{
+  position: relative;
+  text-align: center;
+  height:500px; 
+} */
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  text-align: center;
+}
+
+#parallax1{
+  background-image: url('/storage/img/parallax1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.banner{
+ /* background-image: url('/storage/img/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  min-height: 400px;
+  font-family: 'Truculenta', sans-serif;
+}
+
+.text-header{
+  color: #8a12b9;
+  font-size: 4.9rem;
+  font-weight: 700;
+}
+
+.text-body{
+  color: #111;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.text-blue{
+  color: #0078f6;
+}
+
+.base-text{
+  color: #222;
+  font-size: 1.3rem;
+}
+
+.photo-frame{
+  border-radius: 5px;
+  border: 2px solid #0078f6;
+  box-shadow: 1px 1px 1px 2px #8a12b9;
+}
+/* #################################### */
