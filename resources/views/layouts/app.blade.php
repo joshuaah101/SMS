@@ -20,6 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@600&display=swap" rel="stylesheet"> 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+     <!-- Scripts -->
+     <script src="{{ asset('js/jquery.min.js') }}"></script>
+     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 <body>
     <div id="app">
