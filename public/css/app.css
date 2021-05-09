@@ -16240,6 +16240,26 @@ a:hover {
   font-family: "Truculenta", sans-serif;
 }
 
+.achievement {
+  margin-top: 5%;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.achievement::before {
+  font-family: "Font Awesome 5 Free";
+  color: #8a12b9;
+  font-size: 1rem;
+  font-weight: 900;
+  content: "";
+}
+
 .header-text {
   color: #8a12b9;
   font-size: 4.9rem;
@@ -16259,6 +16279,14 @@ a:hover {
 
 .text-purple {
   color: #8a12b9;
+}
+
+.bg-blue {
+  background-color: #0078f6;
+}
+
+.bg-purple {
+  background-color: #8a12b9;
 }
 
 .base-text {
