@@ -19,16 +19,16 @@
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="inline-links">
-                            <a href="" class="">Other links</a> ~
-                            <a href="" class="">Donation</a> ~
-                            <a href="" class="">E-Journals</a> ~
+                            <a href="" class="">Other links</a> |
+                            <a href="" class="">Donation</a> |
+                            <a href="" class="">E-Journals</a> |
                             <a href="" class="">Recreation</a>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 text-center offset-md-4">
                         <div class="inline-links">
-                            <a href="" class="">Student</a> ~
-                            <a href="" class="">Parent</a> ~
+                            <a href="" class="">Student</a> |
+                            <a href="" class="">Parent</a> |
                             <a href="" class="">Alumni</a>
                         </div>
                     </div>
@@ -38,7 +38,10 @@
         
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-lg">
             <div class="container">
-                <img src="{{ asset('storage/img/logo.png') }}" class="img img-fluid navbar-brand" width="6%" alt="{{ config('app.name') }} School logo" title="{{ config('app.name') }}" />
+                {{-- <img src="{{ asset('storage/img/logo.png') }}" class="img img-fluid navbar-brand" width="6%" alt="{{ config('app.name') }} School logo" title="{{ config('app.name') }}" /> --}}
+                <a href="{{ route('/') }}" class="navbar-brand">
+                    {{ config('app.name') }} Logo
+                </a>
 
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -92,19 +95,29 @@
             <div class="banner bg-white">
                <div class="container">
                    <div class="row">
-                       <div class="col-12 col-sm-5" style="margin-top: 4%;">
+                       <div class="col-12 col-sm-6 lead" style="margin-top: 4%;">
                            <div class="header-text">
                                Welcome
                            </div>
                            <div class="body-text">
-                               {{ config('app.name') }}, Ilaro
+                               {{ config('app.name') }}
                            </div>
-                           <div class="base-text text-justify">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, fugiat molestiae quam, officia cum voluptatem sint a rem quas quidem iste doloribus placeat impedit labore eius in aliquam obcaecati. Temporibus.
-                        </div>
+                           <p class="base-text text-justify">
+                            {{ config('app.school_address') }}
+                            </p>
+                            <figure class="mt-2">
+                                <blockquote class="blockquote">
+                                    Education is the passport to the future, for tomorrow belongs to those who prepare for it today. 
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Malcolm X">Malcolm X</cite>
+                                </figcaption>
+                            </figure>
                        </div>
-                        <div class="col-12 col-sm-6 offset-sm-1 d-none d-sm-block d-flex mt-3 justify-content-center">
-                            <img src="{{ asset('storage/img/textbook.png') }}" class="img img-fluid" width="100%" alt="{{ config('app.name') }} School logo" />
+                        <div class="col-12 col-sm-6 d-none d-sm-block d-flex mt-5 justify-content-center">
+                            <figure class="figure">
+                                <img src="{{ asset('storage/img/textbook.png') }}" class="figure-img img-fluid rounded" width="100%" alt="{{ config('app.name') }} School logo" />
+                            </figure>
                         </div>
                    </div>
                </div>
@@ -116,20 +129,44 @@
                 <div class="row">
                     <div class="col-12 col-col-sm-6 col-md-8">
                         <div class="body-text">
-                            History
+                            <i class="fa fa-calendar-alt"></i>  History
                         </div>
                         <div class="main-underline"></div>
-                        <p class="text-justify">
+                        <p class="text-justify lead">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. A porro ipsum numquam, sequi pariatur eos accusamus sunt veniam error placeat aspernatur aut eius reprehenderit recusandae. Distinctio recusandae est blanditiis eaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, qui quam dignissimos porro, excepturi molestiae sequi pariatur aliquid expedita ab, asperiores harum. Praesentium provident veritatis impedit aperiam numquam nihil veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos delectus incidunt optio ex sit voluptates, voluptate vitae cupiditate numquam blanditiis commodi 
                         </p>
                     </div>
                     <div class="col-12 col-col-sm-6 col-md-4 text-center">
                         <div class="mt-5">
-                            <img src="{{ asset('storage/img/rector.jpg') }}" class="img img-fluid photo-frame" width="60%" alt="Principal" title="Principal" />
+                            <figure class="figure">
+                                <img src="{{ asset('storage/img/rector.jpg') }}" class="figure-img img-fluid rounded photo-frame" width="80%" alt="__{{ "principal" }}" />
+                            </figure>
                         </div>
                         <p class="base-text">
                             Principal's name
                         </p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="body-text">
+                            <i class="fa fa-award"></i> Achievements
+                        </div>
+                        <div class="main-underline"></div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="lead">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-4">
+
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-8">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, ipsum dolorem natus reprehenderit suscipit dolore voluptatibus aliquid quam quod illo itaque nostrum recusandae rem explicabo, voluptatem quas quo! At, mollitia.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,9 +179,23 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-5">
-                <div class="header-info-display-inner text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam numquam ipsum fugiat, ullam doloremque molestiae voluptatibus, vitae, ducimus neque rem enim voluptates amet quidem expedita ipsa illum quos repudiandae.
+            <div class="mt-5"></div>
+            <div style="background-color: #8a12b9;" class="text-white p-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mb-5">
+                            <div class="body-text">
+                               <i class="fa fa-info"></i> News and Events
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <figure class="figure">
+                                <img src="{{ asset('storage/img/rector.jpg') }}" class="figure-img img-fluid rounded" width="50%" alt="__{{ "principal" }}" />
+                                <figcaption class="fig-caption">Admission into Jss 1</figcaption>
+                                <a href="" class="">Read more &raquo;</a>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
