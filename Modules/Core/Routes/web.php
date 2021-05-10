@@ -11,6 +11,8 @@
 |
 */
 
-Route::prefix('core')->group(function() {
-    Route::get('/', 'CoreController@index');
-});
+
+use Illuminate\Support\Facades\Route;
+use Modules\Core\Http\Controllers\CoreController;
+
+Route::get('/', [CoreController::class, 'index'])->name('homepage');

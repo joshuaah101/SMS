@@ -1,30 +1,88 @@
-<footer class="bg-purple-900 px-8 pt-5">
-    <div class="grid md:grid-cols-4 xs:grid-cols-2 p-3 text-purple-300 md:mb-5">
-        <div class="flex flex-col mb-12 md:mb-0">
-            <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">Legal</h4>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Privacy Policy</a>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Terms &amp; Conditions</a>
-        </div>
-        <div class="flex flex-col mb-12 md:mb-0">
-            <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">Academics</h4>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Admissions</a>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Portal</a>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Helpdesk</a>
-        </div>
-        <div class="flex flex-col mb-12 md:mb-0">
-            <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">Schools</h4>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Faith in Christ College</a>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Faith in Christ Nur/Pry (Oke ola, ilaro)</a>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Faith in Christ Nur/Pry (Oja-odan)</a>
-        </div>
-        <div class="flex flex-col mb-12 md:mb-0">
-            <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">Find us</h4>
-            <a href="#" target="_blank" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">School Location - put a map here instead</a>
-            <a href="#" target="_blank" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Contact Us</a>
+<footer>
+    <div class="general-footer-upper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-5 mb-3">
+                    <h5>Location</h5>
+                    <div class="underline mb-4"></div>
+                    <p>
+                    {{-- <div class="mapouter"> --}}
+                    <div class="gmap_canvas">
+                        <iframe width="90%" height="300" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=faith%20in%20christ%20college,%20oke%20ola,%20ilaro,%20ogun%20state,%20nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="2" scrolling="yes" marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
+                    {{-- </div> --}}
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2 mb-3">
+                    <h5>Quick links</h5>
+                    <div class="underline mb-4"></div>
+                    <p class="block-links">
+                        <a href="/" class="{{ request()->is('/') ? 'active' : '' }}">
+                            Home
+                        </a>
+                        <a href="{{ route('register') }}" class="{{ request()->is('register') ? 'active' : '' }}">
+                            Register
+                        </a>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2 mb-3">
+                    <h5>Alumni</h5>
+                    <div class="underline mb-4"></div>
+                    <p class="block-links">
+                        <a href="/" class="{{ request()->is('/') ? 'active' : '' }}">
+                            Home
+                        </a>
+                        <a href="{{ route('register') }}" class="{{ request()->is('register') ? 'active' : '' }}">
+                            Register
+                        </a>
+                        <a href="{{ route('payment') }}" class="{{ request()->is('payment') ? 'active' : '' }}">
+                            Payment
+                        </a>
+                        <a href="{{ route('portal') }}" class="{{ request()->is('portal') ? 'active' : '' }}">
+                            Portal
+                        </a>
+                        <a href="{{ route('check-status') }}"
+                           class="{{ request()->is('check-status') ? 'active' : '' }}">
+                            Check status
+                        </a>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <div class="mb-3">
+                        <img src="{{ asset('storage/img/logo.png') }}" class="img img-fluid" width="40%"
+                             alt="School logo"/>
+                    </div>
+                    <p>
+                    {{ config('app.school_address') }}
+                    <p class="mt-3">
+                        <a href="nailto: {{ config('app.email') }}" target="{{ __('blank') }}">
+                            {{ config('app.email') }}
+                        </a><br/>
+                        <a href="tel: {{ config('app.phone_number') }}" target="{{ __('blank') }}">
+                            {{ config('app.phone_number') }}
+                        </a>
+                    </p>
+                    </p>
+                    <div class="underline mt-2 mb-3"></div>
+                    <p class="social-icons">
+                        <a href="" class="" target="{{ __('_blank') }}" title="Like our facebook page"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="" class="" target="{{ __('_blank') }}" title="Follow us on instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="" class="" target="{{ __('_blank') }}" title="Follow us on twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="" class="" target="{{ __('_blank') }}" title="Check us out on LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <hr class="border-purple-700">
-    <div class="flex md:justify-end xs:justify-start py-3 text-purple-300">
-        <p class="text-xs font-bold">{{ config('app.name') }} | &copy; {{ date("Y") }}.</p>
+    <div class="text-center text-white p-3"
+         style="font-weight: 600; background-color: #8a12b9;">{{ config('app.name') }}, Ilaro &middot; &copy;
+        {{ date('Y') }} &middot; All rights reserved.
     </div>
 </footer>

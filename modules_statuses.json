@@ -9,5 +9,6 @@
     "Exam": true,
     "CA": true,
     "Core": true,
-    "StdClass": true
+    "StdClass": true,
+    "Payment": true
 }
