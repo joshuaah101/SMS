@@ -1,0 +1,13 @@
+{
+    "name": "StdClass",
+    "alias": "stdclass",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\StdClass\\Providers\\StdClassServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
