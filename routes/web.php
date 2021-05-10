@@ -1,9 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesController;
-
+use Modules\Core\Http\Controllers\PortalController;
 
 
 /*
@@ -17,12 +18,7 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-Route::get('/', [PagesController::class , 'homepage'])->name('/');
-Route::get('/payment', [PagesController::class , 'payment'])->name('payment');
-Route::get('/portal', [PagesController::class , 'portal'])->name('portal');
-Route::get('/check-status', [PagesController::class , 'check_status'])->name('check-status');
+
+Route::get('/portal', [PortalController::class, 'portal'])->name('portal');
 
 Auth::routes();
-
-
-Route::get('/home', [HomeController::class, 'index']);

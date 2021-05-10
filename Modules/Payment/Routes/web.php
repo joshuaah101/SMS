@@ -11,9 +11,8 @@
 |
 */
 
-use Illuminate\Support\Facades\Route;
-use Modules\Exam\Http\Controllers\ExamController;
 
-Route::prefix('exam')->group(function () {
-    Route::get('/', [ExamController::class, 'index'])->name('check_status');
-});
+use Illuminate\Support\Facades\Route;
+use Modules\Payment\Http\Controllers\PaymentController;
+
+Route::get('/payment', [PaymentController::class, 'payment'])->name('payment');
