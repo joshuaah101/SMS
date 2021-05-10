@@ -6,8 +6,8 @@
     "Parent": true,
     "Guest": true,
     "Subject": true,
-    "Class": true,
     "Exam": true,
     "CA": true,
-    "Core": true
+    "Core": true,
+    "StdClass": true
 }

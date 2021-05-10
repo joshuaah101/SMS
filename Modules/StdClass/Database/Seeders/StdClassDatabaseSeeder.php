@@ -16,7 +16,6 @@ class StdClassDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-         $this->call(DefaultDepartmentTableSeeder::class);
-         $this->call(DefaultAlphabetTableSeeder::class);
+        // $this->call("OthersTableSeeder");
     }
 }
