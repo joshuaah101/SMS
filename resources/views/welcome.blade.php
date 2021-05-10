@@ -94,7 +94,7 @@
                 </div>
             </div>
         </nav>
-        <header>
+        <header class="mb-5">
             <div class="banner bg-white">
                <div class="container">
                    <div class="row">
@@ -159,7 +159,12 @@
                     </div>
                 </div>
             </div>
-            <div class="text-white p-5">
+            <div class="text-secondary">
+                <div class="mb-5 mt-5">
+                    <div class="col-8">
+                        <div class="long-hr"></div>
+                    </div>
+                </div>
                 <div class="container">
                     {{-- <div class="row">
                         <div class="col-12">
@@ -168,8 +173,8 @@
                             </div>
                         </div>
                     </div> --}}
-                    <div class="underline mb-5"></div>
-                    <div class="row mb-5">
+                    
+                    <div class="row">
                         <div class="col-12">
                             <div class="lead">
                                 <div class="row">
@@ -187,7 +192,7 @@
                                             <li class="mt-3 lead text-secondary"><span class="icon achievement"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, in quibusdam. Aliquid, autem reprehenderit </li>
                                             </ul>
                                     </div>
-                                    <div class="col-12 col-sm-6 col-md-4 text-center mt-5">
+                                    <div class="col-12 col-sm-6 col-md-4 text-center">
                                         <i class="fa fa-award text-purple" style="font-size: 10rem;"></i>
                                     </div>
                                 </div>
@@ -195,8 +200,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="mt-5">
+                    <div class="col-8 offset-4">
+                        <div class="long-hr"></div>
+                    </div>
+                </div>
             </div>
-            <div id="parallax1">
+            <div id="parallax1" class="mt-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -205,42 +215,60 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-5"></div>
-            <div class="text-white p-5 bg-purple">
+            <div class="text-purple p-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 mb-5">
-                            <div class="body-text">
-                               <i class="fa fa-info"></i> News and Events
+                        <div class="col-12 col-sm-8">
+                            <div class="row">
+                                <div class="col-12 mb-5">
+                                    <div class="body-text">
+                                       <i class="fa fa-info"></i> News
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <figure class="figure text-center">
+                                        <img src="{{ asset('storage/img/rector.jpg') }}" class="figure-img img-fluid photo-frame rounded" width="50%" alt="__{{ "principal" }}" />
+                                        <figcaption class="fig-caption">Admission into Jss 1</figcaption>
+                                        <a href="" class="">Read more &raquo;</a>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <figure class="figure text-center">
+                                        <img src="{{ asset('storage/img/rector.jpg') }}" class="figure-img img-fluid rounded" width="50%" alt="__{{ "principal" }}" />
+                                        <figcaption class="fig-caption">Admission into Jss 1</figcaption>
+                                        <a href="" class="">Read more &raquo;</a>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <figure class="figure text-center">
+                                        <img src="{{ asset('storage/img/rector.jpg') }}" class="figure-img img-fluid rounded" width="50%" alt="__{{ "principal" }}" />
+                                        <figcaption class="fig-caption">Admission into Jss 1</figcaption>
+                                        <a href="" class="">Read more &raquo;</a>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <figure class="figure text-center">
+                                        <img src="{{ asset('storage/img/rector.jpg') }}" class="figure-img img-fluid rounded" width="50%" alt="__{{ "principal" }}" />
+                                        <figcaption class="fig-caption">Admission into Jss 1</figcaption>
+                                        <a href="" class="">Read more &raquo;</a>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <figure class="figure text-center">
-                                <img src="{{ asset('storage/img/rector.jpg') }}" class="figure-img img-fluid photo-frame rounded" width="50%" alt="__{{ "principal" }}" />
-                                <figcaption class="fig-caption">Admission into Jss 1</figcaption>
-                                <a href="" class="">Read more &raquo;</a>
-                            </figure>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <figure class="figure text-center">
-                                <img src="{{ asset('storage/img/rector.jpg') }}" class="figure-img img-fluid rounded" width="50%" alt="__{{ "principal" }}" />
-                                <figcaption class="fig-caption">Admission into Jss 1</figcaption>
-                                <a href="" class="">Read more &raquo;</a>
-                            </figure>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <figure class="figure text-center">
-                                <img src="{{ asset('storage/img/rector.jpg') }}" class="figure-img img-fluid rounded" width="50%" alt="__{{ "principal" }}" />
-                                <figcaption class="fig-caption">Admission into Jss 1</figcaption>
-                                <a href="" class="">Read more &raquo;</a>
-                            </figure>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <figure class="figure text-center">
-                                <img src="{{ asset('storage/img/rector.jpg') }}" class="figure-img img-fluid rounded" width="50%" alt="__{{ "principal" }}" />
-                                <figcaption class="fig-caption">Admission into Jss 1</figcaption>
-                                <a href="" class="">Read more &raquo;</a>
-                            </figure>
+                        <div class="col-12 col-sm-4" style="border-left: 2px solid #8a12b9;">
+                            <div class="row">
+                                <div class="col-12 mt-3">
+                                    <div class="body-text">
+                                       <i class="fa fa-bullhorn"></i> Events
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rerum asperiores quibusdam consequuntur voluptas architecto! Laboriosam, nihil quisquam accusamus nam impedit est! Quasi perspiciatis dolor delectus veniam ad, consectetur dolores.
+                                </div>
+                                <div class="col-12 mt-5">
+                                    lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rerum asperiores quibusdam consequuntur voluptas architecto! Laboriosam, nihil quisquam accusamus nam impedit est! Quasi perspiciatis dolor delectus veniam ad, consectetur dolo
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
