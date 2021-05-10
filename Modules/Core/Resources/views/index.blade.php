@@ -1,5 +1,5 @@
 @extends('core::layouts.master')
-
+@section('title') Welcome @endsection
 @section('content')
     <main>
         <div class="container">
