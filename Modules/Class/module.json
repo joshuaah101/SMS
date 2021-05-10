@@ -1,0 +1,13 @@
+{
+    "name": "Class",
+    "alias": "class",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Class\\Providers\\ClassServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

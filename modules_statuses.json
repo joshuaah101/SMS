@@ -1,0 +1,13 @@
+{
+    "School": true,
+    "Student": true,
+    "Staff": true,
+    "Alumni": true,
+    "Parent": true,
+    "Guest": true,
+    "Subject": true,
+    "Class": true,
+    "Exam": true,
+    "CA": true,
+    "Core": true
+}
