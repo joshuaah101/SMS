@@ -1,11 +1,13 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-lg">
     <div class="container">
         {{-- <img src="{{ asset('storage/img/logo.png') }}" class="img img-fluid navbar-brand" width="6%" alt="{{ config('app.name') }} School logo" title="{{ config('app.name') }}" /> --}}
-        <a href="{{ route('/') }}" class="navbar-brand">
+        <a href="{{ route('homepage') }}" class="navbar-brand">
             {{ config('app.name') }} Logo
         </a>
 
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -32,7 +34,8 @@
                     @endif
                 @else
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }}
                         </a>
 

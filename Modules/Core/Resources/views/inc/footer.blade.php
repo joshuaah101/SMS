@@ -5,7 +5,7 @@
                 <div class="col-12 col-sm-6 col-md-5 mb-3">
                     <h5>Location</h5>
                     <div class="underline mb-4"></div>
-                    <p>
+
                     {{-- <div class="mapouter"> --}}
                     <div class="gmap_canvas">
                         <iframe width="90%" height="300" id="gmap_canvas"
@@ -14,13 +14,13 @@
                         </iframe>
                     </div>
                     {{-- </div> --}}
-                    </p>
+
                 </div>
                 <div class="col-12 col-sm-6 col-md-2 mb-3">
                     <h5>Quick links</h5>
                     <div class="underline mb-4"></div>
                     <p class="block-links">
-                        <a href="/" class="{{ request()->is('/') ? 'active' : '' }}">
+                        <a href="{{ route('homepage') }}" class="{{ request()->is('homepage') ? 'active' : '' }}">
                             Home
                         </a>
                         <a href="{{ route('register') }}" class="{{ request()->is('register') ? 'active' : '' }}">
@@ -44,7 +44,7 @@
                         <a href="{{ route('portal') }}" class="{{ request()->is('portal') ? 'active' : '' }}">
                             Portal
                         </a>
-                        <a href="{{ route('check-status') }}"
+                        <a href="{{ route('check_status') }}"
                            class="{{ request()->is('check-status') ? 'active' : '' }}">
                             Check status
                         </a>
