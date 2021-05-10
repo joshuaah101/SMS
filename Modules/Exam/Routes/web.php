@@ -11,9 +11,6 @@
 |
 */
 
-use Illuminate\Support\Facades\Route;
-use Modules\Exam\Http\Controllers\ExamController;
-
-Route::prefix('exam')->group(function () {
-    Route::get('/', [ExamController::class, 'index'])->name('check_status');
+Route::prefix('exam')->group(function() {
+    Route::get('/', 'ExamController@index');
 });

@@ -14,9 +14,6 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected $moduleNamespace = 'Modules\Student\Http\Controllers';
 
-
-    public const HOME = 'student';
-
     /**
      * Called before routes are registered.
      *

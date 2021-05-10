@@ -10,7 +10,7 @@
                             <iframe width="90%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=faith%20in%20christ%20college,%20oke%20ola,%20ilaro,%20ogun%20state,%20nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="2" scrolling="yes" marginheight="0" marginwidth="0">
                             </iframe>
                         </div>
-                     {{--</div> --}}
+                     {{-- </div> --}}
                 </p>
             </div>
             <div class="col-12 col-sm-6 col-md-2 mb-3">
@@ -20,7 +20,6 @@
                     <a href="/" class="{{ request()->is('/') ? 'active' : '' }}">
                         Home
                     </a>
-                
                     <a href="{{ route('register') }}" class="{{ request()->is('register') ? 'active' : '' }}">
                         Register
                     </a>

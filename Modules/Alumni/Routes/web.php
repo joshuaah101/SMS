@@ -11,13 +11,6 @@
 |
 */
 
-use Illuminate\Support\Facades\Route;
-use Modules\Alumni\Http\Controllers\Auth\LoginController;
-use Modules\Alumni\Http\Controllers\Auth\ConfirmPasswordController;
-
-Route::prefix('alumni')->group(function () {
-    Route::get('/', 'AlumniController@index')->name('alumni');
-    Route::get('/login', [LoginController::class, 'showLoginForm'])->name('alumni.login');
-    Route::get('/confirm-password', [ConfirmPasswordController::class, 'showConfirmForm'])->name('alumni.password.confirm');
+Route::prefix('alumni')->group(function() {
+    Route::get('/', 'AlumniController@index');
 });
-

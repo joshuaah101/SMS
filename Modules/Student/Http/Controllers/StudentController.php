@@ -8,18 +8,12 @@ use Illuminate\Routing\Controller;
 
 class StudentController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('student');
-    }
-
     /**
      * Display a listing of the resource.
      * @return Renderable
      */
     public function index()
     {
-
         return view('student::index');
     }
 
@@ -39,7 +33,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //request()->has('
+        //
     }
 
     /**
