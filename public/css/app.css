@@ -16195,13 +16195,12 @@ a:hover {
 
 .underline {
   border-bottom: 2px solid #8a12b9;
-  width: 80%;
+  width: 40%;
 }
 
-.main-underline {
+.long-hr {
   border-bottom: 3px solid #8a12b9;
-  width: 30%;
-  margin-bottom: 2%;
+  width: 100%;
 }
 
 .block-links a {
