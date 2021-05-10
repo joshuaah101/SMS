@@ -142,7 +142,7 @@
                             {{ config('app.name') }}, Ilaro
                         </div>
                         <h5 class="text-secondary">We are ranked second to none...</h5>
-                        <div class="main-underline"></div>
+                        <div class="long-hr mb-5"></div>
                         <p class="text-justify lead">
                             Welcome to the world of {{ config('app.name') }}, Ilaro. The institution was established by law on {{ date('M, d, Y') }} and opened her gates to the public on October 26, 1999. The Institution has since then acquired the reputation of a quintessential institution educating and training students across her group levels. 
                         </p>
@@ -192,7 +192,7 @@
                                             <li class="mt-3 lead text-secondary"><span class="icon achievement"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, in quibusdam. Aliquid, autem reprehenderit </li>
                                             </ul>
                                     </div>
-                                    <div class="col-12 col-sm-6 col-md-4 text-center">
+                                    <div class="col-12 col-sm-6 col-md-4 mt-2 text-center">
                                         <i class="fa fa-award text-purple" style="font-size: 10rem;"></i>
                                     </div>
                                 </div>
@@ -255,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4" style="border-left: 2px solid #8a12b9;">
+                        <div class="col-12 col-sm-3 offset-sm-1">
                             <div class="row">
                                 <div class="col-12 mt-3">
                                     <div class="body-text">
@@ -265,7 +265,7 @@
                                 <div class="col-12">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rerum asperiores quibusdam consequuntur voluptas architecto! Laboriosam, nihil quisquam accusamus nam impedit est! Quasi perspiciatis dolor delectus veniam ad, consectetur dolores.
                                 </div>
-                                <div class="col-12 mt-5">
+                                <div class="col-12 mt-3">
                                     lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rerum asperiores quibusdam consequuntur voluptas architecto! Laboriosam, nihil quisquam accusamus nam impedit est! Quasi perspiciatis dolor delectus veniam ad, consectetur dolo
                                 </div>
                             </div>
