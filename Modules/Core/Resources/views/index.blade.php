@@ -20,7 +20,7 @@
                 <div class="col-12 col-col-sm-6 col-md-4 text-center">
                     <div class="mt-5">
                         <figure class="figure">
-                            <img src="{{ asset('storage/img/rector.jpg') }}"
+                            <img src="{{ asset('storage/images/layout/rector.jpg') }}"
                                  class="figure-img img-fluid rounded photo-frame" width="60%"
                                  alt="__{{ "principal" }}"/>
                         </figure>
@@ -119,7 +119,7 @@
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <figure class="figure text-center">
-                                    <img src="{{ asset('storage/img/rector.jpg') }}"
+                                    <img src="{{ asset('storage/images/layout/rector.jpg') }}"
                                          class="figure-img img-fluid photo-frame rounded" width="50%"
                                          alt="__{{ "principal" }}"/>
                                     <figcaption class="fig-caption">Admission into Jss 1</figcaption>
@@ -128,7 +128,7 @@
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <figure class="figure text-center">
-                                    <img src="{{ asset('storage/img/rector.jpg') }}"
+                                    <img src="{{ asset('storage/images/layout/rector.jpg') }}"
                                          class="figure-img img-fluid rounded" width="50%" alt="__{{ "principal" }}"/>
                                     <figcaption class="fig-caption">Admission into Jss 1</figcaption>
                                     <a href="" class="">Read more &raquo;</a>
@@ -136,7 +136,7 @@
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <figure class="figure text-center">
-                                    <img src="{{ asset('storage/img/rector.jpg') }}"
+                                    <img src="{{ asset('storage/images/layout/rector.jpg') }}"
                                          class="figure-img img-fluid rounded" width="50%" alt="__{{ "principal" }}"/>
                                     <figcaption class="fig-caption">Admission into Jss 1</figcaption>
                                     <a href="" class="">Read more &raquo;</a>
@@ -144,7 +144,7 @@
                             </div>
                             <div class="col-12 col-sm-6 col-md-3">
                                 <figure class="figure text-center">
-                                    <img src="{{ asset('storage/img/rector.jpg') }}"
+                                    <img src="{{ asset('storage/images/layout/rector.jpg') }}"
                                          class="figure-img img-fluid rounded" width="50%" alt="__{{ "principal" }}"/>
                                     <figcaption class="fig-caption">Admission into Jss 1</figcaption>
                                     <a href="" class="">Read more &raquo;</a>

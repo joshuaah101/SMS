@@ -10,5 +10,6 @@
     "CA": true,
     "Core": true,
     "StdClass": true,
-    "Payment": true
+    "Payment": true,
+    "News": true
 }
