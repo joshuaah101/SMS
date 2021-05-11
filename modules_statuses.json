@@ -3,7 +3,6 @@
     "Student": true,
     "Staff": true,
     "Alumni": true,
-    "Parent": true,
     "Guest": true,
     "Subject": true,
     "Exam": true,
@@ -11,5 +10,6 @@
     "Core": true,
     "StdClass": true,
     "Payment": true,
-    "News": true
+    "News": true,
+    "StdParent": true
 }
