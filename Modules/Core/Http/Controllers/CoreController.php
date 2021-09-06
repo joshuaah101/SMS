@@ -18,62 +18,30 @@ class CoreController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Display about page.
      * @return Renderable
      */
-    public function create()
+    public function about()
     {
-        return view('core::create');
+        return view('core::about');
     }
 
     /**
-     * Store a newly created resource in storage.
-     * @param Request $request
+     * Display terms and condition page.
      * @return Renderable
      */
-    public function store(Request $request)
+    public function terms()
     {
-        //
+        return view('core::terms');
     }
 
     /**
-     * Show the specified resource.
-     * @param int $id
+     * Display Policy.
      * @return Renderable
      */
-    public function show($id)
+    public function policy()
     {
-        return view('core::show');
+        return view('core::policy');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function edit($id)
-    {
-        return view('core::edit');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     * @param Request $request
-     * @param int $id
-     * @return Renderable
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     * @param int $id
-     * @return Renderable
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

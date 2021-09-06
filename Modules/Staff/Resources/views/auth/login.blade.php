@@ -7,12 +7,12 @@
 @section('nav')
     @include('core::inc.nav')
 @endsection
-@section('content')
+@section('main')
 
     <div class="xs:block md:flex w-full">
         <div class="w-full h-screen bg-purple-900 flex flex-col items-center justify-center ">
             <header class="text-purple-300 font-bold text-6xl">
-                Student Portal
+                Staff Portal
             </header>
             <p class="mt-5 text-purple-200 text-2xl font-semibold">
                 Login here ...
@@ -27,7 +27,7 @@
 
         <div class="w-full flex-col justify-center items-center p-12">
             <header class="tracking-wider text-4xl font-bold font-serif">
-                Student login area
+                Enter Login Credentials
             </header>
 
             <div class="mt-12 bg-white p-8 rounded-md shadow-lg">
