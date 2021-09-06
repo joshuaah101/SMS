@@ -18,8 +18,8 @@
 @endsection
 
 @section('header')
-    <div class="bg-landing-2 w-full h-screen bg-no-repeat bg-cover border-b-4 border-red-600">
-
+    <div class="bg-landing-2 w-full h-screen bg-no-repeat bg-cover border-b-4 border-purple-700">
+        {{-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nobis, pariatur esse nostrum earum adipisci! Rem, perferendis? Quas suscipit quidem iusto corporis magnam nobis tempora ex aliquam error. Magnam, totam. --}}
     </div>
 @endsection
 
@@ -43,8 +43,11 @@
                     It is our aim to provide world class teaching that would stir a desire for ever increasing knowledge in our students through outstanding teachers. We put you, our parents and students at the centre of our activities here. Education is a partnership between home and school and we put a great deal of emphasis on our partnership with you, our stakeholders (Parents/Guardians). It is not a gain-saying that children learn best when parents and teachers collaborate. When your Child/Ward(s) starts School it is not where your responsibilities end and School's begin, it is where Ours begin and yours continue. Our sole goal and objective is for every one of our students to achieve outstanding achievement in their education. Wherever they come from, their level, they should achieve better result in Faith in Christ Schools and anywhere else.
                 </article>
             </section>
-            <div class="xs:order-first md:order-none flex items-center justify-center w-full">
-                <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=450" class="w-80 h-80 object-cover border-4 border-red-100 rounded-full bg-cover" alt="principal">
+            <div class="xs:order-first md:order-none flex-col flex items-center justify-center">
+                <img src="{{ asset(config('app.principal_jpg')) }}" class="w-80 h-80 object-cover border-4 border-red-200 rounded-full bg-cover" alt="principal">
+                <p class="mt-5 text-xl font-semi-bold tracking-wider text-gray-700">
+                    Principal's name
+                </p>
             </div>
         </div>
     </div>
@@ -57,8 +60,11 @@
 
     <div class="py-8 px-6">
         <div class="grid xs:grid-cols-1 md:grid-cols-2 gap-5 p-12">
-            <div class="xs:order-first md:order-none flex items-center justify-center w-full">
-                <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=450" class="w-80 h-80 object-cover border-4 border-red-100 rounded-full bg-cover" alt="principal">
+            <div class="xs:order-first md:order-none flex flex-col items-center justify-center">
+                <img src="{{ asset(config('app.proper_jpg')) }}" class="w-80 h-80 object-cover border-4 border-red-200 rounded-full bg-cover" alt="principal">
+                <p class="mt-5 text-xl font-semi-bold tracking-wider text-gray-700">
+                    Proprietress name
+                </p>
             </div>
             <section class="flex flex-col space-y-10 bg-white shadow-xl py-10 px-12 rounded-lg">
                 <header class="text-xl md:text-3xl font-black flex xs:justify-center md:justify-end text-gray-800 tracking-wide">
