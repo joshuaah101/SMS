@@ -2,13 +2,13 @@
     <div class="border-b-4 border-purple-700">
         <div class="">
             <div class="flex justify-between items-center mx-8 xs:py-0 md:py-1">
-                <a href="#" class="space-x-3 xs:hidden md:flex">
+                <a href="{{ url('/') }}" class="space-x-3 xs:hidden md:flex">
                     <img src="{{ asset(config('app.college_logo_png')) }}" class="xs:w-8 xs:h-8 md:w-24 md:h-20"
                          alt="{{ config('app.name') }} logo" title="{{ config('app.name') }}"/>
                 </a>
 
                 <div class="md:flex space-x-3 xs:hidden">
-                    <a href="#"
+                    <a href="{{ route('admission.index') }}"
                        class="bg-purple-100 text-purple-900 border-2 border-purple-900 py-2 px-4 text-xs md:text-sm rounded-full hover:bg-purple-900 hover:text-white shadow-xl transition duration-500 delay-200 ease-in">
                         Admissions
                     </a>
@@ -92,7 +92,7 @@
                         </span>
                         About us
                     </a>
-                    <a href=""
+                    <a href="{{ route('admission.index') }}"
                        class="{{ request()->is('ticket') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                         <span class="mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
@@ -103,7 +103,7 @@
                         </span>
                         Admissions
                     </a>
-                    <a href=""
+                    <a href="{{ route('student') }}"
                        class="{{ request()->is('ticket') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                         <span class="mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
@@ -125,7 +125,7 @@
                         </span>
                         Some menu
                     </a>
-                    <a href=""
+                    <a href="{{ route('curriculum') }}"
                        class="{{ request()->is('register') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                         <span class="mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
