@@ -1,5 +1,6 @@
 <?php
 
+use Modules\Alumni\Entities\Alumni;
 use Modules\Staff\Entities\Staff;
 use Modules\StdParent\Entities\StdParent;
 use Modules\Student\Entities\Student;
@@ -49,6 +50,14 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+        'alumni' => [
+            'driver' => 'session',
+            'provider' => 'alumnis',
+        ],
+        'alumni_api' => [
+            'driver' => 'session',
+            'provider' => 'alumnis',
+        ],
         'staff' => [
             'driver' => 'session',
             'provider' => 'staffs',
@@ -97,6 +106,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+        'alumnis' => [
+            'driver' => 'eloquent',
+            'model' => Alumni::class,
         ],
         'staffs' => [
             'driver' => 'eloquent',

@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Student\Http\Controllers\Auth;
+namespace Modules\Core\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Modules\Student\Providers\RouteServiceProvider;
-use Modules\Student\Traits\ConfirmsStudentPasswords;
+use App\Providers\RouteServiceProvider;
+use Illuminate\Foundation\Auth\ConfirmsPasswords;
 
 class ConfirmPasswordController extends Controller
 {
@@ -19,7 +19,7 @@ class ConfirmPasswordController extends Controller
     |
     */
 
-    use ConfirmsStudentPasswords;
+    use ConfirmsPasswords;
 
     /**
      * Where to redirect users when the intended url fails.

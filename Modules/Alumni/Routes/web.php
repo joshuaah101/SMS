@@ -11,6 +11,10 @@
 |
 */
 
-Route::prefix('alumni')->group(function() {
-    Route::get('/', 'AlumniController@index');
+use Illuminate\Support\Facades\Route;
+
+Route::prefix('alumni')->group(function () {
+    Route::get('/', 'AlumniController@index')->name('alumni');
 });
+
+\Illuminate\Support\Facades\Auth::routes();

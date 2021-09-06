@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Modules\Staff\Traits;
+namespace Modules\Student\traits;
 
 
 use Illuminate\Auth\Events\Registered;
@@ -10,7 +10,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-trait RegistersStaffs
+trait RegisterStudents
 {
     use RedirectsUsers;
 
@@ -21,7 +21,7 @@ trait RegistersStaffs
      */
     public function showRegistrationForm()
     {
-        return view('staff::auth.register');
+        return view('student::auth.register');
     }
 
     /**

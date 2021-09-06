@@ -3,6 +3,10 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use Modules\Alumni\Http\Middleware\Alumni;
+use Modules\Staff\Http\Middleware\Staff;
+use Modules\StdParent\Http\Middleware\StdParent;
+use Modules\Student\Http\Middleware\Student;
 
 class Kernel extends HttpKernel
 {
@@ -54,6 +58,10 @@ class Kernel extends HttpKernel
      */
     protected $routeMiddleware = [
         'auth' => \App\Http\Middleware\Authenticate::class,
+        'staff' => Staff::class,
+        'alumni' => Alumni::class,
+        'student' => Student::class,
+        'parent' => StdParent::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,

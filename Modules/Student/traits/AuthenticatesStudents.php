@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Modules\Alumni\Traits;
+namespace Modules\Student\traits;
 
 
 use Illuminate\Foundation\Auth\RedirectsUsers;
@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 
-trait AuthenticatesAlumni
+trait AuthenticatesStudents
 {
     use RedirectsUsers, ThrottlesLogins;
 
@@ -22,13 +22,13 @@ trait AuthenticatesAlumni
      */
     public function showLoginForm()
     {
-        return view('alumni::auth.login');
+        return view('student::auth.login');
     }
 
     /**
      * Handle a login request to the application.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      *
      * @throws \Illuminate\Validation\ValidationException
@@ -62,7 +62,7 @@ trait AuthenticatesAlumni
     /**
      * Validate the user login request.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return void
      *
      * @throws \Illuminate\Validation\ValidationException
@@ -78,7 +78,7 @@ trait AuthenticatesAlumni
     /**
      * Attempt to log the user into the application.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return bool
      */
     protected function attemptLogin(Request $request)
@@ -91,7 +91,7 @@ trait AuthenticatesAlumni
     /**
      * Get the needed authorization credentials from the request.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return array
      */
     protected function credentials(Request $request)
@@ -102,7 +102,7 @@ trait AuthenticatesAlumni
     /**
      * Send the response after the user was authenticated.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
      */
     protected function sendLoginResponse(Request $request)
@@ -123,8 +123,8 @@ trait AuthenticatesAlumni
     /**
      * The user has been authenticated.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param mixed $user
+     * @param  \Illuminate\Http\Request  $request
+     * @param  mixed  $user
      * @return mixed
      */
     protected function authenticated(Request $request, $user)
@@ -135,7 +135,7 @@ trait AuthenticatesAlumni
     /**
      * Get the failed login response instance.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Symfony\Component\HttpFoundation\Response
      *
      * @throws \Illuminate\Validation\ValidationException
@@ -160,7 +160,7 @@ trait AuthenticatesAlumni
     /**
      * Log the user out of the application.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
      */
     public function logout(Request $request)
@@ -183,7 +183,7 @@ trait AuthenticatesAlumni
     /**
      * The user has logged out of the application.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return mixed
      */
     protected function loggedOut(Request $request)

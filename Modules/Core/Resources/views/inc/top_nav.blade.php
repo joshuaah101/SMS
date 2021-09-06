@@ -11,9 +11,10 @@
             </div>
             <div class="col-12 col-sm-6 col-md-4 text-center offset-md-4">
                 <div class="inline-links">
-                    <a href="" class="">Student</a> |
-                    <a href="" class="">Parent</a> |
-                    <a href="" class="">Alumni</a>
+                    <a href="{{ route('student') }}" class="">Student</a> |
+                    <a href="{{ route('parent') }}" class="">Parent</a> |
+                    <a href="{{ route('staff') }}" class="">Staff</a> |
+                    <a href="{{ route('alumni') }}" class="">Alumni</a>
                 </div>
             </div>
         </div>

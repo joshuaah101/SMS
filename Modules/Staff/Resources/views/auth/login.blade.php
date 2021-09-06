@@ -9,7 +9,7 @@
                          style="font-size: 1.2rem; font-weight: 600;">{{ __('Staff Login here .') }}</div>
 
                     <div class="card-body" style="background-color: #fdf4f4c9;">
-                        <form method="POST" action="{{ route('staff.login') }}">
+                        <form method="POST" action="{{ route('login') }}">
                             @csrf
 
                             <div class="form-group row">
@@ -65,8 +65,8 @@
                                         {{ __('Login') }}
                                     </button>
 
-                                    @if (Route::has('staff.password.request'))
-                                        <a class="btn btn-link" href="{{ route('staff.password.request') }}">
+                                    @if (Route::has('password.request'))
+                                        <a class="btn btn-link" href="{{ route('password.request') }}">
                                             {{ __('Forgot Your Password?') }}
                                         </a>
                                     @endif

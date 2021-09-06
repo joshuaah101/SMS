@@ -8,6 +8,11 @@ use Illuminate\Routing\Controller;
 
 class StaffController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('staff');
+    }
+
     /**
      * Display a listing of the resource.
      * @return Renderable

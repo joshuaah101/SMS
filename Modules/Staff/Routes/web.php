@@ -11,6 +11,10 @@
 |
 */
 
-Route::prefix('staff')->group(function() {
-    Route::get('/', 'StaffController@index');
+use Illuminate\Support\Facades\Route;
+
+Route::prefix('staff')->group(function () {
+    Route::get('/','StaffController@index')->name('staff');
 });
+
+\Illuminate\Support\Facades\Auth::routes();

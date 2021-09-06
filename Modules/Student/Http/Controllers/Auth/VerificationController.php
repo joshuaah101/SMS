@@ -3,8 +3,8 @@
 namespace Modules\Student\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Modules\Student\Providers\RouteServiceProvider;
-use Modules\Student\Traits\VerifyStudentEmails;
+use App\Providers\RouteServiceProvider;
+use Modules\Student\traits\VerifyStudentEmails;
 
 class VerificationController extends Controller
 {
