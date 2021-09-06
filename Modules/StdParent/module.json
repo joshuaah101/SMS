@@ -1,0 +1,13 @@
+{
+    "name": "StdParent",
+    "alias": "stdparent",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\StdParent\\Providers\\StdParentServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

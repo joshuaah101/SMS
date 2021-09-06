@@ -1,0 +1,199 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+$fa-font-path:        "../webfonts";
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+/* My modified rules */
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: nunito;
+  font-size: 1.1rem;
+}
+
+.general-footer-upper{
+  background-color: #111;
+  color: #fff;
+  margin-top: 5%;
+}
+
+.general-footer-upper a{
+  color: #fff;
+}
+
+.general-footer-upper a:hover{
+  color: #8a12b9;
+  transition: color ease-in 1.0s;
+}
+
+.general-footer-upper .active{
+  color: #8a12b9;
+}
+
+.general-top-nav{
+  background-color: #8a12b9;
+}
+
+.general-top-nav a{
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.general-top-nav a:hover{
+  color: #232425;
+  transition: color ease-in 1.0s;
+}
+
+a {
+  color: #3490dc;
+  text-decoration: none;
+}
+a:hover {
+  color: #232425;
+  text-decoration: none;
+  transition: color ease-in 1.0s;
+}
+
+.active{
+  color: #8a12b9;
+}
+
+.general-footer-upper{
+  padding: 2%;
+}
+
+.underline{
+  border-bottom: 2px solid #8a12b9;
+  width: 40%;
+}
+
+.long-hr{
+  border-bottom: 3px solid #8a12b9;
+  width: 100%;
+}
+
+.block-links a{
+  display: block;
+}
+
+.inline-links a{
+  display: inline;
+}
+
+
+/* .mapouter{
+  position: relative;
+  text-align: center;
+  height:500px; 
+} */
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  text-align: center;
+}
+
+#parallax1{
+  background-image: url('/storage/img/parallax1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.banner{
+ /* background-image: url('/storage/img/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  min-height: 450px;
+  font-family: 'Truculenta', sans-serif;
+}
+
+.achievement{
+  margin-top: 5%;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.achievement::before {
+  font-family: "Font Awesome 5 Free"; 
+  color: #8a12b9; 
+  font-size: 1rem; 
+  font-weight: 900; 
+  content: "\f101";
+}
+
+.header-text{
+  color: #8a12b9;
+  font-size: 4.9rem;
+  font-weight: 700;
+}
+
+.body-text{
+  color: #0078f6;
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: 'Truculenta', sans-serif;
+}
+
+.text-blue{
+  color: #0078f6;
+}
+
+.text-purple{
+  color: #8a12b9;
+}
+
+.bg-blue{
+  background-color: #0078f6;
+}
+
+.bg-purple{
+  background-color: #8a12b9;
+}
+
+.base-text{
+  color: #222;
+  font-size: 1.3rem;
+}
+
+.photo-frame{
+  border: 2px solid #0078f6;
+  box-shadow: 1px 1px 1px 2px #8a12b9;
+}
+
+.social-icons a{
+  padding: 3%;
+  border: 2px solid #0078f6;
+  color: #8a12b9;
+  border-radius: 100%;
+}
+
+.social-icons a:hover{
+  border: 2px solid #8a12b9;
+  color: #0078f6;
+}
+/* #################################### */
