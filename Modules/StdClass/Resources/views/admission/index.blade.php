@@ -1,5 +1,5 @@
 @extends('core::layouts.master')
-@section('title') Portal Webpage @endsection
+@section('title') Admissions @endsection
 
 @section('css_links')
     @include('core::inc.links')
@@ -23,8 +23,9 @@
     </div>
 @endsection
 
+
 @section('main')
-    <h3>Portal</h3>
+
 @endsection
 
 
@@ -32,5 +33,4 @@
 @section('footer')
     @include('core::inc.footer')
 @endsection
-
 

@@ -11,6 +11,8 @@
 |
 */
 
-Route::prefix('complaint')->group(function() {
-    Route::get('/', 'ComplaintController@index');
+use Illuminate\Support\Facades\Route;
+
+Route::prefix('helpdesk')->group(function() {
+    Route::get('/', 'ComplaintController@index')->name('helpdesk');
 });

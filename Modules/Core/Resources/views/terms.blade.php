@@ -22,3 +22,15 @@
 
     </div>
 @endsection
+
+
+@section('main')
+
+@endsection
+
+
+
+@section('footer')
+    @include('core::inc.footer')
+@endsection
+

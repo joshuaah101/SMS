@@ -1,5 +1,5 @@
 @extends('core::layouts.master')
-@section('title') Portal Webpage @endsection
+@section('title') Show Admission Status @endsection
 
 @section('css_links')
     @include('core::inc.links')
@@ -23,8 +23,9 @@
     </div>
 @endsection
 
+
 @section('main')
-    <h3>Portal</h3>
+
 @endsection
 
 

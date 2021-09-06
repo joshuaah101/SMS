@@ -49,7 +49,7 @@
                            class="{{ request()->is('about') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold">About
                             us</a>
                         {{-- <a href="#" class="{{ request()->is('grad') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white tranistion duration-500 ease-in-out' }}  font-semibold">Graduations</a> --}}
-                        <a href="#"
+                        <a href="{{ route('curriculum') }}"
                            class="{{ request()->is('curriculum') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold">Schools
                             at a glance</a>
                     </div>

@@ -11,6 +11,17 @@
 |
 */
 
-Route::prefix('stdclass')->group(function() {
-    Route::get('/', 'StdClassController@index');
+use Illuminate\Support\Facades\Route;
+use Modules\StdClass\Http\Controllers\StdClassController;
+
+Route::prefix('curriculum')->group(function () {
+    Route::get('/', [StdClassController::class,'index'])->name('curriculum');
 });
+
+
+Route::prefix('admission')->group(function () {
+    Route::get('/', 'StdClassController@admissions')->name('admission.index');
+    Route::get('/{slug}', 'StdClassController@admissions')->name('admission.show');
+});
+
+

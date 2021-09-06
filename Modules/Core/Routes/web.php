@@ -20,7 +20,5 @@ Route::get('/', [CoreController::class, 'index'])->name('homepage');
 Route::get('/about', [CoreController::class, 'about'])->name('about');
 Route::get('/terms-&-condition', [CoreController::class, 'terms'])->name('terms');
 Route::get('/policy', [CoreController::class, 'policy'])->name('policy');
-
-
 Route::get('/portal', [PortalController::class, 'index'])->name('portal');
 
