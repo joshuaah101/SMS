@@ -14,7 +14,7 @@
     @yield('nav')
     @yield('notification')
     @yield('header')
-    @yield('main')
+    @yield('content')
     @yield('footer')
     @include('core::inc.scripts')
 </body>

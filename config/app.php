@@ -9,8 +9,6 @@ return [
     "college_logo_png" => 'img/png/college-logo.png',
     "nursery_logo_jpg" => 'img/jpg/nursery-logo.jpg',
     "college_logo_jpg" => 'img/jpg/college-logo.jpg',
-    "principal_jpg" => 'img/jpg/principal.jpg',
-    "proper_jpg" => 'img/jpg/proper.jpg',
     /*
     |--------------------------------------------------------------------------
     | Application Name

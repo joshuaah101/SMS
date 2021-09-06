@@ -1,14 +1,15 @@
 <header class="bg-purple-100">
-    <div class="border-b-4 border-purple-700">
+    <div class="border-b-4 border-red-600">
         <div class="">
-            <div class="flex justify-between items-center mx-8 xs:py-0 md:py-1">
+            <div class="flex justify-between items-center mx-8 xs:py-0 md:py-5">
                 <a href="#" class="space-x-3 xs:hidden md:flex">
-                    <img src="{{ asset(config('app.college_logo_png')) }}" class="xs:w-8 xs:h-8 md:w-24 md:h-20"
+                    <img src="{{ asset(config('app.college_logo_png')) }}" class="xs:w-10 xs:h-10 md:w-28 md:h-24"
                     alt="{{ config('app.name') }} logo" title="{{ config('app.name') }}"/>
                 </a>
 
                 <div class="md:flex space-x-3 xs:hidden">
-                    <a href="#" class="bg-purple-100 text-purple-900 border-2 border-purple-900 py-2 px-4 text-xs md:text-sm rounded-full hover:bg-purple-900 hover:text-white shadow-xl transition duration-500 delay-200 ease-in">
+                    <a href="#" class="bg-purple-100 text-purple-800 border-2 border-purple-800 py-2 px-4 text-xs md:text-sm rounded-full hover:bg-purple-600
+                    hover:text-purple-100 shadow-xl transition duration-500 delay-200 ease-in">
                         Admissions
                     </a>
 
@@ -29,8 +30,8 @@
             </div>
 
             <div class="">
-                <div class="flex justify-between items-center space-x-8 bg-purple-900 px-8 xs:py-2 md:py-1">
-                    <div class="text-purple-300 font-bold text-md">
+                <div class="flex justify-between items-center space-x-8 border-b-4 bg-purple-800 border-blue-500 px-8 xs:py-2 md:py-2">
+                    <div class="text-purple-100 font-bold text-md">
                         <div class="xs:hidden md:flex">
                             {{ config('app.name') }}
                         </div>
@@ -42,16 +43,16 @@
                     </div>
 
                     <div class="md:flex space-x-3 text-sm items-center xs:hidden p-2">
-                        <a href="/" class="{{ request()->is('/') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white tranistion duration-500 ease-in-out' }}  font-semibold">Home</a>
-                        <a href="about" class="{{ request()->is('about') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white tranistion duration-500 ease-in-out' }}  font-semibold">About us</a>
-                        {{-- <a href="#" class="{{ request()->is('grad') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white tranistion duration-500 ease-in-out' }}  font-semibold">Graduations</a> --}}
-                        <a href="#" class="{{ request()->is('curriculum') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white tranistion duration-500 ease-in-out' }}  font-semibold">Schools at a glance</a>
+                        <a href="/" class="{{ request()->is('/') ? 'text-red-600 hover:text-red-100 font-bold' : 'text-purple-100 hover:text-red-600 tranistion duration-500 ease-in-out' }}  font-semibold">Home</a>
+                        <a href="core:about" class="{{ request()->is('about') ? 'text-red-600 hover:text-red-100 font-bold' : 'text-purple-100 hover:text-red-600 tranistion duration-500 ease-in-out' }}  font-semibold">About us</a>
+                        {{-- <a href="#" class="{{ request()->is('grad') ? 'text-red-600 hover:text-red-100 font-bold' : 'text-purple-100 hover:text-red-600 tranistion duration-500 ease-in-out' }}  font-semibold">Graduations</a> --}}
+                        <a href="#" class="{{ request()->is('curriculum') ? 'text-red-600 hover:text-red-100 font-bold' : 'text-purple-100 hover:text-red-600 tranistion duration-500 ease-in-out' }}  font-semibold">Schools at a glance</a>
                     </div>
 
                     {{-- secondary nav --}}
                     {{-- mobile button goes here --}}
                     <div class="md:hidden flex items-center">
-                        <button class="mobile-menu-button text-purple-300">
+                        <button class="mobile-menu-button text-purple-100">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                             </svg>
