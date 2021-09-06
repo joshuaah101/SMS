@@ -18,6 +18,10 @@ class CreateRegistersTable extends Migration
             $table->unsignedBigInteger('staff_id')->comment('teacher taking this class');
             $table->unsignedBigInteger('class_id')->comment('The class the teacher is taking');
             $table->enum('term', ['first', 'second', 'third'])->nullable()->default('first')->comment('The term ');
+            $table->dateTime('session_start')->nullable()->default(now()->toDateTimeString());
+            $table->dateTime('session_end')->nullable()->default(now()->addMonths(3)->toDateTimeString());
+            $table->dateTime('admission_start')->default(now()->toDateTimeString());
+            $table->dateTime('admission_end')->default(now()->addMonths(3)->toDateTimeString());
             $table->softDeletes();
             $table->timestamps();
         });
