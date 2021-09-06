@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Faith in Christ Group of Schools') }} - @yield('title')</title>
     @include('core::inc.links')
+    @livewireStyles
 </head>
 <body class="bg-purple-100">
     @yield('top_nav')
@@ -17,5 +18,6 @@
     @yield('main')
     @yield('footer')
     @include('core::inc.scripts')
+    @livewireScripts
 </body>
 </html>
