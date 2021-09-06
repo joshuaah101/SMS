@@ -25,6 +25,9 @@ class CreateSchoolsTable extends Migration
             $table->longText('school_description')->nullable();
             $table->longText('school_address')->nullable();
             $table->longText('about_school')->nullable();
+            $table->string('lat')->nullable();
+            $table->string('lon')->nullable();
+            $
             $table->timestamps();
         });
     }
