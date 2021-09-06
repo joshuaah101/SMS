@@ -4,7 +4,7 @@ namespace Modules\Staff\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Modules\Staff\Providers\RouteServiceProvider;
-use Illuminate\Foundation\Auth\ConfirmsPasswords;
+use Modules\Staff\Traits\ConfirmsStaffPasswords;
 
 class ConfirmPasswordController extends Controller
 {
@@ -19,7 +19,7 @@ class ConfirmPasswordController extends Controller
     |
     */
 
-    use ConfirmsPasswords;
+    use ConfirmsStaffPasswords;
 
     /**
      * Where to redirect users when the intended url fails.

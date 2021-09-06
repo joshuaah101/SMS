@@ -6,22 +6,16 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Faith in Christ College') }} - @yield('title')</title>
+    <title>{{ config('app.name', 'Faith in Christ Group of Schools') }} - @yield('title')</title>
     @include('core::inc.links')
 </head>
-<body>
-<div id="app">
-    @include('core::inc.top_nav')
-    @include('core::inc.nav')
-    @include('core::inc.notification')
-    <main class="py-4">
-        @yield('content')
-    </main>
-
-
-    @include('core::inc.footer')
+<body class="bg-purple-100">
+    @yield('top_nav')
+    @yield('nav')
+    @yield('notification')
+    @yield('header')
+    @yield('main')
+    @yield('footer')
     @include('core::inc.scripts')
-</div>
 </body>
 </html>

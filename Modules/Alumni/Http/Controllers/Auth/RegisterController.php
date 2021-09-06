@@ -1,12 +1,10 @@
 <?php
 
-namespace Modules\Core\Http\Controllers\Auth;
+namespace Modules\Alumni\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Modules\Alumni\Entities\Alumni;
 use Modules\Alumni\Providers\RouteServiceProvider;
-
-use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Modules\Alumni\Traits\RegistersAlumnis;

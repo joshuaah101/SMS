@@ -19,7 +19,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'student',
         'passwords' => 'users',
     ],
 

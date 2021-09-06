@@ -4,7 +4,7 @@ namespace Modules\Student\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Modules\Student\Providers\RouteServiceProvider;
-use Modules\Student\traits\ResetStudentPassword;
+use Modules\Student\Traits\ResetStudentPassword;
 
 class ResetPasswordController extends Controller
 {

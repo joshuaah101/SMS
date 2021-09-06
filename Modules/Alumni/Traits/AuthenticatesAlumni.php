@@ -22,6 +22,7 @@ trait AuthenticatesAlumni
      */
     public function showLoginForm()
     {
+        dd('here');
         return view('alumni::auth.login');
     }
 

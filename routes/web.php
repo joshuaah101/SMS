@@ -1,10 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
-use Modules\Core\Http\Controllers\PortalController;
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +12,3 @@ use Modules\Core\Http\Controllers\PortalController;
 */
 
 
-Route::get('/portal', [PortalController::class, 'portal'])->name('portal');
-
-Auth::routes();

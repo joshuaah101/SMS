@@ -3,8 +3,8 @@
 namespace Modules\Staff\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Modules\Alumni\Traits\VerifiesAlumniEmails;
 use Modules\Staff\Providers\RouteServiceProvider;
-use Illuminate\Foundation\Auth\VerifiesEmails;
 
 class VerificationController extends Controller
 {
@@ -19,7 +19,7 @@ class VerificationController extends Controller
     |
     */
 
-    use VerifiesEmails;
+    use VerifiesAlumniEmails;
 
     /**
      * Where to redirect users after verification.

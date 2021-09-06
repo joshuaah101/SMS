@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::prefix('ca')->group(function() {
-    Route::get('/', 'CAController@index');
+    Route::get('/', 'CAController@index')->name('ca');
 });

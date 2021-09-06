@@ -5,6 +5,7 @@ namespace Modules\Student\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Modules\Student\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Modules\Student\Traits\AuthenticatesStudents;
 
 class LoginController extends Controller
 {
@@ -19,7 +20,7 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers;
+    use AuthenticatesStudents;
 
     /**
      * Where to redirect users after login.
