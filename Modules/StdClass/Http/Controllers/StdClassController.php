@@ -21,13 +21,13 @@ class StdClassController extends Controller
      * View All Admissions
      *
      */
-    public function admission()
+    public function admissions()
     {
-        return view('admission.index');
+        return view('stdclass::admission.index');
     }
 
     public function show_admission($slug)
     {
-        return view('admission.show');
+        return view('stdclass::admission.show');
     }
 }

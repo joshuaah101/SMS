@@ -21,7 +21,7 @@ Route::prefix('curriculum')->group(function () {
 
 Route::prefix('admission')->group(function () {
     Route::get('/', 'StdClassController@admissions')->name('admission.index');
-    Route::get('/{slug}', 'StdClassController@admissions')->name('admission.show');
+    Route::get('/{slug}', 'StdClassController@show_admission')->name('admission.show');
 });
 
 
