@@ -11,6 +11,5 @@
     "StdClass": true,
     "Payment": true,
     "News": true,
-    "StdParent": true,
-    "Image": true
+    "StdParent": true
 }
