@@ -7,7 +7,7 @@
 @section('nav')
     @include('core::inc.nav')
 @endsection
-@section('content')
+@section('main')
     <div class="xs:block md:flex w-full">
         <div class="w-full h-screen bg-purple-900 flex flex-col items-center justify-center ">
             <header class="text-purple-300 font-bold text-6xl">
