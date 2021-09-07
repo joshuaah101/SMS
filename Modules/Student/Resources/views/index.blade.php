@@ -18,9 +18,9 @@
 @endsection
 
 @section('header')
-    <div class="bg-landing-2 w-full h-screen bg-no-repeat border-b-4 border-red-600">
+    <div class="bg-landing-2 w-full h-auto bg-no-repeat border-b-4 border-red-600">
         <ul>
-            <li>Student Menu</li>
+            <li><h2 class="font-extrabold lg">Student Menu</h2></li>
             <li>Attendance</li>
             <li>Assessments</li>
             <li>Practicals</li>
