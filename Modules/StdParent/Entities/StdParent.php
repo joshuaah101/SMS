@@ -5,11 +5,12 @@ namespace Modules\StdParent\Entities;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laravel\Cashier\Billable;
 use Modules\Image\Entities\SingleImage;
 
 class StdParent extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable,Billable;
 
 
     /**

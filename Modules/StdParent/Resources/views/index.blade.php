@@ -6,7 +6,7 @@
 @section('nav')
     @include('core::inc.nav')
 @endsection
-@section('content')
+@section('main')
     <h1>Hello World</h1>
 
     <p>

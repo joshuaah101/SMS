@@ -19,9 +19,16 @@
 
 @section('header')
     <div class="bg-landing-2 w-full h-screen bg-no-repeat border-b-4 border-red-600">
+        <ul>
+            <li>Student Menu</li>
+            <li>Attendance</li>
+            <li>Assessments</li>
+            <li>Practicals</li>
+            <li>Exams</li>
+        </ul>
     </div>
 @endsection
-@section('content')
+@section('main')
     <h1>Hello World</h1>
     <p>
         This view is loaded from module: {!! config('student.name') !!}
