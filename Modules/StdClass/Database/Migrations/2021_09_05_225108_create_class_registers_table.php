@@ -17,6 +17,7 @@ class CreateClassRegistersTable extends Migration
             $table->id();
             $table->unsignedBigInteger('register_id');
             $table->unsignedBigInteger('std_id');
+            $table->boolean('present')->nullable()->default(false);
             $table->softDeletes();
             $table->timestamps();
         });

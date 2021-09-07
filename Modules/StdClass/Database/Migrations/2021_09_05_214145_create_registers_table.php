@@ -15,13 +15,9 @@ class CreateRegistersTable extends Migration
     {
         Schema::create('registers', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('staff_id')->comment('teacher taking this class');
+            $table->unsignedBigInteger('staff_id')->comment('Teacher taking this class');
             $table->unsignedBigInteger('class_id')->comment('The class the teacher is taking');
-            $table->enum('term', ['first', 'second', 'third'])->nullable()->default('first')->comment('The term ');
-            $table->dateTime('session_start')->nullable()->default(now()->toDateTimeString());
-            $table->dateTime('session_end')->nullable()->default(now()->addMonths(3)->toDateTimeString());
-            $table->dateTime('admission_start')->default(now()->toDateTimeString());
-            $table->dateTime('admission_end')->default(now()->addMonths(3)->toDateTimeString());
+            $table->unsignedBigInteger('admission_id');
             $table->softDeletes();
             $table->timestamps();
         });
