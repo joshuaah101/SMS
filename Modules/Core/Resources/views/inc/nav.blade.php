@@ -36,7 +36,7 @@
                             {{ config('app.name') }}
                         </div>
 
-                        <a href="#" class="space-x-3 xs:flex md:hidden">
+                        <a href="{{ url('/') }}" class="space-x-3 xs:flex md:hidden">
                             <img src="{{ asset(config('app.college_logo_png')) }}" class="w-20 h-20"
                                  alt="{{ config('app.name') }} logo" title="{{ config('app.name') }}"/>
                         </a>
@@ -114,17 +114,17 @@
                         </span>
                         Student Portal
                     </a>
-                    <a href=""
-                       class="{{ request()->is('login') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
-                        <span class="mr-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                                 stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                      d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
-                            </svg>
-                        </span>
-                        Some menu
-                    </a>
+{{--                    <a href=""--}}
+{{--                       class="{{ request()->is('login') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">--}}
+{{--                        <span class="mr-1">--}}
+{{--                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"--}}
+{{--                                 stroke="currentColor">--}}
+{{--                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                      d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>--}}
+{{--                            </svg>--}}
+{{--                        </span>--}}
+{{--                        Some menu--}}
+{{--                    </a>--}}
                     <a href="{{ route('curriculum') }}"
                        class="{{ request()->is('register') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                         <span class="mr-1">

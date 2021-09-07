@@ -29,40 +29,57 @@
         </div>
         <div class="flex flex-col mb-12 md:mb-0">
             <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">Find us</h4>
-{{--            <a href="#" target="_blank" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">School Location </a>--}}
+            {{--            <a href="#" target="_blank" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">School Location </a>--}}
 
             {{--            For map location, you can either use the embedded style or the paid version of using longitude latitude--}}
-            <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:100px;"><div id="googlemaps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Faith+in+Christ+College+ilaro&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlemaps-html" rel="nofollow" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a><style>#googlemaps-canvas .text-marker{}.map-generator{max-width: 100%; max-height: 100%; background: none;}</style></div>
+            <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:300px;height:300px;">
+                <div id="googlemaps-canvas" style="height:100%; width:100%;max-width:100%;">
+                    <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                            src="https://www.google.com/maps/embed/v1/place?q=Faith+in+Christ+College+ilaro&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div>
+                <a class="googlemaps-html" rel="nofollow" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                <style>#googlemaps-canvas .text-marker {
+                    }
+
+                    .map-generator {
+                        max-width: 100%;
+                        max-height: 100%;
+                        background: none;
+                    }</style>
+            </div>
             {{--            If embedded is not null, use it--}}
 
             {{--            else use the longitude, latitude if available--}}
             <div id="map"></div>
 
             <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-{{--            <script--}}
-{{--                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"--}}
-{{--                async--}}
-{{--            ></script>--}}
-{{--            <script>--}}
-{{--                // Initialize and add the map--}}
-{{--                function initMap() {--}}
-{{--                    // The location of Uluru--}}
-{{--                    const uluru = { lat: -25.344, lng: 131.036 };--}}
-{{--                    // The map, centered at Uluru--}}
-{{--                    const map = new google.maps.Map(document.getElementById("map"), {--}}
-{{--                        zoom: 4,--}}
-{{--                        center: uluru,--}}
-{{--                    });--}}
-{{--                    // The marker, positioned at Uluru--}}
-{{--                    const marker = new google.maps.Marker({--}}
-{{--                        position: uluru,--}}
-{{--                        map: map,--}}
-{{--                    });--}}
-{{--                }--}}
-{{--            </script>--}}
+            {{--            <script--}}
+            {{--                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"--}}
+            {{--                async--}}
+            {{--            ></script>--}}
+            {{--            <script>--}}
+            {{--                // Initialize and add the map--}}
+            {{--                function initMap() {--}}
+            {{--                    // The location of Uluru--}}
+            {{--                    const uluru = { lat: -25.344, lng: 131.036 };--}}
+            {{--                    // The map, centered at Uluru--}}
+            {{--                    const map = new google.maps.Map(document.getElementById("map"), {--}}
+            {{--                        zoom: 4,--}}
+            {{--                        center: uluru,--}}
+            {{--                    });--}}
+            {{--                    // The marker, positioned at Uluru--}}
+            {{--                    const marker = new google.maps.Marker({--}}
+            {{--                        position: uluru,--}}
+            {{--                        map: map,--}}
+            {{--                    });--}}
+            {{--                }--}}
+            {{--            </script>--}}
+            <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mt-4">Contact</h4>
             <a href="#" target="_blank"
                class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Contact
-                Us</a>
+                Us</a> <a href="#" target="_blank"
+                          class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">Default
+                School Location</a>
         </div>
     </div>
     <hr class="border-purple-700">

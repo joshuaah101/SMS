@@ -18,6 +18,7 @@ use Modules\Core\Http\Controllers\PortalController;
 
 Route::get('/', [CoreController::class, 'index'])->name('homepage');
 Route::get('/about', [CoreController::class, 'about'])->name('about');
+Route::get('/donation', [CoreController::class, 'donation'])->name('donation');
 Route::get('/terms-&-condition', [CoreController::class, 'terms'])->name('terms');
 Route::get('/policy', [CoreController::class, 'policy'])->name('policy');
 Route::get('/portal', [PortalController::class, 'index'])->name('portal');

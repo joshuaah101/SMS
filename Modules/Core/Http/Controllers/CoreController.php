@@ -36,12 +36,21 @@ class CoreController extends Controller
     }
 
     /**
-     * Display Policy.
+     * Display Policy Page.
      * @return Renderable
      */
     public function policy()
     {
         return view('core::policy');
+    }
+
+    /**
+     * Display Donation Page.
+     * @return Renderable
+     */
+    public function donation()
+    {
+        return view('core::donation');
     }
 
 }
