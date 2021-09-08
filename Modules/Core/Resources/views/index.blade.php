@@ -85,6 +85,10 @@
             </section>
         </div>
     </div>
+
+    <div class="">
+    Lorem ipisum whatever
+    </div>
 @endsection
 
 @section('footer')
