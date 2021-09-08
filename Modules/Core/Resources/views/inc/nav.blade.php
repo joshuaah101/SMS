@@ -44,13 +44,23 @@
 
                     <div class="md:flex space-x-3 text-sm items-center xs:hidden p-2">
                         <a href="{{ url('/') }}"
-                           class="{{ request()->is('/') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold">Home</a>
+                           class="{{ request()->is('/') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                            Home
+                        </a>
                         <a href="{{ route('about') }}"
-                           class="{{ request()->is('about') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold">About
-                            us</a>
-                        {{-- <a href="#" class="{{ request()->is('grad') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white tranistion duration-500 ease-in-out' }}  font-semibold">Graduations</a> --}}
+                           class="{{ request()->is('about') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                                About us
+                        </a>
+
+                        {{-- <a href="#" class="{{ request()->is('grad') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white tranistion duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">Graduations</a> --}}
                         <a href="{{ route('curriculum') }}"
-                           class="{{ request()->is('curriculum') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold">Schools
+                           class="{{ request()->is('curriculum') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">Schools
                             at a glance</a>
                     </div>
 
