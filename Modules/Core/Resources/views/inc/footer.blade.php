@@ -56,24 +56,28 @@
         </div>
         </div>
         <div class="flex flex-col mb-12 md:mb-0">
-            <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">Find us</h4>
-            {{--            <a href="#" target="_blank" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">School Location </a>--}}
-
-            {{--            For map location, you can either use the embedded style or the paid version of using longitude latitude--}}
+            <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">
+                Find us
+            </h4>
+            
+            {{-- For map location, you can either use the embedded style or the paid version of using longitude latitude--}}
             <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:300px;height:300px;">
                 <div id="googlemaps-canvas" style="height:100%; width:100%;max-width:100%;">
                     <iframe style="height:100%;width:100%;border:0;" frameborder="0"
                             src="https://www.google.com/maps/embed/v1/place?q=Faith+in+Christ+College+ilaro&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                 </div>
                 <a class="googlemaps-html" rel="nofollow" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                <style>#googlemaps-canvas .text-marker {
+                <style>
+                    #googlemaps-canvas .text-marker {
+                    
                     }
 
                     .map-generator {
                         max-width: 100%;
                         max-height: 100%;
                         background: none;
-                    }</style>
+                    }
+                </style>
             </div>
             {{--            If embedded is not null, use it--}}
 
