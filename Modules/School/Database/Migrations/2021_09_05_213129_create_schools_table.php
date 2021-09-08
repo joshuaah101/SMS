@@ -17,6 +17,7 @@ class CreateSchoolsTable extends Migration
             $table->id();
             $table->string('school_name')->nullable()->default('Faith in Christ College');
             $table->string('school_motto')->nullable();
+            $table->string('school_logo')->nullable();
             $table->string('school_principal')->nullable();
             $table->string('phone_number')->nullable();
             $table->string('email_address')->nullable();
