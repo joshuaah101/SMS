@@ -19,6 +19,8 @@ class CreateSchoolsTable extends Migration
             $table->string('school_motto')->nullable();
             $table->string('school_logo')->nullable();
             $table->string('school_principal')->nullable();
+            $table->string('school_principal_img')->nullable();
+            $table->longText('principal_welcome_speech')->nullable();
             $table->string('phone_number')->nullable();
             $table->string('email_address')->nullable();
             $table->longText('school_anthem')->nullable();
