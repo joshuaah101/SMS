@@ -12,6 +12,10 @@ class School extends Model
 
     protected $guarded = [];
 
+    public function school_type()
+    {
+        return $this->belongsTo(SchoolType::class);
+    }
 
     public function image()
     {

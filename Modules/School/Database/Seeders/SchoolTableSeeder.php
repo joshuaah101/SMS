@@ -29,7 +29,7 @@ class SchoolTableSeeder extends Seeder
             // Create Creche, Primary and Secondary default schools from the school type created above
             $school_details = [
                 [
-                    'school_type_id' => 2,
+                    'school_type_id' => 3,
                     'title' => 'Faith in Christ Nursery School',
                     'slug' => 'faith-in-christ-nursery-school-oke-ola-ilaro',
                     'location' => 'Oke ola, Ilaro'

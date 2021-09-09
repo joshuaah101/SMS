@@ -65,6 +65,7 @@ It is our aim to provide world class teaching that would stir a desire for ever 
 
     private function get_schools()
     {
-        return School::all();
+        return School::with('school_type')->get()->groupBy('location');
+
     }
 }

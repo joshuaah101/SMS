@@ -36,11 +36,22 @@
             </h4>
             @isset($schools)
                 @if(count($schools) > 0)
-                    @foreach($schools as $school)
+                    @foreach($schools as $school_details)
                         <a href="#"
                            class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
-                            {{ isset($school->title)?$school->title:'' }}
-                            ({{ isset($school->location)?$school->location:'' }})
+                            @if(count($school_details) > 1)
+                                @php
+                                    $title = isset($school_details[0]->title)?explode(" ",$school_details[0]->title):'';
+
+                                $filtered = convert_school_names($school_details,$title);
+                                @endphp
+
+                                {{ $filtered.' School' }}
+                                ({{ isset($school_details[0]->location)?$school_details[0]->location:'' }})
+                            @else
+                                {{ isset($school_details[0]->title)?$school_details[0]->title:'' }}
+                                ({{ isset($school_details[0]->location)?$school_details[0]->location:'' }})
+                            @endif
                         </a>
                     @endforeach
                 @else
