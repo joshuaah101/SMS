@@ -55,7 +55,6 @@ It is our aim to provide world class teaching that would stir a desire for ever 
                 'welcome_speech' => $speech,
                 'welcome_speech_2' => $speech_2,
                 'school_address' => 'Opp Jimtex Block Industry Oke Ola, Ilaro Ogun State. Yewa South 111101 Ilaro, Ogun State, Nigeria',
-                'about_school',
                 'embedded' => $embedded_map
             ];
             SiteSetting::create($site_school_settings);

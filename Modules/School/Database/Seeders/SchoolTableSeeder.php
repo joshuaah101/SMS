@@ -48,7 +48,6 @@ class SchoolTableSeeder extends Seeder
                 ]
             ];
             School::create($school_details);
-
         }
     }
 }

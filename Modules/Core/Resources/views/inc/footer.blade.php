@@ -35,7 +35,7 @@
                 Schools
             </h4>
             @isset($schools)
-                @if(count($schools)>0)
+                @if(count($schools) > 0)
                     @foreach($schools as $school)
                         <a href="#"
                            class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
@@ -66,7 +66,7 @@
             {{--            For map location, you can either use the embedded style or the paid version of using longitude latitude--}}
             @isset($site_settings->embedded)
                 {{--            If embedded is not null, use it--}}
-                {!! $site_settings->embedded !!}
+                {!! html_entity_decode($site_settings->embedded) !!}
             @else
 
                 {{--            else use the longitude, latitude if available--}}

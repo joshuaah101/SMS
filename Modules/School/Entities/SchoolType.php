@@ -9,8 +9,8 @@ class SchoolType extends Model
 {
     use HasFactory;
 
-    protected $fillable = [];
-    
+    protected $guarded = [];
+
     protected static function newFactory()
     {
         return \Modules\School\Database\factories\SchoolTypeFactory::new();
