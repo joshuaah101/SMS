@@ -34,15 +34,18 @@
             <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">
                 Schools
             </h4>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
-                Faith in Christ College
-            </a>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
-                Faith in Christ Nur/Pry (Oke ola, ilaro)
-            </a>
-            <a href="#" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
-                Faith in Christ Nur/Pry (Oja-odan)
-            </a>
+            @isset($schools)
+                @if(count($schools)>0)
+                    @foreach($schools as $school)
+                        <a href="#"
+                           class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
+                            {{ $school->title }}
+                        </a>
+                    @endforeach
+                @else
+                    <p class="mx-1"> Schools not available right now.</p>
+                @endif
+            @endisset
 
             <div class="flex flex-col">
                 <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mt-4">Contact</h4>
@@ -98,6 +101,7 @@
 
     <hr class="border-purple-700">
     <div class="flex md:justify-end xs:justify-start py-3 text-purple-300">
-        <p class="text-xs font-bold">{{ config('app.name') }} | &copy; {{ date("Y") }}.</p>
+        <p class="text-xs font-bold">{{ isset($site_settings->school_name)? $site_settings->school_name : config('app.name') }}
+            | &copy; {{ date("Y") }}.</p>
     </div>
 </footer>

@@ -16,7 +16,10 @@ class CreateSchoolsTable extends Migration
         Schema::create('schools', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('school_type_id');
+            $table->string('title');
+            $table->string('slug')->unique();
             $table->longText('description')->nullable();
+            $table->text('location')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
