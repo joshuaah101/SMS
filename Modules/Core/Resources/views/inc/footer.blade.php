@@ -39,7 +39,8 @@
                     @foreach($schools as $school)
                         <a href="#"
                            class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
-                            {{ $school->title }}
+                            {{ isset($school->title)?$school->title:'' }}
+                            ({{ isset($school->location)?$school->location:'' }})
                         </a>
                     @endforeach
                 @else

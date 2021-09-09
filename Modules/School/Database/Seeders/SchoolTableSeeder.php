@@ -31,23 +31,30 @@ class SchoolTableSeeder extends Seeder
                 [
                     'school_type_id' => 2,
                     'title' => 'Faith in Christ Nursery School',
-                    'slug' => 'faith-in-christ-nursery-school',
+                    'slug' => 'faith-in-christ-nursery-school-oke-ola-ilaro',
                     'location' => 'Oke ola, Ilaro'
                 ],
                 [
                     'school_type_id' => 4,
                     'title' => 'Faith in Christ Primary School',
-                    'slug' => 'faith-in-christ-primary-school',
+                    'slug' => 'faith-in-christ-primary-school-oke-ola-ilaro',
+                    'location' => 'Oke ola, Ilaro'
+                ],
+                [
+                    'school_type_id' => 4,
+                    'title' => 'Faith in Christ Primary School',
+                    'slug' => 'faith-in-christ-primary-school-oja-odan-ilaro',
                     'location' => 'Oja-Odan, Ilaro'
                 ],
                 [
                     'school_type_id' => 5,
                     'title' => 'Faith in Christ College',
-                    'slug' => 'faith-in-christ-college',
+                    'slug' => 'faith-in-christ-college-ilaro',
                     'location' => 'Ilaro'
                 ]
             ];
-            School::create($school_details);
+            foreach ($school_details as $details)
+                School::create($details);
         }
     }
 }
