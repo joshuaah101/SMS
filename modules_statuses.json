@@ -12,5 +12,6 @@
     "Payment": true,
     "News": true,
     "StdParent": true,
-    "Complaint": true
+    "Complaint": true,
+    "Announcement": true
 }
