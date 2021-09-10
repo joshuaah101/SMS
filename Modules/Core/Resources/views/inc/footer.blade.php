@@ -1,6 +1,6 @@
-<footer class="bg-purple-900 px-8 pt-5">
+<footer class="bg-purple-900 md:px-8 pt-5 pt-2">
     <div class="grid md:grid-cols-4 xs:grid-cols-1 sm:grid-cols-2 p-3 text-purple-300 md:mb-5">
-        <div class="flex flex-col mb-12 md:mb-0">
+        <div class="flex flex-col mb-12 md:mb-0 px-2">
             <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">
                 Legal
             </h4>
@@ -13,7 +13,7 @@
                 Terms &amp; Conditions
             </a>
         </div>
-        <div class="flex flex-col mb-12 md:mb-0">
+        <div class="flex flex-col mb-12 md:mb-0 px-2">
             <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">
                 Academics
             </h4>
@@ -30,7 +30,7 @@
                 Helpdesk
             </a>
         </div>
-        <div class="flex flex-col mb-12 md:mb-0">
+        <div class="flex flex-col mb-12 md:mb-0 px-2">
             <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">
                 Schools
             </h4>
@@ -76,7 +76,7 @@
                 @endisset
             </div>
         </div>
-        <div class="flex flex-col mb-12 md:mb-0">
+        <div class="flex flex-col mb-12 md:mb-0 px-2">
             <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">Find us</h4>
             {{--            <a href="#" target="_blank" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">School Location </a>--}}
 

@@ -18,9 +18,7 @@
 @endsection
 
 @section('header')
-    <div class="bg-landing-2 w-full h-screen bg-no-repeat bg-cover border-b-4 border-red-600">
-
-    </div>
+    @include('core::inc.header',['header_title'=>'','header_class'=>'','header_sub_title'=>'','header_url'=>''])
 @endsection
 
 @section('main')
@@ -36,19 +34,21 @@
                     @isset($schools)
                         @foreach($schools as $school_details)
                             <p class="md:-inset-y-9 ">
+                                <a href="{{ route('school.show',$school_details[0]['slug']) }}"
+                                   class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
+                                    @if(count($school_details) > 1)
+                                        @php
+                                            $title = isset($school_details[0]->title)?explode(" ",$school_details[0]->title):'';
+                                        $filtered = convert_school_names($school_details,$title);
+                                        @endphp
 
-                                @if(count($school_details) > 1)
-                                    @php
-                                        $title = isset($school_details[0]->title)?explode(" ",$school_details[0]->title):'';
-                                    $filtered = convert_school_names($school_details,$title);
-                                    @endphp
-
-                                    {{ $filtered.' School' }}
-                                    ({{ isset($school_details[0]->location)?$school_details[0]->location:'' }})
-                                @else
-                                    {{ isset($school_details[0]->title)?$school_details[0]->title:'' }}
-                                    ({{ isset($school_details[0]->location)?$school_details[0]->location:'' }})
-                                @endif
+                                        {{ $filtered.' School' }}
+                                        ({{ isset($school_details[0]->location)?$school_details[0]->location:'' }})
+                                    @else
+                                        {{ isset($school_details[0]->title)?$school_details[0]->title:'' }}
+                                        ({{ isset($school_details[0]->location)?$school_details[0]->location:'' }})
+                                    @endif
+                                </a>
                             </p>
                         @endforeach
 
