@@ -22,7 +22,8 @@ class SchoolController extends Controller
      */
     public function index()
     {
-        return view('school::index');
+        $schools = $this->repo->get_schools(['school_type', 'image'])->get();
+        return view('school::index')->with(compact('schools'));
     }
 
 

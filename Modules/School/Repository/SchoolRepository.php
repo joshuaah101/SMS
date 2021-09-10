@@ -19,10 +19,17 @@ class SchoolRepository extends CoreAbstract implements SchoolInterface
     /**
      * @inheritDoc
      */
-    public function show_school($slug, array $with = [],$where=[]): Builder
+    public function show_school($slug, array $with = [], $where = []): Builder
     {
         return $this->find_by_field('slug', $slug, $where, $with);
     }
 
 
+    /**
+     * @inheritdoc
+     */
+    public function get_schools($with = [], $where = []): Builder
+    {
+        return $this->get_all($with)->where($where);
+    }
 }

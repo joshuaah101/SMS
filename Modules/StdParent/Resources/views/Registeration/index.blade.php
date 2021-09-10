@@ -21,7 +21,6 @@
     <div class="bg-landing-2 w-full h-auto bg-no-repeat border-b-4 border-red-600">
         <h2>WELCOME TO REGISTRATION PAGE</h2>
         <h3>REGISTER YOUR CHILDREN</h3>
-
     </div>
 @endsection
 @section('main')

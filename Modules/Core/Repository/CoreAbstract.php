@@ -76,9 +76,8 @@ abstract class CoreAbstract implements CoreInterface
     }
 
 
-    public function all(array $with = array())
+    public function get_all(array $with = array()): Builder
     {
-        $query = $this->relationship($with);
-        return $query->get();
+        return $this->relationship($with);
     }
 }

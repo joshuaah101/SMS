@@ -78,5 +78,5 @@ interface CoreInterface
      * @param array $with
      * @return mixed
      */
-    public function all(array $with = array());
+    public function get_all(array $with = array());
 }
