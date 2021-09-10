@@ -18,15 +18,15 @@
 @endsection
 
 @section('header')
-    @include('core::inc.header',['header_title'=>'','header_class'=>'','header_sub_title'=>'','header_url'=>''])
+    @include('core::inc.header',['header_title'=>'List of Schools','header_sub_title'=>'','header_url'=>''])
 @endsection
 
 @section('main')
     <div class="py-8 px-6">
-        <div class="grid xs:grid-cols-1 md:grid-cols-2 gap-5 p-12">
+        <div class="grid xs:grid-cols-1 md:grid-cols-1 gap-5 p-12">
             <section class="flex flex-col space-y-10 bg-white shadow-xl py-10 px-12 rounded-lg">
                 <header
-                    class="text-xl md:text-3xl font-black flex xs:justify-center md:justify-start text-gray-800 tracking-wide">
+                    class="text-3xl md:text-4xl font-black flex xs:justify-center md:justify-start text-gray-800 tracking-wide ">
                     List of Schools
                 </header>
                 <article class="text-gray-700 text-justify text-md flex flex-col space-y-3 font-semibold">
@@ -35,7 +35,7 @@
                         @foreach($schools as $school_details)
                             <p class="md:-inset-y-9 ">
                                 <a href="{{ route('school.show',$school_details[0]['slug']) }}"
-                                   class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
+                                   class="text-sm py-1 hover:text-red-700 hover:font-bold transition duration-500 delay-100 ease-in">
                                     @if(count($school_details) > 1)
                                         @php
                                             $title = isset($school_details[0]->title)?explode(" ",$school_details[0]->title):'';

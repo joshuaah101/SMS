@@ -1,7 +1,7 @@
 @isset($header_title)
-    <div class="w-full bg-blue-600">
+    <div class="w-full {{ isset($header_bg)&&$header_bg!=''?$header_bg:'bg-blue-600 ' }}">
         <div
-            class="{{ isset($header_class)&&$header_class!=''?$header_class:'w-full h-full relative flex items-center justify-center py-24' }}">
+            class="w-full h-full relative flex {{ isset($header_class)&&$header_class!=''?$header_class:' items-center justify-center py-24' }} ">
 
             @if(isset($header_image)&&$header_image!='')
                 <img
