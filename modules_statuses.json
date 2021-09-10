@@ -7,6 +7,7 @@
     "Subject": true,
     "Exam": true,
     "CA": true,
+    "Image": true,
     "Core": true,
     "StdClass": true,
     "Payment": true,

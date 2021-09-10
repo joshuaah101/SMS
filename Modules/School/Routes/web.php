@@ -11,6 +11,7 @@
 |
 */
 
-Route::prefix('school')->group(function() {
-    Route::get('/', 'SchoolController@index');
+Route::prefix('school')->group(function () {
+    Route::get('/', 'SchoolController@index')->name('school');
+    Route::get('/{slug}', 'SchoolController@show')->name('school.show');
 });

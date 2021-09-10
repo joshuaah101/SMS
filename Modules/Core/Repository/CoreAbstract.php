@@ -4,6 +4,7 @@
 namespace Modules\Core\Repository;
 
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
@@ -25,15 +26,15 @@ abstract class CoreAbstract implements CoreInterface
     }
 
 
-    public function find_by_id($id, array $with = array(), array $where = array()): Model
+    public function find_by_id($id, array $with = array(), array $where = array()): Builder
     {
         return $this->relationship($with)->where('id', $id)->where($where);
     }
 
 
-    public function find_by_field($field, $value, $where, array $with = array()): Model
+    public function find_by_field($field, $value, $where = [], array $with = array()): Builder
     {
-        return $this->relationship($with)::where($field, $value)->where($where);
+        return $this->relationship($with)->where($field, $value)->where($where);
     }
 
 

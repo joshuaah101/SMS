@@ -5,11 +5,11 @@
                 Legal
             </h4>
             <a href="{{ route('policy') }}"
-               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
+               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
                 Privacy Policy
             </a>
             <a href="{{ route('terms') }}"
-               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
+               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
                 Terms &amp; Conditions
             </a>
         </div>
@@ -18,15 +18,15 @@
                 Academics
             </h4>
             <a href="{{ route('admission.index') }}"
-               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
+               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
                 Admissions
             </a>
             <a href="{{ route('portal') }}"
-               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
+               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
                 Portal
             </a>
             <a href="{{ route('helpdesk') }}"
-               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
+               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
                 Helpdesk
             </a>
         </div>
@@ -37,12 +37,11 @@
             @isset($schools)
                 @if(count($schools) > 0)
                     @foreach($schools as $school_details)
-                        <a href="#"
-                           class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
+                        <a href="{{ route('school.show',$school_details[0]['slug']) }}"
+                           class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
                             @if(count($school_details) > 1)
                                 @php
                                     $title = isset($school_details[0]->title)?explode(" ",$school_details[0]->title):'';
-
                                 $filtered = convert_school_names($school_details,$title);
                                 @endphp
 
@@ -61,19 +60,25 @@
 
             <div class="flex flex-col">
                 <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mt-4">Contact</h4>
-                <a href="#" target="_blank"
-                   class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
-                    Contact Us
-                </a>
-                <a href="#" target="_blank"
-                   class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
-                    Default School Location
-                </a>
+                @isset($site_settings)
+                    @isset($site_settings->email_address)
+                        <i class="fas fa-map-marker"></i>  <a href="mailto:{{ $site_settings->email_address }}"
+                                                              class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 hover:translate-x-1.5 delay-100 ease-in">
+                            {{ $site_settings->email_address }}
+                        </a>
+                    @endisset
+                    @isset($site_settings->phone_number)
+                        <i class="fas fa-phone"></i> <a href="tel: {{ $site_settings->phone_number }}" target="_blank"
+                                                        class="text-sm py-1 hover:text-white hover:font-bold hover:translate-x-1.5 transition duration-500 delay-100 ease-in">
+                            {{ $site_settings->phone_number }}
+                        </a>
+                    @endisset
+                @endisset
             </div>
         </div>
         <div class="flex flex-col mb-12 md:mb-0">
             <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">Find us</h4>
-            {{--            <a href="#" target="_blank" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">School Location </a>--}}
+            {{--            <a href="#" target="_blank" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">School Location </a>--}}
 
             {{--            For map location, you can either use the embedded style or the paid version of using longitude latitude--}}
             @isset($site_settings->embedded)

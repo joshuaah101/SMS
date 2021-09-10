@@ -5,11 +5,19 @@ namespace Modules\School\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\School\Repository\SchoolInterface as SchoolRepo;
 
 class SchoolController extends Controller
 {
+    public $repo;
+
+    public function __construct(SchoolRepo $repo)
+    {
+        $this->repo = $repo;
+    }
+
     /**
-     * Display a listing of the resource.
+     * Display list of schools available
      * @return Renderable
      */
     public function index()
@@ -17,33 +25,15 @@ class SchoolController extends Controller
         return view('school::index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     * @return Renderable
-     */
-    public function create()
-    {
-        return view('school::create');
-    }
 
     /**
-     * Store a newly created resource in storage.
-     * @param Request $request
-     * @return Renderable
+     * Show school Information.
+     * @param string $slug
      */
-    public function store(Request $request)
+    public function show(string $slug)
     {
-        //
-    }
-
-    /**
-     * Show the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function show($id)
-    {
-        return view('school::show');
+        $school = $this->repo->show_school($slug, ['school_type', 'image'])->firstOrFail();
+        return view('school::show')->with(compact('school'));
     }
 
     /**
