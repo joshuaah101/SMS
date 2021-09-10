@@ -15,9 +15,11 @@ class CreateExamsTable extends Migration
     {
         Schema::create('exams', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('std_id');
+            $table->unsignedBigInteger('student_id');
             $table->unsignedBigInteger('subject_id');
-            $table->unsignedBigInteger('class_id');
+            $table->unsignedBigInteger('broadsheet_id');
+            $table->string('total')->nullable()->default(0);
+            $table->boolean('malpractice')->nullable()->default(false);
             $table->timestamps();
         });
     }

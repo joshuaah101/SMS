@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMaterialsTable extends Migration
+class CreateBroadsheetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateMaterialsTable extends Migration
      */
     public function up()
     {
-        Schema::create('materials', function (Blueprint $table) {
+        Schema::create('broadsheets', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('report_sheet_id');
             $table->unsignedBigInteger('subject_id');
-            $table->string('title');
-            $table->longText('description')->nullable();
-            $table->string('author')->nullable();
-            $table->softDeletes();
+            $table->enum('term', ['first', 'second', 'third']);
+            $table->string('total_score')->nullable()->default(0)->comment('exam total (70) + CA total(30)');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateMaterialsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('materials');
+        Schema::dropIfExists('broadsheets');
     }
 }
