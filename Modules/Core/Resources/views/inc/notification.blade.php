@@ -1,4 +1,4 @@
-<div class="px-8 py-1 border-b-4 bg-purple-200 border-purple-700 space-x-8 flex items-center">
+<div class="px-8 py-1 border-b-2 bg-purple-200 border-purple-700 space-x-8 flex items-center">
     <span class="text-purple-900 font-bold text-md font-sans">
         Notification:
     </span>
