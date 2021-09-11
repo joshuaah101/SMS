@@ -14,5 +14,7 @@
     "News": true,
     "StdParent": true,
     "Complaint": true,
-    "Announcement": true
+    "Announcement": true,
+    "Bursary": true,
+    "Administrator": true
 }
