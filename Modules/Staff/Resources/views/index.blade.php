@@ -1,9 +1,33 @@
-@extends('staff::layouts.master')
+@extends('core::layouts.master')
+@section('title') Terms and Condition @endsection
 
-@section('content')
-    <h1>Hello World</h1>
+@section('css_links')
+    @include('core::inc.links')
+@endsection
 
-    <p>
-        This view is loaded from module: {!! config('staff.name') !!}
-    </p>
+@section('top_nav')
+    @include('core::inc.top_nav')
+@endsection
+
+@section('nav')
+    @include('core::inc.nav')
+@endsection
+
+@section('notification')
+    @include('core::inc.notification')
+@endsection
+
+@section('header')
+    @include('core::inc.header',['header_title'=>'Staff Homepage','header_class'=>'','header_sub_title'=>'','header_url'=>''])
+@endsection
+
+
+@section('main')
+
+@endsection
+
+
+
+@section('footer')
+    @include('core::inc.footer')
 @endsection

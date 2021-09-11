@@ -62,13 +62,13 @@
                 <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mt-4">Contact</h4>
                 @isset($site_settings)
                     @isset($site_settings->email_address)
-                        <i class="fas fa-map-marker"></i>  <a href="mailto:{{ $site_settings->email_address }}"
-                                                              class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 hover:translate-x-1.5 delay-100 ease-in">
+                        <i class="fas fa-map-marker"></i>  <a href="mailto:{{ $site_settings->email_address }}" class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 hover:translate-x-1.5 delay-100 ease-in">
                             {{ $site_settings->email_address }}
                         </a>
                     @endisset
                     @isset($site_settings->phone_number)
-                        <i class="fas fa-phone"></i> <a href="tel: {{ $site_settings->phone_number }}" target="_blank"
+                        <i class="fas fa-phone"></i> <a href="tel:{{ remove_spaces($site_settings->phone_number) }}"
+
                                                         class="text-sm py-1 hover:text-white hover:font-bold hover:translate-x-1.5 transition duration-500 delay-100 ease-in">
                             {{ $site_settings->phone_number }}
                         </a>

@@ -40,3 +40,8 @@ function convert_school_names($school_details, $title): string
     }
     return $filtered;
 }
+
+function remove_spaces($value): string
+{
+    return implode("", explode(" ", $value));
+}
