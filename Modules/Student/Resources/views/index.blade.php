@@ -59,3 +59,8 @@
         This view is loaded from module: {!! config('student.name') !!}
     </p>
 @endsection
+
+
+@section('footer')
+    @include('core::inc.footer')
+@endsection
