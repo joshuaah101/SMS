@@ -5,9 +5,17 @@ namespace Modules\CA\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\CA\Repository\CARepository as CARepo;
 
 class CAController extends Controller
 {
+    public $repo;
+
+    public function __construct(CARepo $repo)
+    {
+        $this->repo = $repo;
+    }
+
     /**
      * Display a listing of the resource.
      * @return Renderable

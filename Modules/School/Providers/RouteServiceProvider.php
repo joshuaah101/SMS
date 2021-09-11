@@ -26,7 +26,6 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
-        app()->singleton(SchoolInterface::class, SchoolRepository::class);
     }
 
     /**

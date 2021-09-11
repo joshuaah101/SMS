@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateClassRegistersTable extends Migration
+class CreateAnnouncementsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateClassRegistersTable extends Migration
      */
     public function up()
     {
-        Schema::create('class_registers', function (Blueprint $table) {
+        Schema::create('announcements', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('register_id');
-            $table->unsignedBigInteger('student_id');
-            $table->boolean('present')->nullable()->default(false);
-            $table->softDeletes();
+
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreateClassRegistersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('class_registers');
+        Schema::dropIfExists('announcements');
     }
 }
