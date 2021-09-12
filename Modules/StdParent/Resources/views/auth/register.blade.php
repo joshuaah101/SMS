@@ -105,7 +105,7 @@
     <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4 py-8">
         <div class="inline-flex">
             <div class="inline-flex flex-row items-center">
-                <svg class="w-10 h-10 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
                     <path
                         fill-rule="evenodd"
                         d="M11.757 2.034a1 1 0 01.638.519c.483.967.844 1.554 1.207 2.03.368.482.756.876 1.348 1.467A6.985 6.985 0 0117 11a7.002 7.002 0 01-14 0c0-1.79.684-3.583 2.05-4.95a1 1 0 011.707.707c0 1.12.07 1.973.398 2.654.18.374.461.74.945 1.067.116-1.061.328-2.354.614-3.58.225-.966.505-1.93.839-2.734.167-.403.356-.785.57-1.116.208-.322.476-.649.822-.88a1 1 0 01.812-.134zm.364 13.087A2.998 2.998 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879.586.585.879 1.353.879 2.121s-.293 1.536-.879 2.121z"
@@ -149,9 +149,15 @@
                             id="name"
                             type="text"
                             name="name"
-                            class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-indigo-400"
+                            value="{{ old('name') }}"
+                            class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-indigo-400 @error('name') border-red-500 focus:border-red-800  @enderror"
                             placeholder="Name"
                         />
+                        @error('name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                     </div>
                 </div>
                 <div class="flex flex-col mb-4">
@@ -182,9 +188,56 @@
                             id="email"
                             type="email"
                             name="email"
-                            class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-indigo-400"
+                            value="{{ old('email') }}"
+                            class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-indigo-400 @error('email') border-red-500 focus:border-red-800  @enderror"
                             placeholder="E-Mail Address" required
                         />
+                        @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
+                    </div>
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label
+                        for="phone"
+                        class="mb-1 text-xs sm:text-sm tracking-wide text-gray-600"
+                    >Phone:</label>
+                    <div class="relative">
+                        <div
+                            class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400"
+                        >
+              <span>
+                <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                  <path
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  />
+                </svg>
+              </span>
+                        </div>
+
+                        <input
+                            id="phone"
+                            type="tel"
+                            name="phone"
+                            value="{{ old('phone') }}"
+                            class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-indigo-400 @error('phone') border-red-500 focus:border-red-800  @enderror"
+                            placeholder="Phone" required
+                        />
+                        @error('phone')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                     </div>
                 </div>
                 <div class="flex flex-col mb-4">
@@ -217,9 +270,14 @@
                             id="password"
                             type="password"
                             name="password"
-                            class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-indigo-400"
+                            class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-indigo-400 @error('password') border-red-500 focus:border-red-800  @enderror"
                             placeholder="Password" required
                         />
+                        @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                     </div>
                 </div>
                 <div class="flex flex-col mb-4">
@@ -255,6 +313,11 @@
                             class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-indigo-400"
                             placeholder="Confirm Password" required
                         />
+                        @error('password_confirmation')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                     </div>
                 </div>
 
