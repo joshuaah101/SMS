@@ -3,6 +3,7 @@
         <div class="flex flex-col mb-12 md:mb-0 px-2">
             <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">
                 Legal
+                <hr class="border-pink-700 border-2 w-1/3 mt-2 animate-pulse">
             </h4>
             <a href="{{ route('policy') }}"
                class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
@@ -16,6 +17,7 @@
         <div class="flex flex-col mb-12 md:mb-0 px-2">
             <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">
                 Academics
+                <hr class="border-pink-700 border-2 w-1/3 mt-2 animate-pulse">
             </h4>
             <a href="{{ route('admission.index') }}"
                class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
@@ -33,6 +35,7 @@
         <div class="flex flex-col mb-12 md:mb-0 px-2">
             <h4 class="border-b-2 border-purple-700 w-1/3 pb-2 font-bold text-purple-300 mb-4">
                 Schools
+                <hr class="border-pink-700 border-2 w-1/3 mt-2 animate-pulse">
             </h4>
             @isset($schools)
                 @if(count($schools) > 0)
