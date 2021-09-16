@@ -1,19 +1,26 @@
 @extends('core::layouts.master')
 
 @section('nav')
-    <nav class="bg-blue-900">
-        <div class="px-8 py-2 flex justify-between items-center">
-            <a href="" class="">
+    <nav class="px-8 py-1 bg-blue-800 border-b-4 border-white">
+        <div class="flex justify-between items-center">
+            <a href="parent" class="ml-5 py-1">
                 <img src="{{ config('app.college_logo_png') }}" alt="" class="h-12 w-16" />
             </a>
-            <div class="xs:hidden md:flex space-x-5 text-blue-300">
-                <a href="" class="{{ request()->is('parent') ? 'text-white' : '' }} font-semibold hover:text-blue-100">
+            <div class="xs:hidden md:flex space-x-5 text-blue-300 text-sm">
+                <a href="{{ url('/') }}" class="{{ request()->is('parent') ? 'text-white hover:text-blue-300 font-bold' : 'hover:text-white' }}  font-semibold flex items-center justify-between transition duration-500 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
                     Home
                 </a>
-                <a href="" class="{{ request()->is('') ? 'text-white' : '' }} font-semibold hover:text-blue-100">
-                    Register a pupil
+
+                <a href="{{ url('/') }}" class="{{ request()->is('register') ? 'text-white hover:text-blue-300 font-bold' : 'hover:text-white' }}  font-semibold flex items-center justify-between transition duration-500 ease-in-out">
+                    
+                    Register your child
                 </a>
-                <a href="" class="{{ request()->is('') ? 'text-white' : '' }} font-semibold hover:text-blue-100">
+
+                <a href="{{ url('/') }}" class="{{ request()->is('view_ca') ? 'text-white hover:text-blue-300 font-bold' : 'hover:text-white' }}  font-semibold flex items-center justify-between transition duration-500 ease-in-out">
+                    
                     View CA
                 </a>
             </div>
@@ -21,7 +28,7 @@
             {{-- secondary nav --}}
             {{-- mobile button goes here --}}
             <div class="md:hidden flex items-center">
-                <button class="mobile-menu-button text-blue-300">
+                <button class="mobile-menu-button text-blue-100">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
                     </svg>

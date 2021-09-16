@@ -1,5 +1,5 @@
 @isset($header_title)
-    <div class="w-full {{ isset($header_bg)&&$header_bg!=''?$header_bg:'bg-blue-600 ' }}">
+    <div class="w-full {{ isset($header_bg)&&$header_bg!=''?$header_bg:'bg-blue-700 ' }}">
         <div
             class="w-full h-full relative flex {{ isset($header_class)&&$header_class!=''?$header_class:' items-center justify-center py-24' }} ">
 

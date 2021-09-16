@@ -1,5 +1,5 @@
-<footer class="bg-blue-900 px-8 pt-5">
-    <div class="grid md:grid-cols-4 xs:grid-cols-1 sm:grid-cols-2 p-3 text-blue-300 md:mb-5">
+<footer class="bg-blue-800 px-8 pt-5">
+    <div class="grid md:grid-cols-4 xs:grid-cols-1 sm:grid-cols-2 p-3 text-blue-200 md:mb-5">
         <div class="flex flex-col mb-12 md:mb-0 md:mx-auto xs:mx-0">
             <h4 class="font-bold text-blue-300 mb-4">
                 Legal

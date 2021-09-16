@@ -1,7 +1,4 @@
-<div class="px-8 py-1 border-b-2 bg-purple-200 border-purple-700 space-x-8 flex items-center">
-    <span class="text-purple-900 font-bold text-md font-sans">
-        Notification:
-    </span>
+<div class="px-4 py-1 border-b bg-white border-white">
     @php
         $marquee = [
         ['url'=>route('terms'),'title'=>'Click on this notification to visit terms and conditions','class'=>'text-green-700  '],
@@ -14,7 +11,7 @@
             @foreach($marquee as $item)
                 <a href="{{ $item['url'] }}"
                    class="font-bold text-md font-sans border-r-2
-                @if($loop->first) border-l-2  @elseif($loop->last) border-dotted @else border-current @endif border-purple-800 px-2 {{ $item['class'] }}">
+                @if($loop->first) border-l-2  @elseif($loop->last) border-dotted @else border-current @endif border-blue-800 px-2 {{ $item['class'] }}">
                     {{ $item['title'] }}
                 </a>
             @endforeach
