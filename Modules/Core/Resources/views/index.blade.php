@@ -91,16 +91,16 @@
 
 
     {{-- This part will be updated dynamically according to the season of admission --}}
-    <div class="py-16 px-12 bg-purple-900">
-        <header class="animate-pulse text-6xl text-purple-100 font-semibold font-mono flex justify-center">
+    <div class="py-16 px-12 bg-blue-900">
+        <header class="animate-pulse text-6xl text-blue-100 font-semibold font-mono flex justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
               </svg>
             Admissions!!!
         </header>
-        <p class="text-purple-200 mt-8 text-3xl font-semibold">
+        <p class="text-blue-200 mt-8 text-3xl font-semibold">
             We are currently admitting students into the following classes:
-            <header class="text-2xl mt-5 font-semibold text-purple-200">
+            <header class="text-2xl mt-5 font-semibold text-blue-200">
                 <div class="flex justify-around">
                     <div class="p-5 w-full">
                         <div class="flex items-center">
@@ -173,7 +173,7 @@
     </div>
 
     <div class="py-12 px-8 bg-white shadow-lg">
-        <header class="text-3xl font-bold animate-pulse flex justify-center font-mono text-purple-700">
+        <header class="text-3xl font-bold animate-pulse flex justify-center font-mono text-blue-700">
             Faces of {{ strtoupper(config('app.name')) }}
         </header>
 
@@ -185,13 +185,13 @@
             </div>
         </div>
 
-        <p class="flex justify-center font-bold text-purple-900 text-lg mt-8 animate-pulse">
+        <p class="flex justify-center font-bold text-blue-900 text-lg mt-8 animate-pulse">
             Join us today and we guarantee you quality education at its best...
         </p>
     </div>
 
-    <div class="py-12 px-8 bg-purple-900 shadow-lg">
-        <header class="text-3xl font-bold animate-pulse flex justify-center font-mono text-purple-100">
+    <div class="py-12 px-8 bg-blue-900 shadow-lg">
+        <header class="text-3xl font-bold animate-pulse flex justify-center font-mono text-blue-100">
             Our partners
         </header>
 
@@ -201,18 +201,24 @@
             @endfor          
         </div>
 
-        <p class="flex justify-center font-bold text-purple-100 text-lg mt-8 animate-pulse">
+        <p class="flex justify-center font-bold text-blue-100 text-lg mt-8 animate-pulse">
             We value your trust in us and your unwavering support...
         </p>
     </div>
 
-    <div class="mb-12 py-16 px-12 md:mb-0">
-        <h4 class="font-bold text-purple-700 mb-4 text-2xl">
-            We are also registered on google maps
-            <hr class="border-pink-700 border-2 w-1/2 mt-3 animate-pulse">
+    <div class="mb-12 py-16 px-12 md:mb-0 bg-white">
+        <h4 class="font-bold text-pink-700 mb-4 text-3xl flex justify-center items-center flex-col font-mono">
+            Find us on google maps
+            <span class="flex items-center text-red-900">
+                ~
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-12" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                  </svg> 
+                ~
+            </span>
         </h4>
         {{-- For map location, you can either use the embedded style or the paid version of using longitude latitude--}}
-        <div class="w-full h-screen mt-8" {{-- style="max-width:100%;list-style:none;transition:none;overflow:hidden;width:300px;height:250px;" --}}>
+        <div class="w-full h-screen mt-8 rounded" {{-- style="max-width:100%;list-style:none;transition:none;overflow:hidden;width:300px;height:250px;" --}}>
             <div id="googlemaps-canvas" style="height:100%; width:100%;max-width:100%;">
                 <iframe style="height:100%;width:100%;border:0;" frameborder="0"
                         src="https://www.google.com/maps/embed/v1/place?q=Faith+in+Christ+College+ilaro&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">

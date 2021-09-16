@@ -14,7 +14,7 @@
     @include('core::inc.links')
     {{-- @livewireStyles --}}
 </head>
-<body class="bg-purple-100">
+<body class="bg-blue-100">
     @yield('top_nav')
     @yield('nav')
     @yield('notification')

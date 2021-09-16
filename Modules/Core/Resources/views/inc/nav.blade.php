@@ -1,4 +1,4 @@
-<header class="bg-purple-100">
+<header class="bg-blue-100">
     <div class="border-b-2 border-pink-700">
         <div class="">
             <div class="flex justify-between items-center mx-8 xs:py-0 md:py-1">
@@ -9,7 +9,7 @@
 
                 <div class="md:flex space-x-3 xs:hidden">
                     <a href="{{ route('admission.index') }}"
-                       class="bg-purple-100 text-purple-900 border-2 border-purple-900 py-2 px-4 text-xs md:text-sm rounded-full hover:bg-purple-900 hover:text-white shadow-xl transition duration-500 delay-200 ease-in">
+                       class="bg-blue-100 text-blue-900 border-2 border-blue-900 py-2 px-4 text-xs md:text-sm rounded-full hover:bg-blue-900 hover:text-white shadow-xl transition duration-500 delay-200 ease-in">
                         Admissions
                     </a>
 
@@ -30,8 +30,8 @@
             </div>
 
             <div class="">
-                <div class="flex justify-between items-center space-x-8 bg-purple-900 px-8 xs:py-2 md:py-1 border-t-2 border-pink-700">
-                    <div class="text-purple-300 font-bold">
+                <div class="flex justify-between items-center space-x-8 bg-blue-900 px-8 xs:py-2 md:py-1 border-t-2 border-pink-700">
+                    <div class="text-blue-300 font-bold">
                         <div class="xs:hidden md:flex text-lg">
                             {{ config('app.name') }}
                         </div>
@@ -44,23 +44,23 @@
 
                     <div class="md:flex space-x-3 text-sm items-center xs:hidden p-2">
                         <a href="{{ url('/') }}"
-                           class="{{ request()->is('/') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">
+                           class="{{ request()->is('/') ? 'text-white hover:text-blue-300 font-bold' : 'text-blue-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">
                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                           </svg>
                             Home
                         </a>
                         <a href="{{ route('about') }}"
-                           class="{{ request()->is('about') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">
+                           class="{{ request()->is('about') ? 'text-white hover:text-blue-300 font-bold' : 'text-blue-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">
                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
                           </svg>
                                 About us
                         </a>
 
-                        {{-- <a href="#" class="{{ request()->is('grad') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white tranistion duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">Graduations</a> --}}
+                        {{-- <a href="#" class="{{ request()->is('grad') ? 'text-white hover:text-blue-300 font-bold' : 'text-blue-300 hover:text-white tranistion duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">Graduations</a> --}}
                         <a href="{{ route('curriculum') }}"
-                           class="{{ request()->is('curriculum') ? 'text-white hover:text-purple-300 font-bold' : 'text-purple-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">
+                           class="{{ request()->is('curriculum') ? 'text-white hover:text-blue-300 font-bold' : 'text-blue-300 hover:text-white transition duration-500 ease-in-out' }}  font-semibold flex items-center justify-between">
                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                             <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
@@ -72,7 +72,7 @@
                     {{-- secondary nav --}}
                     {{-- mobile button goes here --}}
                     <div class="md:hidden flex items-center">
-                        <button class="mobile-menu-button text-purple-300">
+                        <button class="mobile-menu-button text-blue-300">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
                                  fill="currentColor">
                                 <path fill-rule="evenodd"
@@ -86,7 +86,7 @@
                 {{-- mobile menu --}}
                 <div class="mobile-menu md:hidden py-3 hidden">
                     <a href="{{ url('/') }}"
-                       class="{{ request()->is('/') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
+                       class="{{ request()->is('/') ? 'text-blue-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                         <span class="mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor">
@@ -97,7 +97,7 @@
                         Home
                     </a>
                     <a href="{{ route('about') }}"
-                       class="{{ request()->is('ticket') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
+                       class="{{ request()->is('ticket') ? 'text-blue-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                         <span class="mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor">
@@ -108,7 +108,7 @@
                         About us
                     </a>
                     <a href="{{ route('admission.index') }}"
-                       class="{{ request()->is('ticket') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
+                       class="{{ request()->is('ticket') ? 'text-blue-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                         <span class="mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor">
@@ -119,7 +119,7 @@
                         Admissions
                     </a>
                     <a href="{{ route('student') }}"
-                       class="{{ request()->is('ticket') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
+                       class="{{ request()->is('ticket') ? 'text-blue-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                         <span class="mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor">
@@ -129,19 +129,9 @@
                         </span>
                         Student Portal
                     </a>
-{{--                    <a href=""--}}
-{{--                       class="{{ request()->is('login') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">--}}
-{{--                        <span class="mr-1">--}}
-{{--                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"--}}
-{{--                                 stroke="currentColor">--}}
-{{--                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
-{{--                                      d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>--}}
-{{--                            </svg>--}}
-{{--                        </span>--}}
-{{--                        Some menu--}}
-{{--                    </a>--}}
+
                     <a href="{{ route('curriculum') }}"
-                       class="{{ request()->is('register') ? 'text-purple-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
+                       class="{{ request()->is('register') ? 'text-blue-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                         <span class="mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor">
