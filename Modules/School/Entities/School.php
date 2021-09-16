@@ -10,8 +10,12 @@ class School extends Model
 {
     use HasFactory;
 
-    protected $fillable = [];
+    protected $guarded = [];
 
+    public function school_type()
+    {
+        return $this->belongsTo(SchoolType::class);
+    }
 
     public function image()
     {

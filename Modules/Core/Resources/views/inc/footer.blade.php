@@ -6,11 +6,11 @@
                 <hr class="border-pink-700 border-2 w-1/2 mt-2 animate-pulse">
             </h4>
             <a href="{{ route('policy') }}"
-               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
+               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
                 Privacy Policy
             </a>
             <a href="{{ route('terms') }}"
-               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
+               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
                 Terms &amp; Conditions
             </a>
         </div>
@@ -20,16 +20,16 @@
                 <hr class="border-pink-700 border-2 w-5/6 mt-2 animate-pulse">
             </h4>
             <a href="{{ route('admission.index') }}"
-               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
-               Admissions
+               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
+                Admissions
             </a>
             <a href="{{ route('portal') }}"
-               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
+               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
                 Portal
             </a>
             <a href="{{ route('helpdesk') }}"
-               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-200 ease-in">
-               Helpdesk
+               class="text-sm py-1 hover:text-white hover:font-bold transition duration-500 delay-100 ease-in">
+                Helpdesk
             </a>
         </div>
         <div class="flex flex-col mb-12 md:mb-0 md:mx-auto xs:mx-0">

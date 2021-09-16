@@ -1,0 +1,13 @@
+{
+    "name": "Bursary",
+    "alias": "bursary",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Bursary\\Providers\\BursaryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

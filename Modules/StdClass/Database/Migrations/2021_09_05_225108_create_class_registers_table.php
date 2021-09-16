@@ -16,7 +16,7 @@ class CreateClassRegistersTable extends Migration
         Schema::create('class_registers', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('register_id');
-            $table->unsignedBigInteger('std_id');
+            $table->unsignedBigInteger('student_id');
             $table->boolean('present')->nullable()->default(false);
             $table->softDeletes();
             $table->timestamps();

@@ -7,10 +7,14 @@
     "Subject": true,
     "Exam": true,
     "CA": true,
+    "Image": true,
     "Core": true,
     "StdClass": true,
     "Payment": true,
     "News": true,
     "StdParent": true,
-    "Complaint": true
+    "Complaint": true,
+    "Announcement": true,
+    "Bursary": true,
+    "Administrator": true
 }

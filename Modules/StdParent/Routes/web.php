@@ -12,6 +12,7 @@
 */
 
 use Illuminate\Support\Facades\Route;
+use Modules\StdParent\Http\Controllers\Auth\ForgotPasswordController;
 use Modules\StdParent\Http\Controllers\Auth\LoginController;
 use Modules\StdParent\Http\Controllers\Auth\RegisterController;
 use Modules\StdParent\Http\Controllers\Auth\ResetPasswordController;
@@ -23,6 +24,7 @@ Route::prefix('parent')->group(function () {
     Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('parent.register');
     Route::get('/password/request', [ResetPasswordController::class, 'showResetForm'])->name('parent.password.request');
     Route::get('/password/verify', [VerificationController::class, 'verify'])->name('parent.password.verify');
+    Route::get('/password/forgot', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('parent.password.forgot');
 
 });
 

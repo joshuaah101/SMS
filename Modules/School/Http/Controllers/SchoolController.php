@@ -3,77 +3,37 @@
 namespace Modules\School\Http\Controllers;
 
 use Illuminate\Contracts\Support\Renderable;
-use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\School\Repository\SchoolInterface as SchoolRepo;
 
 class SchoolController extends Controller
 {
+    public $repo;
+
+    public function __construct(SchoolRepo $repo)
+    {
+        $this->repo = $repo;
+    }
+
     /**
-     * Display a listing of the resource.
+     * Display list of schools available
      * @return Renderable
      */
     public function index()
     {
-        return view('school::index');
+        $schools = $this->repo->get_schools(['school_type', 'image'])->get();
+        return view('school::index')->with(compact('schools'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     * @return Renderable
-     */
-    public function create()
-    {
-        return view('school::create');
-    }
 
     /**
-     * Store a newly created resource in storage.
-     * @param Request $request
-     * @return Renderable
+     * Show school Information.
+     * @param string $slug
      */
-    public function store(Request $request)
+    public function show(string $slug)
     {
-        //
+        $school = $this->repo->show_school($slug, ['school_type', 'image'])->firstOrFail();
+        return view('school::show')->with(compact('school'));
     }
 
-    /**
-     * Show the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function show($id)
-    {
-        return view('school::show');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function edit($id)
-    {
-        return view('school::edit');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     * @param Request $request
-     * @param int $id
-     * @return Renderable
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     * @param int $id
-     * @return Renderable
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

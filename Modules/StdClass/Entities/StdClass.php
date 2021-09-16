@@ -9,8 +9,8 @@ class StdClass extends Model
 {
     use HasFactory;
 
-    protected $fillable = [];
-    
+    protected $guarded = [];
+
     protected static function newFactory()
     {
         return \Modules\StdClass\Database\factories\StdClassFactory::new();

@@ -15,20 +15,12 @@ class CreateSchoolsTable extends Migration
     {
         Schema::create('schools', function (Blueprint $table) {
             $table->id();
-            $table->string('school_name')->nullable()->default('Faith in Christ College');
-            $table->string('school_motto')->nullable();
-            $table->string('school_logo')->nullable();
-            $table->string('school_principal')->nullable();
-            $table->string('phone_number')->nullable();
-            $table->string('email_address')->nullable();
-            $table->longText('school_anthem')->nullable();
-            $table->longText('school_pledge')->nullable();
-            $table->longText('school_description')->nullable();
-            $table->longText('school_address')->nullable();
-            $table->longText('about_school')->nullable();
-            $table->string('lat')->nullable();
-            $table->string('lon')->nullable();
-            $table->string('embedded')->nullable();
+            $table->unsignedBigInteger('school_type_id');
+            $table->string('title');
+            $table->string('slug')->unique();
+            $table->longText('description')->nullable();
+            $table->text('location')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

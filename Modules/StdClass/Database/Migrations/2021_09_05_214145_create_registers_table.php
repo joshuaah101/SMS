@@ -17,7 +17,7 @@ class CreateRegistersTable extends Migration
             $table->id();
             $table->unsignedBigInteger('staff_id')->comment('Teacher taking this class');
             $table->unsignedBigInteger('class_id')->comment('The class the teacher is taking');
-            $table->unsignedBigInteger('admission_id');
+            $table->unsignedBigInteger('admission_id')->comment('The current Admission for the year/term');
             $table->softDeletes();
             $table->timestamps();
         });

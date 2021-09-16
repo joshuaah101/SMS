@@ -58,6 +58,14 @@
     </nav>
 @endsection
 
+@section('notification')
+    @include('core::inc.notification')
+@endsection
+
+@section('header')
+    @include('core::inc.header',['header_title'=>'Parent / Guardian Home','header_sub_title'=>'','header_url'=>''])
+@endsection
+
 @section('main')
     <h1>Hello World</h1>
 

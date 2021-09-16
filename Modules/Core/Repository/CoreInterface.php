@@ -4,6 +4,7 @@
 namespace Modules\Core\Repository;
 
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 
@@ -19,9 +20,9 @@ interface CoreInterface
      * @param $id
      * @param array $with
      * @param array $where
-     * @return Model
+     * @return Builder
      */
-    public function find_by_id($id, array $with = array(), array $where = array()): Model;
+    public function find_by_id($id, array $with = array(), array $where = array()): Builder;
 
     /**
      * @param $field
@@ -30,7 +31,7 @@ interface CoreInterface
      * @param array $with
      * @return mixed
      */
-    public function find_by_field($field, $value, $where, array $with = array()): Model;
+    public function find_by_field($field, $value, $where, array $with = array()): Builder;
 
     /**
      * @param array $values
@@ -77,5 +78,5 @@ interface CoreInterface
      * @param array $with
      * @return mixed
      */
-    public function all(array $with = array());
+    public function get_all(array $with = array());
 }

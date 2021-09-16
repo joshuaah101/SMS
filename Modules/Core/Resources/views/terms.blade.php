@@ -18,9 +18,7 @@
 @endsection
 
 @section('header')
-    <div class="bg-landing-2 w-full h-screen bg-no-repeat bg-cover border-b-4 border-red-600">
-
-    </div>
+    @include('core::inc.header',['header_title'=>'Terms and Condition','header_class'=>'','header_sub_title'=>'','header_url'=>''])
 @endsection
 
 

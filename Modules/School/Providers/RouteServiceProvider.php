@@ -4,6 +4,8 @@ namespace Modules\School\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Modules\School\Repository\SchoolInterface;
+use Modules\School\Repository\SchoolRepository;
 
 class RouteServiceProvider extends ServiceProvider
 {

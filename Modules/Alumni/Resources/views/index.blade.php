@@ -1,4 +1,5 @@
 @extends('core::layouts.master')
+
 @section('title') Welcome @endsection
 
 @section('css_links')
@@ -18,9 +19,7 @@
 @endsection
 
 @section('header')
-    <div class="bg-landing-2 w-full h-screen bg-no-repeat border-b-4 border-red-600">
-
-    </div>
+    @include('core::inc.header',['header_title'=>'Alumni Page','header_bg'=>'bg-landing-2 w-full h-screen bg-no-repeat border-b-4 bg-green-400 border-red-600','header_sub_title'=>'','header_url'=>''])
 @endsection
 
 

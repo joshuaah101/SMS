@@ -15,9 +15,13 @@ class CreateCAsTable extends Migration
     {
         Schema::create('c_as', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('std_id');
-            $table->unsignedBigInteger('class_id');
+            $table->unsignedBigInteger('student_id');
             $table->unsignedBigInteger('subject_id');
+            $table->unsignedBigInteger('broadsheet_id');
+            $table->string('test')->nullable()->default(0);
+            $table->string('project')->nullable()->default(0);
+            $table->string('assignment')->nullable()->default(0);
+            $table->string('total')->nullable()->default(0);
             $table->timestamps();
         });
     }
