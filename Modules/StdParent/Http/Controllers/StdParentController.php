@@ -22,6 +22,17 @@ class StdParentController extends Controller
         return view('stdparent::index');
     }
 
+    public function showDashboard()
+    {
+       return view('stdparent::home.index');
+    }
+
+    public function dashboardMenu(Request $req)
+    {
+        $menuUrl = $req->get('menu');
+        return view('stdparent::home.index', ['menuUrl' => $menuUrl]);
+    }
+
     /**
      * Show the form for creating a new resource.
      * @return Renderable

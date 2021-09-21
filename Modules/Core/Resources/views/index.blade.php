@@ -1,10 +1,6 @@
 @extends('core::layouts.master')
 @section('title') Welcome @endsection
 
-@section('css_links')
-    @include('core::inc.links')
-@endsection
-
 @section('top_nav')
     @include('core::inc.top_nav')
 @endsection
@@ -178,7 +174,7 @@
 
         <div class="flex justify-around space-x-4 mt-8">
             <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
-                @for ($i = 0; $i <= 11; $i++)
+                @for ($i = 0; $i <= 7; $i++)
                     <img src="{{ asset(config('app.principal_jpg')) }}" class="w-40 h-40 object-cover border-4 border-pink-700 p-1 rounded-full bg-cover" alt="" />
                 @endfor
             </div>

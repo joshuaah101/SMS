@@ -14,7 +14,16 @@
                     Home
                 </a>
 
-                <a href="{{ url('/') }}" class="{{ request()->is('register') ? 'text-white hover:text-blue-300 font-bold' : 'hover:text-white' }}  font-semibold flex items-center justify-between transition duration-500 ease-in-out">
+                {{-- this button will display a logout button when logged in and login button by default --}}
+                <a href="parent/login"
+                    class="{{ request()->is('') ? 'text-white hover:text-blue-300 font-bold' : 'hover:text-white' }}  font-semibold flex items-center justify-between transition duration-500 ease-in-out">
+                    <span class="mr-1">
+                        {{-- svg --}}
+                    </span>
+                    Login
+                </a>
+            
+                {{-- <a href="{{ url('/') }}" class="{{ request()->is('register') ? 'text-white hover:text-blue-300 font-bold' : 'hover:text-white' }}  font-semibold flex items-center justify-between transition duration-500 ease-in-out">
                     
                     Register your child
                 </a>
@@ -22,7 +31,7 @@
                 <a href="{{ url('/') }}" class="{{ request()->is('view_ca') ? 'text-white hover:text-blue-300 font-bold' : 'hover:text-white' }}  font-semibold flex items-center justify-between transition duration-500 ease-in-out">
                     
                     View CA
-                </a>
+                </a> --}}
             </div>
     
             {{-- secondary nav --}}
@@ -47,19 +56,27 @@
                 </span>
                 Home
             </a>
-            <a href="{{ route('about') }}"
+            {{-- <a href="{{ route('about') }}"
                 class="{{ request()->is('ticket') ? 'text-blue-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                 <span class="mr-1">
-                    {{-- svg --}}
+                    menu item
                 </span>
                 Register a pupil
             </a>
             <a href="{{ route('admission.index') }}"
                 class="{{ request()->is('ticket') ? 'text-blue-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
                 <span class="mr-1">
-                    {{-- svg --}}
+                    menu item
                 </span>
                 View CA
+            </a> --}}
+
+            <a href="{{ route('about') }}"
+                class="{{ request()->is('ticket') ? 'text-blue-700 hover:text-blue-100 font-bold' : '' }} flex justify-center w-full items-center text-md px-5 py-2 text-blue-700 hover:text-blue-600 font-semibold">
+                <span class="mr-1">
+                    {{-- svg --}}
+                </span>
+                Login
             </a>
         </div>
     </nav>
@@ -70,7 +87,7 @@
 @endsection
 
 @section('header')
-    @include('core::inc.header',['header_title'=>'Parent / Guardian Home','header_sub_title'=>'','header_url'=>''])
+    @include('core::inc.header',['header_title'=>'Parent / Guardian Portal','header_sub_title'=>'','header_url'=>''])
 @endsection
 
 @section('main')
