@@ -7,3 +7,4 @@
 {{--<link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@600&display=swap" rel="stylesheet">--}}
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">

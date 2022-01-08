@@ -14,13 +14,14 @@
     @include('core::inc.links')
     {{-- @livewireStyles --}}
 </head>
-<body class="bg-blue-100">
+<body class="antialiased leading-none bg-gray-50 text-gray-700">
     @yield('top_nav')
     @yield('nav')
     @yield('notification')
     @yield('header')
     @yield('main')
     @yield('footer')
+    
     @include('core::inc.scripts')
     {{-- @livewireScripts --}}
 </body>

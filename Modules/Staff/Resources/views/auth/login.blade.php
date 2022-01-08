@@ -1,99 +1,76 @@
 @extends('core::layouts.master')
 @section('title') Staff Sign In @endsection
-@section('top_nav')
-    @include('core::inc.top_nav')
-@endsection
 
-@section('nav')
-    @include('core::inc.nav')
-@endsection
 @section('main')
-
-    <div class="xs:block md:flex w-full">
-        <div class="w-full h-screen bg-purple-900 flex flex-col items-center justify-center ">
-            <header class="text-purple-300 font-bold text-6xl">
-                Staff Portal
-            </header>
-            <p class="mt-5 text-purple-200 text-2xl font-semibold">
-                Login here ...
-            </p>
-            <p class="xs:hidden md:flex mt-5 text-purple-200 text-2xl font-semibold">
-                &DoubleLongRightArrow;
-            </p>
-            <p class="md:hidden xs:flex mt-5 text-purple-200 text-2xl font-semibold">
-                &DoubleDownArrow;
-            </p>
-        </div>
-
-        <div class="w-full flex-col justify-center items-center p-12">
-            <header class="tracking-wider text-4xl font-bold font-serif">
-                Enter Login Credentials
-            </header>
-
-            <div class="mt-12 bg-white p-8 rounded-md shadow-lg">
-                <form action="{{ route('staff.login') }}" method="POST" id="std-login-form">
-                    @csrf
-                    <div class="flex flex-col space-y-4">
-                        <label for="email" class="text-xl font-semibold font-serif">
-                            Username
-                        </label>
-                        <input type="text" name="email" placeholder="email@example.com" id="email"
-                               class="placeholder-gray-700 focus:bg-purple-200 rounded-br-xl focus:outline-none"/>
-
-                        @error('email')
-                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                        @enderror
-                    </div>
-
-                    <div class="flex flex-col space-y-4 mt-5">
-                        <label for="password" class="text-xl font-semibold font-serif">
-                            Password
-                        </label>
-                        <input type="password" name="password" placeholder="******************" id=""
-                               class="placeholder-gray-700 focus:bg-purple-200 rounded-br-xl focus:outline-none  @error('email') is-invalid @enderror"/>
-                        @error('password')
-                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                        @enderror
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-6 offset-md-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="remember"
-                                       id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                <label class="form-check-label" for="remember">
-                                    {{ __('Remember Me') }}
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col space-y-4 mt-5">
-                        <button class="px-5 py-3 bg-purple-900 text-purple-300 font-bold rounded-br-full tracking-widest hover:bg-purple-700
-                        hover:text-white" type="submit">
-                            Login
-                        </button>
-
-
-                        @if (Route::has('staff.password.request'))
-                            <a class="btn btn-link" href="{{ route('staff.password.request') }}">
-                                {{ __('Forgot Your Password?') }}
-                            </a>
-                        @endif
-                    </div>
-                </form>
+<div class="xs:px-2 md:px-8 py-3">
+    <button class="px-4 py-3 bg-red-700 hover:bg-red-800 text-red-100 text-xs rounded font-semibold" type="button" onclick="window.history.back()">
+        &DoubleLongLeftArrow; Back
+    </button>
+</div>
+<div class="flex flex-col justify-center items-center md:p-1 xs:p-2">
+    <div class="flex flex-col justify-center items-center space-y-6">
+        <a href="/" class="">
+            <img src="{{ asset('storage/images/school/png/college-logo.png') }}" alt="logo" class="w-24 h-24">
+        </a>
+        <header class="font-bold font-sans text-xl">
+            Account login
+        </header>
+    </div>
+    <div class="flex flex-col xs:w-full md:w-1/4 mt-2">
+        <form action="" method="POST">
+            @csrf
+            <div class="flex flex-col py-1">
+                <label for="username" class="py-1 font-medium">
+                   Username/E-mail
+                </label>
+                <input type="text" id="username" name="username"  placeholder="adamsmith123" class="border border-gray-400 placeholder-gray-800 rounded-lg w-full p-2">
             </div>
 
+            <div class="flex flex-col py-1">
+                <label for="password" class="py-1 font-medium">
+                    Password
+                </label>
+                <div class="">
+                    <input type="password" id="password" name="password" placeholder="Password" class="border border-gray-400 placeholder-gray-800 rounded-lg w-full p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 cursor-pointer float-right relative right-3" style="margin-left: -25px; margin-top: 13px;" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
 
-        </div>
+            <div class="flex flex-col py-4">
+                <button type="submit" class="bg-pink-600 hover:bg-pink-700 px-5 py-4 w-full text-white font-semibold rounded-full">
+                    Log in
+                </button>
+            </div>
+
+            <div class="flex justify-center space-x-3 py-2 items-center">
+                <input type="checkbox" class="">
+                <span class="">
+                    Keep me logged in
+                </span>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-sm font-sans mt-5 space-y-3">
+                <a href="#" class="underline hover:no-underline text-red-600">Forgot login credentials?</a>
+
+                <span class="">
+                    Don't have an account?
+                    <a href="register" class="underline hover:no-underline text-blue-600">
+                        Sign up
+                    </a>
+                </span>
+            </div>
+
+            <div class="mt-5">
+                @if($errors->any())
+                    @foreach ($errors->all() as $error)
+                        <li class="list-none leading-6">{{ $error }}</li>
+                    @endforeach
+                @endif
+            </div>
+        </form>
     </div>
-
-@endsection
-{{-- adding the footer --}}
-@section('footer')
-    @include('core::inc.footer')
+</div>    
 @endsection

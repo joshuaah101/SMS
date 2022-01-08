@@ -14,251 +14,190 @@
 @endsection
 
 @section('header')
-    <div class="bg-landing-2 w-full h-screen bg-no-repeat bg-cover shadow-lg border-b-2 border-pink-700">
-        {{-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nobis, pariatur esse nostrum earum adipisci! Rem, perferendis? Quas suscipit quidem iusto corporis magnam nobis tempora ex aliquam error. Magnam, totam. --}}
+    <div class="sliderAx">
+        <div id="slider-1">
+            <div class="bg-cover bg-center h-screen object-cover bg-no-repeat" style="background-image: url({{ asset('storage/images/jpg/pic4.jpg') }})">
+                {{-- <div class="md:w-1/2">
+                    <p class="font-bold text-sm uppercase">Services</p>
+                    <p class="text-3xl font-bold">Hello world</p>
+                    <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+                    <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+                </div>   --}}
+            </div> <!-- -->
+            <br>
+        </div>
+
+        <div id="slider-2">
+            <div class="bg-cover bg-top h-screen object-cover bg-no-repeat" style="background-image: url({{ asset('storage/images/jpg/pic2.jpg') }})">
+                {{-- <p class="font-bold text-sm uppercase">Services</p>
+                <p class="text-3xl font-bold">Hello world</p>
+                <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+                <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a> --}}
+            </div> <!-- -->
+            <br>
+        </div>
+    </div>
+
+    <div  class="flex justify-between w-12 mx-auto space-x-2 pb-2">
+        <button id="sButton1" onclick="sliderButton1()" class="bg-pink-300 rounded-full w-4 p-2 " ></button>
+        <button id="sButton2" onclick="sliderButton2() " class="bg-pink-300 rounded-full w-4 p-2"></button>
     </div>
 @endsection
 
 @section('main')
-    <div class="py-8 px-6">
-        <div class="grid xs:grid-cols-1 md:grid-cols-2 gap-5 p-12">
-            <section class="flex flex-col space-y-6 bg-white shadow-xl py-10 px-12 rounded-lg">
-                <header class="text-xl md:text-3xl font-black flex xs:justify-center md:justify-start text-gray-800 tracking-wide">
-                    Principal's Message
-                </header>
-                <hr class="border-pink-700 border-2 w-1/3 mt-2 mr-auto animate-pulse">
-                <article class="text-gray-700 text-justify text-md flex flex-col space-y-3 font-semibold">
-                    <p class="">
-                        It is with great pleasure and admiration to introduce our schools to you on this site.
-                    </p>
-                    <p class="">
-                        The various Schools that make up the Faith in Christ Schools are very rare Schools.
-                    </p>
-                    <p class="">
-                        One reason they are so rare is that the founding purpose of the first school (Nur/Pry) set more than 24years ago, remains at the core of everything that we aim to achieve today. We are notfor-profit, which means that every fund realized from our stakeholders is invested for the progress of our students and Staff.
-                    </p>
-                    It is our aim to provide world class teaching that would stir a desire for ever increasing knowledge in our students through outstanding teachers. We put you, our parents and students at the centre of our activities here. Education is a partnership between home and school and we put a great deal of emphasis on our partnership with you, our stakeholders (Parents/Guardians). It is not a gain-saying that children learn best when parents and teachers collaborate. When your Child/Ward(s) starts School it is not where your responsibilities end and School's begin, it is where Ours begin and yours continue. Our sole goal and objective is for every one of our students to achieve outstanding achievement in their education. Wherever they come from, their level, they should achieve better result in Faith in Christ Schools and anywhere else.
-                </article>
-            </section>
-            <div class="xs:order-first md:order-none flex-col flex items-center justify-center">
-                <img src="{{ asset(config('app.principal_jpg')) }}" class="w-80 h-80 object-cover border-4 border-red-200 rounded-full bg-cover" alt="principal">
-                <p class="mt-5 text-xl font-semi-bold tracking-wider text-gray-700">
-                    Principal's name
-                </p>
+<main class="w-full">
+    <section class="grid xs:grid-cols-1 md:grid-cols-3 xs:gap-y-5 md:gap-y-0 px-8 py-12 md:gap-x-8">
+        <div class="flex flex-col justify-center items-center space-y-3 hover:bg-blue-700 hover:text-white p-8 transition duration-500">
+            <div class="bg-white p-2 rounded">
+                <img src="{{ asset('storage/images/png/nursery-logo.png') }}" class="w-32 h-auto" alt="Faith in Christ Nursery School" title="Faith in Christ Nursery School">
             </div>
-        </div>
-    </div>
-
-    <div class="bg-landing-1 bg-no-repeat bg-fixed bg-center h-72 w-full z-0 opacity-75">
-        <div class="flex justify-center items-center">
-            {{-- {{ config("app.name") }} --}}
-        </div>
-    </div>
-
-    <div class="py-8 px-6">
-        <div class="grid xs:grid-cols-1 md:grid-cols-2 gap-5 p-12">
-            <div class="xs:order-first md:order-none flex flex-col items-center justify-center">
-                <img src="{{ asset(config('app.proper_jpg')) }}" class="w-80 h-80 object-cover border-4 border-red-200 rounded-full bg-cover" alt="principal">
-                <p class="mt-5 text-xl font-semi-bold tracking-wider text-gray-700">
-                    Proprietress name
-                </p>
-            </div>
-            <section class="flex flex-col space-y-6 bg-white shadow-xl py-10 px-12 rounded-lg">
-                <header class="text-xl md:text-3xl font-black flex xs:justify-center md:justify-end text-gray-800 tracking-wide">
-                    Proprietress's Message
-                </header>
-                <hr class="border-pink-700 border-2 w-1/3 mt-2 ml-auto animate-pulse">
-                <article class="text-gray-700 text-justify text-md flex flex-col space-y-3 font-semibold">
-                    <p class="">
-                        It is with great pleasure and admiration to introduce our schools to you on this site.
-                    </p>
-                    <p class="">
-                        The various Schools that make up the Faith in Christ Schools are very rare Schools.
-                    </p>
-                    <p class="">
-                        One reason they are so rare is that the founding purpose of the first school (Nur/Pry) set more than 24years ago, remains at the core of everything that we aim to achieve today. We are notfor-profit, which means that every fund realized from our stakeholders is invested for the progress of our students and Staff.
-                    </p>
-                    It is our aim to provide world class teaching that would stir a desire for ever increasing knowledge in our students through outstanding teachers. We put you, our parents and students at the centre of our activities here. Education is a partnership between home and school and we put a great deal of emphasis on our partnership with you, our stakeholders (Parents/Guardians). It is not a gain-saying that children learn best when parents and teachers collaborate. When your Child/Ward(s) starts School it is not where your responsibilities end and School's begin, it is where Ours begin and yours continue. Our sole goal and objective is for every one of our students to achieve outstanding achievement in their education. Wherever they come from, their level, they should achieve better result in Faith in Christ Schools and anywhere else.
-                </article>
-            </section>
-        </div>
-    </div>
-
-
-    {{-- This part will be updated dynamically according to the season of admission --}}
-    <div class="py-16 px-12 bg-purple-900">
-        <header class="animate-pulse text-6xl text-purple-100 font-semibold font-mono flex justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-              </svg>
-            Admissions!!!
-        </header>
-        <p class="text-blue-200 mt-8 text-3xl font-semibold">
-            We are currently admitting students into the following classes:
-            <header class="text-2xl mt-5 font-semibold text-blue-200">
-                <div class="flex justify-around">
-                    <div class="p-5 w-full">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-                            </svg>
-                              Junior secondary school
-                        </div>
-                        <hr class="border-pink-700 border-2 w-1/3 mt-2 mr-auto animate-pulse">
-        
-                        <ul class="text-xl mt-5">
-                            <li class="flex space-x-5 items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                                </svg>
-                                  JSS 1
-                            </li>
-                            <li class="flex space-x-5 items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                                </svg>
-                                JSS 2
-                            </li>
-                            <li class="flex space-x-5 items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                                </svg>
-                                JSS 3
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="p-5 w-full">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-                            </svg>
-                              Senior secondary school
-                        </div>
-                        <hr class="border-pink-700 border-2 w-1/3 mt-2 mr-auto animate-pulse">
-        
-                        <ul class="text-xl mt-5">
-                            <li class="flex space-x-5 items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                                </svg>
-                                  SSS 1
-                            </li>
-                            <li class="flex space-x-5 items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                                </svg>
-                                SSS 2
-                            </li>
-                            <li class="flex space-x-5 items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                                </svg>
-                                SSS 3
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <header class="text-xl uppercase font-bold font-mono text-center">
+               Faith in Christ Nursery School
             </header>
-        </p>
-
-        <div class="flex justify-center text-white font-bold text-2xl animate-pulse mt-12">
-            Admission fliers can be displayed here
+            <p class="text-center font-medium text-sm">
+                Children admitted are usually between the ages of two and five (2 – 5 year olds) for the Pre-school and Reception classes
+            </p>
         </div>
-    </div>
-
-    <div class="py-12 px-8 bg-white shadow-lg">
-        <header class="text-3xl font-bold animate-pulse flex justify-center font-mono text-blue-700">
-            Faces of {{ strtoupper(config('app.name')) }}
-        </header>
-
-        <div class="flex justify-around space-x-4 mt-8">
-            <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
-                @for ($i = 0; $i <= 7; $i++)
-                    <img src="{{ asset(config('app.principal_jpg')) }}" class="w-40 h-40 object-cover border-4 border-pink-700 p-1 rounded-full bg-cover" alt="" />
-                @endfor
+        <div class="flex flex-col justify-center items-center space-y-3 hover:bg-pink-700 hover:text-white p-8 transition duration-500">
+            <div class="bg-white p-2 rounded">
+                <img src="{{ asset('storage/images/png/college-logo.png') }}" class="w-32 h-auto" alt="Faith in Christ Primary School" title="Faith in Christ Primary School">
             </div>
+            <header class="text-xl uppercase font-bold font-mono text-center">
+                Faith in Christ Primary School
+            </header>
+            <p class="text-center font-medium text-sm">
+                The ages for the Primary classes are between five and six years (5 – 6 year olds).
+            </p>
         </div>
-
-        <p class="flex justify-center font-bold text-blue-900 text-lg mt-8 animate-pulse">
-            Join us today and we guarantee you quality education at its best...
-        </p>
-    </div>
-
-    <div class="py-12 px-8 bg-blue-900 shadow-lg">
-        <header class="text-3xl font-bold animate-pulse flex justify-center font-mono text-blue-100">
-            Our partners
-        </header>
-
-        <div class="flex justify-around mt-8">
-            @for ($i = 0; $i <= 4; $i++)
-                <img src="{{ asset(config('app.principal_jpg')) }}" class="w-40 h-40 object-cover border-4 border-pink-700 p-1 rounded-full bg-cover" alt="" />
-            @endfor          
-        </div>
-
-        <p class="flex justify-center font-bold text-blue-100 text-lg mt-8 animate-pulse">
-            We value your trust in us and your unwavering support...
-        </p>
-    </div>
-
-    <div class="mb-12 py-16 px-12 md:mb-0 bg-white">
-        <h4 class="font-bold text-pink-700 mb-4 text-3xl flex justify-center items-center flex-col font-mono">
-            Find us on google maps
-            <span class="flex items-center text-red-900">
-                ~
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-12" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-                  </svg> 
-                ~
-            </span>
-        </h4>
-        {{-- For map location, you can either use the embedded style or the paid version of using longitude latitude--}}
-        <div class="w-full h-screen mt-8 rounded" {{-- style="max-width:100%;list-style:none;transition:none;overflow:hidden;width:300px;height:250px;" --}}>
-            <div id="googlemaps-canvas" style="height:100%; width:100%;max-width:100%;">
-                <iframe style="height:100%;width:100%;border:0;" frameborder="0"
-                        src="https://www.google.com/maps/embed/v1/place?q=Faith+in+Christ+College+ilaro&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                </iframe>
+        <div class="flex flex-col justify-center items-center space-y-3 hover:bg-blue-700 hover:text-white p-8 transition duration-500">
+            <div class="bg-white p-2 rounded">
+                <img src="{{ asset('storage/images/png/college-logo.png') }}" class="w-32 h-auto" alt="Faith in Christ College" title="Faith in Christ College">
             </div>
-            <style>
-                #googlemaps-canvas .text-marker {
+            <header class="text-xl uppercase font-bold font-mono text-center">
+                Faith in Christ College
+            </header>
+            <p class="text-center font-medium text-sm">
+                The prospective candidate must have completed at least year 5 (or its equivalent) in a recognized primary school within or outside the country. 
+            </p>
+        </div>
+    </section>
+
+    <div class="flex flex-col bg-blue-900 px-8 py-24 font-sans">
+        <div class="flex flex-col space-y-5">
+            <div class="flex flex-col space-y-2">
+                <h1 class="font-semibold text-white text-4xl">
+                    Admissions
+                </h1>
+                <p class="text-blue-300 font-semibold text-lg">
+                    Apply for {{ date('Y') }} admission 
+                </p>
+            </div>
                 
-                }
-
-                .map-generator {
-                    max-width: 100%;
-                    max-height: 100%;
-                    background: none;
-                }
-            </style>
+            <div class="leading-7 text-white text-lg mt-5 text-justify">
+                We don{{ '\'' }}t just give students an education and experiences that set them up for success in a career. We help them succeed in their career—to discover a field they{{ '\'' }}re passionate about and dare to lead it.
+            </div>
         </div>
-        {{--            If embedded is not null, use it--}}
-
-        {{--            else use the longitude, latitude if available--}}
-        <div id="map"></div>
-
-        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-        {{--            <script--}}
-        {{--                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"--}}
-        {{--                async--}}
-        {{--            ></script>--}}
-        {{--            <script>--}}
-        {{--                // Initialize and add the map--}}
-        {{--                function initMap() {--}}
-        {{--                    // The location of Uluru--}}
-        {{--                    const uluru = { lat: -25.344, lng: 131.036 };--}}
-        {{--                    // The map, centered at Uluru--}}
-        {{--                    const map = new google.maps.Map(document.getElementById("map"), {--}}
-        {{--                        zoom: 4,--}}
-        {{--                        center: uluru,--}}
-        {{--                    });--}}
-        {{--                    // The marker, positioned at Uluru--}}
-        {{--                    const marker = new google.maps.Marker({--}}
-        {{--                        position: uluru,--}}
-        {{--                        map: map,--}}
-        {{--                    });--}}
-        {{--                }--}}
-        {{--            </script>--}}
+        
+        <a href="#" class="bg-pink-700 text-white text-md font-medium mt-8 xs:px-3 xs:py-2 xs:rounded md:rounded-none md:px-5 md:py-4 hover:bg-pink-800 xs:w-1/2 md:w-1/6 transition duration-300 text-center">
+            Apply Now
+        </a>
     </div>
+
+    <div class="py-12 px-8 shadow-lg flex xs:flex-col md:flex-row xs:space-y-5 md:space-y-0 md:space-x-12 mt-12 items-center">
+        <div class="flex flex-col md:w-2/3 space-y-5 xs:w-full px-8">
+            <div class="uppercase flex flex-col space-y-8 border-b py-1">
+                <header class="font-semibold text-2xl text-gray-700">
+                    meet our principal
+                </header>
+                <p class="font-bold text-md font-sans text-blue-700">
+                    mr. adu paul okoye
+                </p>
+            </div>
+            <p class="text-sm font-medium text-justify leading-relaxed  text-gray-700">
+                The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.
+            </p>
+        </div>
+
+        <img src="{{ asset('storage/images/jpg/user.jpg') }}" alt="The Principal - Mr. Adu Paul Okoye" class="border-4 border-yellow-700 rounded-full xs:w-full md:w-1/3 h-auto"  title="Mr. Adu Paul Okoye">
+    </div>
+
+    <div class="py-12 px-8 shadow-lg flex xs:flex-col md:flex-row xs:space-y-5 md:space-y-0 md:space-x-12 mt-12 items-center">
+        <img src="{{ asset('storage/images/jpg/user.jpg') }}" alt="The Principal - Mr. Adu Paul Okoye" class="border-4 border-yellow-700 rounded-full xs:w-full md:w-1/3 h-auto xs:order-2 md:order-none xs:mt-5"  title="Mr. Adu Paul Okoye">
+        <div class="flex flex-col md:w-2/3 space-y-8 xs:w-full px-8">
+            <div class="uppercase flex flex-col xs:items-start md:items-end space-y-4 border-b py-1">
+                <header class="font-semibold text-2xl text-gray-700">
+                    meet our proprietress
+                </header>
+                <p class="font-bold text-sm font-sans text-blue-700">
+                    mrs. adu paul okoye
+                </p>
+            </div>
+            <p class="text-sm font-medium text-justify leading-relaxed  text-gray-700">
+                The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.
+                
+            </p>
+        </div>
+    </div>
+
+    <div class="my-12 px-12">
+        <header class="font-semibold text-2xl text-gray-700 uppercase">
+            News and events
+        </header>
+        <div class="p-8 shadow-xl mt-8">
+            <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+                <div class="flex flex-col space-y-3">
+                    <div class="w-full h-auto flex justify-center items-center p-2">
+                        <img src="{{ asset('storage/images/png/college-logo.png') }}" alt="News and events" class="w-8/12 bg-contain h-auto rounded">
+                    </div>
+                    <div class="text-justify leading-relaxed tracking-normal text-xs font-medium text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste libero ipsam ipsum doloremque deserunt eius quam qui sint dolorem repellendus, laudantium, recusandae sed, expedita molestias est. Quia, iure non.
+                    </div>
+
+                    <a href="" class="py-3 px-5 bg-blue-600 w-1/2 hover:bg-blue-800 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
+                        Read more &DoubleRightArrow;
+                    </a>
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <div class="w-full h-auto flex justify-center items-center p-2">
+                        <img src="{{ asset('storage/images/png/college-logo.png') }}" alt="News and events" class="w-8/12 bg-contain h-auto rounded">
+                    </div>
+                    <div class="text-justify leading-relaxed tracking-normal text-xs font-medium text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste libero ipsam ipsum doloremque deserunt eius quam qui sint dolorem repellendus, laudantium, recusandae sed, expedita molestias est. Quia, iure non.
+                    </div>
+
+                    <a href="" class="py-3 px-5 bg-blue-600 w-1/2 hover:bg-blue-800 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
+                        Read more &DoubleRightArrow;
+                    </a>
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <div class="w-full h-auto flex justify-center items-center p-2">
+                        <img src="{{ asset('storage/images/png/college-logo.png') }}" alt="News and events" class="w-8/12 bg-contain h-auto rounded">
+                    </div>
+                    <div class="text-justify leading-relaxed tracking-normal text-xs font-medium text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste libero ipsam ipsum doloremque deserunt eius quam qui sint dolorem repellendus, laudantium, recusandae sed, expedita molestias est. Quia, iure non.
+                    </div>
+
+                    <a href="" class="py-3 px-5 bg-blue-600 w-1/2 hover:bg-blue-800 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
+                        Read more &DoubleRightArrow;
+                    </a>
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <div class="w-full h-auto flex justify-center items-center p-2">
+                        <img src="{{ asset('storage/images/png/college-logo.png') }}" alt="News and events" class="w-8/12 bg-contain h-auto rounded">
+                    </div>
+                    <div class="text-justify leading-relaxed tracking-normal text-xs font-medium text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste libero ipsam ipsum doloremque deserunt eius quam qui sint dolorem repellendus, laudantium, recusandae sed, expedita molestias est. Quia, iure non.
+                    </div>
+
+                    <a href="" class="py-3 px-5 bg-blue-600 w-1/2 hover:bg-blue-800 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
+                        Read more &DoubleRightArrow;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+         
+</main>
 @endsection
 
 @section('footer')

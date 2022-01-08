@@ -1,5 +1,5 @@
-<nav class="flex xs:flex-col md:flex-row md:justify-between xs:items-center
- xs:justify-center xs:text-xs md:text-sm font-semibold xs:space-y-5 md:space-y-0 bg-blue-900
+<nav class="flex flex-col md:flex-row md:justify-between items-center
+ justify-center text-xs md:text-sm font-semibold space-y-5 md:space-y-0 bg-blue-900
   px-8 py-2 text-center border-b-2 border-pink-700">
     <div class="flex space-x-5">
         <a href="{{ route('donation') }}" target="_blank"

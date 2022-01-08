@@ -4,7 +4,7 @@
     <nav class="px-8 py-1 bg-blue-800 border-b-4 border-white">
         <div class="flex justify-between items-center">
             <a href="parent" class="ml-5 py-1">
-                <img src="{{ config('app.college_logo_png') }}" alt="" class="h-12 w-16" />
+                <img src="{{ asset('storage/images/school/png/college-logo.png') }}" alt="logo" class="h-12 w-16" />
             </a>
             <div class="xs:hidden md:flex space-x-5 text-blue-300 text-sm">
                 <a href="{{ url('/') }}" class="{{ request()->is('parent') ? 'text-white hover:text-blue-300 font-bold' : 'hover:text-white' }}  font-semibold flex items-center justify-between transition duration-500 ease-in-out">

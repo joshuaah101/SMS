@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+    other css styles goes here
+*/
+
+a[href$=".pdf"] {
+    background:url('../../public/storage/images/png/pdf-icon.png') 100% 70% no-repeat;
+    padding-right:18px;
+}
+
+a[href$=".docx"] {
+    background:url('../../public/storage/images/png/word-icon.png') 100% 70% no-repeat;
+    padding-right:18px;
+}
+
+a[href$=".xls"] {
+    background:url('../../public/storage/images/png/excel-icon.png') 100% 70% no-repeat;
+    padding-right:18px;
+}
+
+/* a[href^="mailto:"] {
+    background:url('../../public/storage/images/png/gmail-icon.png') 50% 30% no-repeat;
+    padding-right:5rem;
+} */
+
+/* 
+    dashboard css
+*/
+
+
+@media (max-width: 768px) {
+    .dashboard-main-content{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .dashboard-main-content{
+        margin-left: 16.666667%;
+    }
+    .dashboard-nav-bar{
+        margin-right: 16.666667%;
+    }
+}
