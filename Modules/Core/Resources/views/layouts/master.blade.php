@@ -17,8 +17,8 @@
 <body class="antialiased leading-none bg-gray-50 text-gray-700">
     @yield('top_nav')
     @yield('nav')
-    @yield('notification')
     @yield('header')
+    @yield('notification')
     @yield('main')
     @yield('footer')
     

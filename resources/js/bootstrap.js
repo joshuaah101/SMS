@@ -1,5 +1,6 @@
 window._ = require('lodash');
 window.$ = require('jquery')
+require('@themesberg/flowbite')
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support

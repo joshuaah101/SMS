@@ -62,7 +62,7 @@ $(document).ready(function(){
             }
             
             
-            }},8000);
+            }},6000);
     
     }
     
@@ -93,12 +93,17 @@ $(document).ready(function(){
         
         }
     
-        $(window).ready(function(){
-            $("#slider-2").hide();
-            $("#sButton1").addClass("bg-pink-800");
-            
-            loopSlider();
-        });
+        $("#slider-2").hide();
+        $("#sButton1").addClass("bg-pink-800");
+        
+        loopSlider();
+       
+
+    //    $("#menu-button").on('click',function(){
+    //        $("#menu-item").slideToggle()
+    //     })
     
-      
+    //     $(document).on('click', function(){
+    //         $("#menu-item").slideUp('medium')
+    //    })
 })
