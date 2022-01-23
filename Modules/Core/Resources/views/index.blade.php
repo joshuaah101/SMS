@@ -1,9 +1,9 @@
 @extends('core::layouts.master')
 @section('title') Welcome @endsection
 
-@section('top_nav')
+{{-- @section('top_nav')
     @include('core::inc.top_nav')
-@endsection
+@endsection --}}
 
 @section('nav')
     @include('core::inc.nav')
@@ -44,7 +44,7 @@
 
 @section('main')
 <main class="w-full">
-    <section class="grid xs:grid-cols-1 md:grid-cols-3 xs:gap-y-5 md:gap-y-0 px-8 py-12 md:gap-x-8">
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-y-0 px-8 py-12 md:gap-x-8">
         <div class="flex flex-col justify-center items-center space-y-3 hover:bg-blue-700 hover:text-white p-8 transition duration-500">
             <div class="bg-white p-2 rounded">
                 <img src="{{ asset('storage/images/png/nursery-logo.png') }}" class="w-32 h-auto" alt="Faith in Christ Nursery School" title="Faith in Christ Nursery School">
@@ -80,10 +80,10 @@
         </div>
     </section>
 
-    <div class="flex flex-col bg-blue-900 px-8 py-24 font-sans">
+    <div class="flex flex-col px-8 py-24 font-sans bg-no-repeat bg-fixed bg-center bg-cover" style="background: url({{ asset('storage/images/jpg/pic3.jpg') }})">
         <div class="flex flex-col space-y-5">
             <div class="flex flex-col space-y-2">
-                <h1 class="font-semibold text-white text-4xl">
+                <h1 class="font-semibold text-blue-100 text-4xl">
                     Admissions
                 </h1>
                 <p class="text-blue-300 font-semibold text-lg">
@@ -91,103 +91,98 @@
                 </p>
             </div>
                 
-            <div class="leading-7 text-white text-lg mt-5 text-justify">
+            <div class="leading-7 text-blue-100 text-lg mt-5 text-justify">
                 We don{{ '\'' }}t just give students an education and experiences that set them up for success in a career. We help them succeed in their career—to discover a field they{{ '\'' }}re passionate about and dare to lead it.
             </div>
         </div>
         
-        <a href="#" class="bg-pink-700 text-white text-md font-medium mt-8 xs:px-3 xs:py-2 xs:rounded md:rounded-none md:px-5 md:py-4 hover:bg-pink-800 xs:w-1/2 md:w-1/6 transition duration-300 text-center">
+        <a href="#" class="bg-pink-700 text-blue-100 text-md font-medium mt-8 px-4 py-3 rounded md:rounded-none md:px-5 md:py-4 hover:bg-pink-800 w-1/2 md:w-1/6 transition duration-300 text-center flex items-center justify-center">
             Apply Now
         </a>
     </div>
 
-    <div class="py-12 px-8 shadow-lg flex xs:flex-col md:flex-row xs:space-y-5 md:space-y-0 md:space-x-12 mt-12 items-center">
-        <div class="flex flex-col md:w-2/3 space-y-5 xs:w-full px-8">
-            <div class="uppercase flex flex-col space-y-8 border-b py-1">
+    <div class="grid grid-cols1 md:grid-cols-2 gap-8 mt-24 px-6 md:px-16">
+        <div class="flex flex-col space-y-5 py-4 px-5 rounded shadow-lg">
+            <div class="uppercase">
                 <header class="font-semibold text-2xl text-gray-700">
-                    meet our principal
+                    meet the proprietress
                 </header>
-                <p class="font-bold text-md font-sans text-blue-700">
-                    mr. adu paul okoye
-                </p>
-            </div>
-            <p class="text-sm font-medium text-justify leading-relaxed  text-gray-700">
-                The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.
-            </p>
-        </div>
-
-        <img src="{{ asset('storage/images/jpg/user.jpg') }}" alt="The Principal - Mr. Adu Paul Okoye" class="border-4 border-yellow-700 rounded-full xs:w-full md:w-1/3 h-auto"  title="Mr. Adu Paul Okoye">
-    </div>
-
-    <div class="py-12 px-8 shadow-lg flex xs:flex-col md:flex-row xs:space-y-5 md:space-y-0 md:space-x-12 mt-12 items-center">
-        <img src="{{ asset('storage/images/jpg/user.jpg') }}" alt="The Principal - Mr. Adu Paul Okoye" class="border-4 border-yellow-700 rounded-full xs:w-full md:w-1/3 h-auto xs:order-2 md:order-none xs:mt-5"  title="Mr. Adu Paul Okoye">
-        <div class="flex flex-col md:w-2/3 space-y-8 xs:w-full px-8">
-            <div class="uppercase flex flex-col xs:items-start md:items-end space-y-4 border-b py-1">
-                <header class="font-semibold text-2xl text-gray-700">
-                    meet our proprietress
-                </header>
-                <p class="font-bold text-sm font-sans text-blue-700">
+                <p class="font-bold text-md font-sans text-blue-700 mt-2">
                     mrs. adu paul okoye
+                    <hr class="border-pink-700 border mt-2 w-1/3">
                 </p>
             </div>
-            <p class="text-sm font-medium text-justify leading-relaxed  text-gray-700">
-                The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.
-                
-            </p>
+
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-5 md:space-x-5">
+                <img src="{{ asset('storage/images/jpg/user.jpg') }}" alt="The proprietress -  Mrs. adu paul okoye" class="border-2 border-pink-700 rounded-lg md:w-1/3 h-auto"  title="Mr. Adu Paul Okoye">
+                <p class="text-justify text-sm leading-6">
+                    The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The t. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.
+                </p>
+            </div>
+        </div>
+        
+        <div class="flex flex-col space-y-5 py-4 px-5 rounded shadow-lg">
+            <div class="uppercase">
+                <header class="font-semibold text-2xl text-gray-700">
+                    meet the principal
+                </header>
+                <p class="font-bold text-md font-sans text-blue-700 mt-2">
+                    mr. adu paul okoye
+                    <hr class="border-pink-700 border mt-2 w-1/3">
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-5 md:space-x-5">
+                <img src="{{ asset('storage/images/jpg/user.jpg') }}" alt="The Principal - Mr. Adu Paul Okoye" class="border-2 border-pink-700 rounded-lg md:w-1/3 h-auto"  title="Mr. Adu Paul Okoye">
+                <p class="text-justify text-sm leading-6">
+                    The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The t. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.
+                </p>
+            </div>
         </div>
     </div>
 
-    <div class="my-12 px-12">
-        <header class="font-semibold text-2xl text-gray-700 uppercase">
-            News and events
-        </header>
-        <div class="p-8 shadow-xl mt-8">
-            <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+
+    <header class="font-semibold text-2xl md:text-4xl text-gray-700 uppercase px-8 md:ml-10 mt-24">
+        News and events
+        <hr class="border-pink-700 border mt-2 w-1/3">
+    </header>
+
+    <div class="p-6 md:px-8 md:py-2 mt-2">
+        <div class="md:px-8 mt-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
                 <div class="flex flex-col space-y-3">
                     <div class="w-full h-auto flex justify-center items-center p-2">
-                        <img src="{{ asset('storage/images/png/college-logo.png') }}" alt="News and events" class="w-8/12 bg-contain h-auto rounded">
+                        <img src="{{ asset('storage/images/jpg/pic1.jpg') }}" alt="News and events" class="w-full bg-contain h-auto rounded">
                     </div>
                     <div class="text-justify leading-relaxed tracking-normal text-xs font-medium text-gray-700">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste libero ipsam ipsum doloremque deserunt eius quam qui sint dolorem repellendus, laudantium, recusandae sed, expedita molestias est. Quia, iure non.
                     </div>
 
-                    <a href="" class="py-3 px-5 bg-blue-600 w-1/2 hover:bg-blue-800 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
+                    <a href="#" class="py-3 px-3 md:py-3 md:px-5 bg-blue-800 w-1/2 hover:bg-blue-600 hover:text-blue-100 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
                         Read more &DoubleRightArrow;
                     </a>
                 </div>
                 <div class="flex flex-col space-y-3">
                     <div class="w-full h-auto flex justify-center items-center p-2">
-                        <img src="{{ asset('storage/images/png/college-logo.png') }}" alt="News and events" class="w-8/12 bg-contain h-auto rounded">
+                        <img src="{{ asset('storage/images/jpg/pic2.jpg') }}" alt="News and events" class="w-full bg-contain h-auto rounded">
                     </div>
                     <div class="text-justify leading-relaxed tracking-normal text-xs font-medium text-gray-700">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste libero ipsam ipsum doloremque deserunt eius quam qui sint dolorem repellendus, laudantium, recusandae sed, expedita molestias est. Quia, iure non.
                     </div>
 
-                    <a href="" class="py-3 px-5 bg-blue-600 w-1/2 hover:bg-blue-800 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
+                    <a href="#" class="py-3 px-3 md:py-3 md:px-5 bg-blue-800 w-1/2 hover:bg-blue-600 hover:text-blue-100 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
                         Read more &DoubleRightArrow;
                     </a>
                 </div>
                 <div class="flex flex-col space-y-3">
                     <div class="w-full h-auto flex justify-center items-center p-2">
-                        <img src="{{ asset('storage/images/png/college-logo.png') }}" alt="News and events" class="w-8/12 bg-contain h-auto rounded">
+                        <img src="{{ asset('storage/images/jpg/pic3.jpg') }}" alt="News and events" class="w-full bg-contain h-auto rounded">
                     </div>
                     <div class="text-justify leading-relaxed tracking-normal text-xs font-medium text-gray-700">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste libero ipsam ipsum doloremque deserunt eius quam qui sint dolorem repellendus, laudantium, recusandae sed, expedita molestias est. Quia, iure non.
                     </div>
 
-                    <a href="" class="py-3 px-5 bg-blue-600 w-1/2 hover:bg-blue-800 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
-                        Read more &DoubleRightArrow;
-                    </a>
-                </div>
-                <div class="flex flex-col space-y-3">
-                    <div class="w-full h-auto flex justify-center items-center p-2">
-                        <img src="{{ asset('storage/images/png/college-logo.png') }}" alt="News and events" class="w-8/12 bg-contain h-auto rounded">
-                    </div>
-                    <div class="text-justify leading-relaxed tracking-normal text-xs font-medium text-gray-700">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste libero ipsam ipsum doloremque deserunt eius quam qui sint dolorem repellendus, laudantium, recusandae sed, expedita molestias est. Quia, iure non.
-                    </div>
-
-                    <a href="" class="py-3 px-5 bg-blue-600 w-1/2 hover:bg-blue-800 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
+                    <a href="#" class="py-3 px-3 md:py-3 md:px-5 bg-blue-800 w-1/2 hover:bg-blue-600 hover:text-blue-100 rounded text-xs font-medium text-center text-blue-100 transition duration-300">
                         Read more &DoubleRightArrow;
                     </a>
                 </div>

@@ -16,5 +16,6 @@
     "Complaint": true,
     "Announcement": true,
     "Bursary": true,
-    "Administrator": true
+    "Administrator": true,
+    "Admissions": true
 }

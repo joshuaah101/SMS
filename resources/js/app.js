@@ -3,12 +3,12 @@ require('./bootstrap');
 
 
 
-const menu_btn = document.querySelector('.mobile-menu-button')
-const menu_list = document.querySelector('.mobile-menu')
+// const menu_btn = document.querySelector('.mobile-menu-button')
+// const menu_list = document.querySelector('.mobile-menu')
 
-menu_btn.addEventListener('click', function(){
-    menu_list.classList.toggle('hidden')
-})
+// menu_btn.addEventListener('click', function(){
+//     menu_list.classList.toggle('hidden')
+// })
 
 const time = document.querySelector('#dashboard-time')
 var date = new Date()
@@ -33,7 +33,7 @@ setInterval(() => {
 
 
 //banner slider
-$(document).ready(function(){
+$(function(){
     var cont=0;
     function loopSlider(){
       var xx= setInterval(function(){
@@ -41,7 +41,7 @@ $(document).ready(function(){
             {
             case 0:{
                 $("#slider-1").fadeOut(400);
-                $("#slider-2").delay(400).fadeIn(400);
+                $("#slider-2").delay(200).fadeIn(400);
                 $("#sButton1").removeClass("bg-pink-800");
                 $("#sButton2").addClass("bg-pink-800");
             cont=1;
@@ -52,7 +52,7 @@ $(document).ready(function(){
             {
             
                 $("#slider-2").fadeOut(400);
-                $("#slider-1").delay(400).fadeIn(400);
+                $("#slider-1").delay(200).fadeIn(400);
                 $("#sButton2").removeClass("bg-pink-800");
                 $("#sButton1").addClass("bg-pink-800");
                
@@ -66,9 +66,9 @@ $(document).ready(function(){
     
     }
     
-    function reinitLoop(time){
-    clearInterval(xx);
-    setTimeout(loopSlider(),time);
+    function reInitLoop(time){
+        clearInterval(xx);
+        setTimeout(loopSlider(),time);
     }
     
     
@@ -78,32 +78,24 @@ $(document).ready(function(){
         $("#slider-1").delay(400).fadeIn(400);
         $("#sButton2").removeClass("bg-pink-800");
         $("#sButton1").addClass("bg-pink-800");
-        reinitLoop(4000);
+        reInitLoop(4000);
         cont=0
         
         }
         
-        function sliderButton2(){
+    function sliderButton2(){
         $("#slider-1").fadeOut(400);
         $("#slider-2").delay(400).fadeIn(400);
         $("#sButton1").removeClass("bg-pink-800");
         $("#sButton2").addClass("bg-pink-800");
-        reinitLoop(4000);
+        reInitLoop(4000);
         cont=1
-        
-        }
+    
+    }
     
         $("#slider-2").hide();
         $("#sButton1").addClass("bg-pink-800");
         
         loopSlider();
        
-
-    //    $("#menu-button").on('click',function(){
-    //        $("#menu-item").slideToggle()
-    //     })
-    
-    //     $(document).on('click', function(){
-    //         $("#menu-item").slideUp('medium')
-    //    })
 })

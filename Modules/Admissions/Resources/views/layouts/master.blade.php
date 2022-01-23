@@ -15,7 +15,6 @@
     {{-- @livewireStyles --}}
 </head>
 <body class="antialiased leading-none bg-gray-50 text-gray-700">
-    {{-- @yield('top_nav') --}}
     @yield('nav')
     @yield('header')
     @yield('notification')

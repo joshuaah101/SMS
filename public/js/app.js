@@ -4099,13 +4099,13 @@ module.exports = {
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // require('alpinejs');
+// const menu_btn = document.querySelector('.mobile-menu-button')
+// const menu_list = document.querySelector('.mobile-menu')
+// menu_btn.addEventListener('click', function(){
+//     menu_list.classList.toggle('hidden')
+// })
 
 
-var menu_btn = document.querySelector('.mobile-menu-button');
-var menu_list = document.querySelector('.mobile-menu');
-menu_btn.addEventListener('click', function () {
-  menu_list.classList.toggle('hidden');
-});
 var time = document.querySelector('#dashboard-time');
 var date = new Date();
 var hour = date.getHours();
@@ -4121,7 +4121,7 @@ setInterval(function () {
   showTime();
 }, 1000); //banner slider
 
-$(document).ready(function () {
+$(function () {
   var cont = 0;
 
   function loopSlider() {
@@ -4130,7 +4130,7 @@ $(document).ready(function () {
         case 0:
           {
             $("#slider-1").fadeOut(400);
-            $("#slider-2").delay(400).fadeIn(400);
+            $("#slider-2").delay(200).fadeIn(400);
             $("#sButton1").removeClass("bg-pink-800");
             $("#sButton2").addClass("bg-pink-800");
             cont = 1;
@@ -4140,7 +4140,7 @@ $(document).ready(function () {
         case 1:
           {
             $("#slider-2").fadeOut(400);
-            $("#slider-1").delay(400).fadeIn(400);
+            $("#slider-1").delay(200).fadeIn(400);
             $("#sButton2").removeClass("bg-pink-800");
             $("#sButton1").addClass("bg-pink-800");
             cont = 0;
@@ -4150,7 +4150,7 @@ $(document).ready(function () {
     }, 6000);
   }
 
-  function reinitLoop(time) {
+  function reInitLoop(time) {
     clearInterval(xx);
     setTimeout(loopSlider(), time);
   }
@@ -4160,7 +4160,7 @@ $(document).ready(function () {
     $("#slider-1").delay(400).fadeIn(400);
     $("#sButton2").removeClass("bg-pink-800");
     $("#sButton1").addClass("bg-pink-800");
-    reinitLoop(4000);
+    reInitLoop(4000);
     cont = 0;
   }
 
@@ -4169,18 +4169,17 @@ $(document).ready(function () {
     $("#slider-2").delay(400).fadeIn(400);
     $("#sButton1").removeClass("bg-pink-800");
     $("#sButton2").addClass("bg-pink-800");
-    reinitLoop(4000);
+    reInitLoop(4000);
     cont = 1;
   }
 
   $("#slider-2").hide();
   $("#sButton1").addClass("bg-pink-800");
-  loopSlider(); //    $("#menu-button").on('click',function(){
-  //        $("#menu-item").slideToggle()
-  //     })
-  //     $(document).on('click', function(){
-  //         $("#menu-item").slideUp('medium')
-  //    })
+  loopSlider();
+});
+var node = document.querySelector("a#testBtn");
+node.addEventListener('click', function () {
+  console.log(node.nodeName, node.nodet);
 });
 
 /***/ }),

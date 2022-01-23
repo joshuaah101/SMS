@@ -26,10 +26,6 @@ Route::prefix('parent')->group(function () {
     Route::get('/password/request', [ResetPasswordController::class, 'showResetForm'])->name('parent.password.request');
     Route::get('/password/verify', [VerificationController::class, 'verify'])->name('parent.password.verify');
     Route::get('/password/forgot', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('parent.password.forgot');
-    Route::get('/admission', [StdParentController::class, 'showAdmissionPage'])->name('parent.admission');
-    Route::get('/admission/registration', [StdParentController::class, 'showRegistrationPage'])->name('parent.admission.registration');
-    Route::get('/admission/bio-data', [StdParentController::class, 'showBioDataPage'])->name('parent.admission.bio_data');
-    Route::get('/admission/preview', [StdParentController::class, 'showPreviewPage'])->name('parent.admission.preview');
     
 
     //show dashboard page
