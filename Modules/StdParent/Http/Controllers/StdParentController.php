@@ -33,26 +33,6 @@ class StdParentController extends Controller
         return view('stdparent::home.home', ['menuUrl' => $menuUrl]);
     }
 
-    public function showAdmissionPage()
-    {
-        return view('stdparent::admissions.index');
-    }
-
-    public function showRegistrationPage()
-    {
-        return view('stdparent::admissions.registration');
-    }
-
-    public function showBioDataPage()
-    {
-        return view('stdparent::admissions.bio-data');
-    }
-
-    public function showPreviewPage()
-    {
-        return view('stdparent::admissions.preview');
-    }
-
     /**
      * Show the form for creating a new resource.
      * @return Renderable

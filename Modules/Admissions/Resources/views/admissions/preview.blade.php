@@ -1,30 +1,22 @@
 @extends('core::layouts.master')
 @section('title') Admissions @endsection
 
-@section('top_nav')
-    @include('core::inc.top_nav')
-@endsection
-
 @section('nav')
     @include('core::inc.nav')
+@endsection
+
+@section('header')
+@include('core::inc.header',['header_bg'=>'bg-blue-100','header_class'=>'','header_title'=>'Admissions Portal','header_sub_title'=>'Welcome to Faith in Christ Group of Schools ', 'header_foot_note'=>'Reach the world with sound education', 'header_text_color'=>'','header_url'=>'', 'header_anchor_text'=>'', 'header_anchor_class'=>''])
 @endsection
 
 @section('notification')
     @include('core::inc.notification')
 @endsection
 
-@section('header')
-    @include('core::inc.header',['header_title'=>'Admissions Portal','header_sub_title'=>'Reach the world with sound education','header_url'=>'','header_class'=>'justify-start items-center py-16'])
-@endsection
-
-
 @section('main')
 <main class="w-full px-2 md:px-8 my-10 md:my-12">
         <div class="w-full lg:w-2/3">
             <div class="flex border-2 border-blue-700 rounded uppercase overflow-x-scroll md:overflow-x-auto">
-                <a href="#" class="inline-block text-gray-600 hover:text-blue-100 hover:bg-blue-700 w-full text-sm py-2 px-5  md:py-3 font-mono font-bold text-center transition duration-500">
-                    Procedure
-                </a>
                 <a href="#" class="inline-block text-gray-600 hover:text-blue-100 w-full hover:bg-blue-700 text-sm py-2 px-5  md:py-3 border-l-2 border-blue-700 font-mono font-bold text-center transition duration-500">
                     Registration
                 </a>

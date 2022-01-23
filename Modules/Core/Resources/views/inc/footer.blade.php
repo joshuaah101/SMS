@@ -66,6 +66,18 @@
                        </div>
                     </div>
 
+                    <div class="flex flex-col">
+                        <h4 class="text-lg font-mono font-bold text-blue-100 mb-2">
+                            <div class="flex space-x-2 items-center">
+                                <span>Location</span> 
+                                <img src="{{ asset('storage/images/svg/location-marker-1.svg') }}" class="h-4 w-4" alt="location_marker">
+                            </div>
+                            <hr class="border-pink-700 border mt-2 w-1/2">
+                        </h4>
+                        <small class="text-xs py-1 hover:text-blue-100 font-bold font-mono uppercase transition duration-300 cursor-pointer">
+                            Opposite Jimtex block Industry, Oke Ola, Ilaro, Ogun State, Nigeria.
+                        </small>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,17 +99,6 @@
                class="py-1 hover:text-blue-100 font-bold font-mono uppercase transition duration-300 text-xs">
                 Helpdesk
             </a>
-
-            <h4 class="text-lg font-mono font-bold text-blue-100 mt-4 mb-2">
-                <div class="flex space-x-2 items-center">
-                   <span>Location</span> 
-                    <img src="{{ asset('storage/images/svg/location-marker-1.svg') }}" class="h-4 w-4" alt="location_marker">
-                </div>
-                <hr class="border-pink-700 border mt-2 w-1/2">
-            </h4>
-            <small class="text-xs py-1 hover:text-blue-100 font-bold font-mono uppercase transition duration-300 cursor-pointer">
-                Opposite Jimtex block Industry, Oke Ola, Ilaro, Ogun State, Nigeria.
-           </small>
         </div>
 
         <div class="flex flex-col md:mb-0 md:mx-auto xs:mx-0">

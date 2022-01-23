@@ -1,57 +1,33 @@
 @extends('core::layouts.master')
 @section('title') Admissions @endsection
 
-@section('top_nav')
-    @include('core::inc.top_nav')
-@endsection
-
 @section('nav')
     @include('core::inc.nav')
+@endsection
+
+
+@section('header')
+    @include('core::inc.header',['header_bg'=>'bg-blue-100','header_class'=>'','header_title'=>'Admissions Portal','header_sub_title'=>'Welcome to Faith in Christ Group of Schools ', 'header_foot_note'=>'Reach the world with sound education', 'header_text_color'=>'','header_url'=>'', 'header_anchor_text'=>'', 'header_anchor_class'=>''])
 @endsection
 
 @section('notification')
     @include('core::inc.notification')
 @endsection
 
-@section('header')
-    @include('core::inc.header',['header_title'=>'Admissions Portal','header_sub_title'=>'Reach the world with sound education','header_url'=>'','header_class'=>'justify-start items-center py-16'])
-@endsection
-
-
 @section('main')
 <main class="w-full px-2 md:px-8 my-10 md:my-12">
-        <div class="w-full lg:w-2/3">
-            <div class="flex border-2 border-blue-700 rounded uppercase overflow-x-scroll md:overflow-x-auto">
-                <a href="#" class="inline-block text-blue-100 bg-blue-700 w-full text-sm py-2 px-5 md:py-3 font-mono font-bold text-center transition duration-500">
-                    Procedure
-                </a>
-                <a href="#" class="inline-block text-gray-600 hover:text-blue-100  w-full hover:bg-blue-700 text-sm py-2 px-5 md:py-3 border-l-2 border-blue-700 font-mono font-bold text-center transition duration-500">
-                    Registration
-                </a>
-                <a href="#" class="inline-block text-gray-600 hover:text-blue-100  w-full hover:bg-blue-700 text-sm py-2 px-5 md:py-3 border-l-2 border-blue-700 font-mono font-bold text-center transition duration-500">
-                    Bio data
-                </a>
-                <a href="#" class="inline-block text-gray-600 hover:text-blue-100  w-full hover:bg-blue-700 text-sm py-2 px-5 md:py-3 border-l-2 border-blue-700 font-mono font-bold text-center transition duration-500">
-                    Preview  
-                </a>
-                <a href="#" class="inline-block text-gray-600 hover:text-blue-100  w-full hover:bg-blue-700 text-sm py-2 px-5 md:py-3 border-l-2 border-blue-700 font-mono font-bold text-center transition duration-500">
-                    Payment
-                </a>
-            </div>
+        <div class="flex flex-col space-y-3 text-gray-700">
+            <h1 class="text-2xl font-bold">
+                Admission Procedure!
+            </h1>
+            <p class="text-lg font-semibold text-gray-500">
+                Our admission procedure is divided into stages and steps and they are outlined below:
+            </p>
         </div>
             
-        <div class="px-4 md:px-8 py-10 shadow-xl my-1 space-y-5">
+        <div class="px-4 md:px-8 py-10 shadow-xl my-1 space-y-5 font-semibold">
             <div class="flex flex-col space-y-3 text-sm">
-                <header class="uppercase text-pink-700 font-semibold">
-                    Admission Procedure
-                </header>
-                <p class="">
-                    Our admission procedure is divided into stages or steps
-                </p>
-            </div>
-
-            <div class="flex flex-col space-y-3 text-sm">
-                <header class="uppercase text-pink-700 font-semibold">
+                <header class="uppercase text-pink-700">
                     Step 1
                 </header>
                 <p class="">
@@ -60,7 +36,7 @@
             </div>
 
             <div class="flex flex-col space-y-3 text-sm">
-                <header class="uppercase text-pink-700 font-semibold">
+                <header class="uppercase text-pink-700">
                     Step 2
                 </header>
                 <p class="">
@@ -69,7 +45,7 @@
             </div>
             
             <div class="flex flex-col space-y-3 text-sm">
-                <header class="uppercase text-pink-700 font-semibold">
+                <header class="uppercase text-pink-700">
                     Step 3
                 </header>
                 <p class="">
@@ -78,7 +54,7 @@
             </div>
 
             <div class="flex flex-col space-y-3 text-sm">
-                <header class="uppercase text-pink-700 font-semibold">
+                <header class="uppercase text-pink-700">
                     Step 4
                 </header>
                 <p class="">
@@ -87,14 +63,8 @@
             </div>
         </div>
         
-        <div class="flex justify-between mt-5">
-            <div class="py-2">
-                <button onclick="window.history.back()" class="px-8 py-4 bg-pink-600 hover:bg-pink-800 transition duration-300 text-red-100 text-xs font-mono font-bold" type="button">
-                    &DoubleLeftArrow; Back
-                </button>
-            </div>
-
-            <div class="py-2">
+        <div class="mt-5">
+            <div class="py-2 flex justify-end">
                 <button class="px-8 py-4 bg-blue-800 hover:bg-blue-600 transition duration-300 text-blue-100 text-xs font-mono font-bold" type="button">
                     Proceed &DoubleRightArrow;
                 </button>

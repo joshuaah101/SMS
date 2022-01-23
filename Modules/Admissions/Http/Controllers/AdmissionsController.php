@@ -14,8 +14,29 @@ class AdmissionsController extends Controller
      */
     public function index()
     {
-        return view('admissions::index');
+        return view('admissions::admissions.index');
     }
+    
+    // public function showAdmissionPage()
+    // {
+    //     return view('admissions::index');
+    // }
+
+    public function showRegistrationPage()
+    {
+        return view('admissions::admissions.registration');
+    }
+
+    public function showBioDataPage()
+    {
+        return view('admissions::admissions.bio-data');
+    }
+
+    public function showPreviewPage()
+    {
+        return view('admissions::admissions.preview');
+    }
+
 
     /**
      * Show the form for creating a new resource.

@@ -110,36 +110,10 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col text-left">
-                    <button type="button" class="inline-flex justify-center w-full text-blue-100 hover:text-pink-700 py-3 space-x-2 font-semibold items-center transition duration-500 ease-in-out" data-dropdown-toggle="dropdownAdmissions" aria-expanded="true" aria-haspopup="true">
-                        Admissions
-                        <svg class="h-4 w-4 animate-bounce text-blue-100 border border-blue-700 rounded-full ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-
-                    {{-- dropdown menu --}}
-                    <div id="dropdownAdmissions" class="z-10 right-0 left-0 mt-8 w-1/3 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                        <div class="grid grid-cols-1 gap-8 px-6 py-4">
-                            <div class="space-y-8">
-                                <div class="py-1">
-                                    <a href="#" class="text-gray-700 block px-4 py-1 text-sm hover:text-pink-700 transition duration-300 ease-linear" tabindex="-1" id="menu-item-0">
-                                        ADMISSION POLICY
-                                    </a>
-                                    <a href="#" class="text-gray-700 block px-4 py-1 text-sm hover:text-pink-700 transition duration-300 ease-linear" tabindex="-1" id="menu-item-1">
-                                        FAITH IN CHRIST COLLEGE
-                                    </a>
-                                    <a href="#" class="text-gray-700 block px-4 py-1 text-sm hover:text-pink-700 transition duration-300 ease-linear" tabindex="-1" id="menu-item-1">
-                                        FAITH IN CHRIST NUR/PRY (OKE OLA, ILARO)
-                                    </a>
-                                    <a href="#" class="text-gray-700 block px-4 py-1 text-sm hover:text-pink-700 transition duration-300 ease-linear" tabindex="-1" id="menu-item-1">
-                                        FAITH IN CHRIST NUR/PRY (OJA-ODAN)
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a href="{{ url('admissions') }}"
+                    class="{{ request()->is('admissions/*') ? 'text-blue-100 font-bold border border-blue-200 rounded hover:border-pink-700 hover:text-pink-700' : 'text-blue-100 hover:text-pink-700 py-3 transition duration-500 ' }} font-semibold px-5 py-2">
+                    Admissions
+                </a>
 
                 <div class="flex flex-col text-left">
                     <button type="button" class="inline-flex justify-center w-full text-blue-100 hover:text-pink-700 py-3 space-x-2 font-semibold items-center transition duration-500 ease-in-out" data-dropdown-toggle="dropdownPortal">

@@ -15,9 +15,8 @@ use Illuminate\Support\Facades\Route;
 use Modules\Admissions\Http\Controllers\AdmissionsController;
 
 Route::prefix('admissions')->group(function() {
-    Route::get('/', [AdmissionsController::class, 'index']);
-    Route::get('/admission', [AdmissionsController::class, 'showAdmissionPage'])->name('admission');
-    Route::get('/admission/registration', [AdmissionsController::class, 'showRegistrationPage'])->name('admission.registration');
-    Route::get('/admission/bio-data', [AdmissionsController::class, 'showBioDataPage'])->name('admission.bio_data');
-    Route::get('/admission/preview', [AdmissionsController::class, 'showPreviewPage'])->name('admission.preview');
+    Route::get('/', [AdmissionsController::class, 'index'])->name('admissions.index'); //admissions homepage
+    Route::get('/registration', [AdmissionsController::class, 'showRegistrationPage'])->name('admissions.registration');
+    Route::get('/bio-data', [AdmissionsController::class, 'showBioDataPage'])->name('admissions.bio_data');
+    Route::get('/preview', [AdmissionsController::class, 'showPreviewPage'])->name('admissions.preview');
 });
