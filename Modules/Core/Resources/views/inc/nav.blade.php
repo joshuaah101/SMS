@@ -111,7 +111,7 @@
                 </div>
 
                 <a href="{{ url('admissions') }}"
-                    class="{{ request()->is('admissions/*') ? 'text-blue-100 font-bold border border-blue-200 rounded hover:border-pink-700 hover:text-pink-700' : 'text-blue-100 hover:text-pink-700 py-3 transition duration-500 ' }} font-semibold px-5 py-2">
+                    class="{{ request()->is('admissions*') ? 'text-blue-100 font-bold border border-blue-200 rounded hover:border-pink-700 hover:text-pink-700' : 'text-blue-100 hover:text-pink-700 py-3 transition duration-500 ' }} font-semibold px-5 py-2">
                     Admissions
                 </a>
 

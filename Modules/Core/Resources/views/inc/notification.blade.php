@@ -1,4 +1,4 @@
-<div class="px-2 md:px-4 py-2 bg-blue-800">
+<div class="px-2 md:px-4 py-4 bg-blue-800">
     @php
         $marquee = [
         ['url'=>route('terms'),'title'=>'Click on this notification to visit terms and conditions','class'=>'text-white  '],
