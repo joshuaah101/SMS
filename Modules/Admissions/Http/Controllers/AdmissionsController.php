@@ -14,7 +14,7 @@ class AdmissionsController extends Controller
      */
     public function index()
     {
-        return view('admissions::admissions.index');
+        return view('admissions::index');
     }
     
     // public function showAdmissionPage()

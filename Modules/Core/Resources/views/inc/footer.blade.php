@@ -60,8 +60,8 @@
                             </span>
                         </div>
                        <div class="flex">
-                            <a href="mailto:faithinchristcollegeilaro@gmail.com" target="_blank" class="text-xs py-1 hover:text-blue-100 font-bold font-mono uppercase transition duration-300">
-                                faithinchristcollegeilaro@gmail.com
+                            <a href="mailto:faithinchristschoolsilaro@gmail.com" target="_blank" class="text-xs py-1 hover:text-blue-100 font-bold font-mono uppercase transition duration-300">
+                                faithinchristschoolsilaro@gmail.com
                             </a>
                        </div>
                     </div>
@@ -103,12 +103,12 @@
 
         <div class="flex flex-col md:mb-0 md:mx-auto xs:mx-0">
             <h4 class="text-lg font-mono font-bold text-blue-100 mb-4">
-                Academics
+                Quick links
                 <hr class="border-pink-700 border mt-2 w-1/2">
             </h4>
             <a href="{{ route('admission.index') }}"
                class="py-1 hover:text-blue-100 font-bold font-mono uppercase transition duration-300 text-xs">
-               Academics options on this column
+               Important options on this column
             </a>
         </div>
 
@@ -148,14 +148,14 @@
         </p>
 
         <div class="flex items-center space-x-2">
-            <p class="text-sm font-mono font-bold text-blue-300">
+            <p class="text-xs font-mono font-bold text-blue-300">
                 Follow us:
             </p>
             <div class="flex space-x-2">
-                <a href="https://facebook.com/" class="rounded-full p-1 bg-blue-100 text-pink-700 hover:text-pink-100 hover:bg-blue-800 font-sans text-xs flex justify-center items-center transition duration-300 ease-in">
+                <a href="https://facebook.com/faithinchristcollegeilaro.ogunstateng" class="rounded-full p-1 bg-blue-100 text-pink-700 hover:text-pink-100 hover:bg-blue-800 font-sans text-xs flex justify-center items-center transition duration-300 ease-in">
                     <img src="{{ asset('storage/images/svg/facebook-1.svg') }}" class="h-4 w-4">
                 </a>
-                <a href="https://instagram.com/" class="rounded-full p-1 bg-blue-100 text-pink-700 hover:text-pink-100 hover:bg-blue-800 font-sans text-xs flex justify-center items-center transition duration-300 ease-in">
+                <a href="https://instagram.com/faithinchristschoolsilaro" class="rounded-full p-1 bg-blue-100 text-pink-700 hover:text-pink-100 hover:bg-blue-800 font-sans text-xs flex justify-center items-center transition duration-300 ease-in">
                     <img src="{{ asset('storage/images/svg/instagram-1.svg') }}" class="h-4 w-4">
                 </a>
                 <a href="https://twitter.com/" class="rounded-full p-1 bg-blue-100 text-pink-700 hover:text-pink-100 hover:bg-blue-800 font-sans text-xs flex justify-center items-center transition duration-300 ease-in">

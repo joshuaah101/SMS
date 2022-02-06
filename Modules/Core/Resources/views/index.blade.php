@@ -101,23 +101,23 @@
         </a>
     </div>
 
-    <div class="grid grid-cols1 md:grid-cols-2 gap-8 mt-24 px-6 md:px-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-24 px-6 md:px-16">
         <div class="flex flex-col space-y-5 py-4 px-5 rounded shadow-lg">
             <div class="uppercase">
                 <header class="font-semibold text-2xl text-gray-700">
                     meet the proprietress
                 </header>
                 <p class="font-bold text-md font-sans text-blue-700 mt-2">
-                    mrs. adu paul okoye
+                    Pastor Mrs. Christiana Abosede Ojo-akinyemi
                     <hr class="border-pink-700 border mt-2 w-1/3">
                 </p>
             </div>
 
-            <div class="flex flex-col md:flex-row items-center md:items-start space-y-5 md:space-x-5">
-                <img src="{{ asset('storage/images/jpg/user.jpg') }}" alt="The proprietress -  Mrs. adu paul okoye" class="border-2 border-pink-700 rounded-lg md:w-1/3 h-auto"  title="Mr. Adu Paul Okoye">
+            <div class="flex flex-col md:flex-row items-center space-y-5 md:space-x-5">
                 <p class="text-justify text-sm leading-6">
-                    The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The t. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.
+                    The principal, Pastor Mrs. Christiana Abosede Ojo-akinyemi, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Pastor Mrs. Christiana Abosede Ojo-akinyemi, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The t. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Pastor Mrs. Christiana Abosede Ojo-akinyemi, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.
                 </p>
+                <img src="{{ asset('storage/images/jpg/proprietress.jpg') }}" alt="The proprietress - Pastor Mrs. Christiana Abosede Ojo-akinyemi" class="border-2 border-pink-700 rounded-lg md:w-1/3 h-auto"  title="Pastor Mrs. Christiana Abosede Ojo-akinyemi">
             </div>
         </div>
         
@@ -127,15 +127,15 @@
                     meet the principal
                 </header>
                 <p class="font-bold text-md font-sans text-blue-700 mt-2">
-                    mr. adu paul okoye
+                    mr. afolabi sunday paul
                     <hr class="border-pink-700 border mt-2 w-1/3">
                 </p>
             </div>
 
-            <div class="flex flex-col md:flex-row items-center md:items-start space-y-5 md:space-x-5">
-                <img src="{{ asset('storage/images/jpg/user.jpg') }}" alt="The Principal - Mr. Adu Paul Okoye" class="border-2 border-pink-700 rounded-lg md:w-1/3 h-auto"  title="Mr. Adu Paul Okoye">
+            <div class="flex flex-col md:flex-row items-center space-y-5 md:space-x-5">
+                <img src="{{ asset('storage/images/jpg/principal.jpg') }}" alt="The Principal - Mr. Afolabi Sunday Paul" class="border-2 border-pink-700 rounded-lg md:w-1/3 h-auto"  title="Mr. Afolabi Sunday Paul">
                 <p class="text-justify text-sm leading-6">
-                    The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The t. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Adee thompson, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.
+                    The principal, Mr. Afolabi Sunday Paul, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Afolabi Sunday Paul, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The t. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.The principal, Mr. Afolabi Sunday Paul, is a renowned educationist. A Phd. holder in physical education and also a motivator with several years of teaching, lecturing and educational experience.
                 </p>
             </div>
         </div>

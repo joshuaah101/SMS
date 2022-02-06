@@ -4177,10 +4177,6 @@ $(function () {
   $("#sButton1").addClass("bg-pink-800");
   loopSlider();
 });
-var node = document.querySelector("a#testBtn");
-node.addEventListener('click', function () {
-  console.log(node.nodeName, node.nodet);
-});
 
 /***/ }),
 

@@ -30,6 +30,9 @@ a[href$=".xls"] {
     dashboard css
 */
 
+body{
+    font-family: 'Poppins', 'Open Sans', 'Oxygen','Truculenta', 'Nunito';
+}
 
 @media (max-width: 768px) {
     .dashboard-main-content{
