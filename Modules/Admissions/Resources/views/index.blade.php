@@ -7,7 +7,7 @@
 
 
 @section('header')
-    @include('core::inc.header',['header_bg'=>'','header_class'=>'mt-16','header_title'=>'Admissions Portal','header_sub_title'=>'Welcome to Faith in Christ Group of Schools ', 'header_foot_note'=>'Reach the world with sound education', 'header_title_class'=>'text-blue-100','header_sub_title_class'=>'text-pink-600','header_foot_note_class'=>'text-white','header_url'=>'', 'header_anchor_text'=>'', 'header_anchor_class'=>'', 'header_bg_img'=>'school-work.jpg'])
+    @include('core::inc.header',['header_bg'=>'','header_class'=>'mt-16','header_title'=>'Admissions Portal','header_sub_title'=>'Welcome to Faith in Christ Group of Schools ', 'header_foot_note'=>'Reach the world with sound education', 'header_title_class'=>'text-blue-100','header_sub_title_class'=>'text-pink-600','header_foot_note_class'=>'text-white','header_url'=>'', 'header_anchor_text'=>'', 'header_anchor_class'=>'', 'header_bg_img'=>'school-work'])
 @endsection
 
 @section('notification')

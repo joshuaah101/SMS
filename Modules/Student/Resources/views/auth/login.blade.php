@@ -11,10 +11,10 @@
 <div class="flex flex-col justify-center items-center md:p-1 xs:p-2">
     <div class="flex flex-col justify-center items-center space-y-6">
         <a href="/" class="">
-            <img src="{{ asset('storage/images/school/png/college-logo.png') }}" alt="logo" class="w-24 h-24">
+            <img src="{{ asset('storage/images/png/college-logo.png') }}" alt="logo" class="w-24 h-24">
         </a>
         <header class="font-bold font-sans text-xl">
-            Account login
+           Student Account login
         </header>
     </div>
     <div class="flex flex-col xs:w-full md:w-1/4 mt-2">

@@ -15,7 +15,7 @@
 @endsection
 
 @section('main')
-    @include('core::inc.main', ['main_section_title' => 'Blog', 'blog_header' => 'This is the blog header', 'blog_aside_section' => 'Blog aside section appears here', 'blog_body' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae itaque, nihil esse repellendus beatae, velit porro soluta iste sequi exercitationem ut mollitia. Officiis sunt, culpa doloremque molestias debitis saepe corrupti!
+    @include('core::inc.main', ['main_section_title' => 'Blog', 'blog_header' => 'This is the blog header', 'blog_body' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae itaque, nihil esse repellendus beatae, velit porro soluta iste sequi exercitationem ut mollitia. Officiis sunt, culpa doloremque molestias debitis saepe corrupti!
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae itaque, nihil esse repellendus beatae, velit porro soluta iste sequi exercitationem ut mollitia. Officiis sunt, culpa doloremque molestias debitis saepe corrupti!
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae itaque, nihil esse repellendus beatae, velit porro soluta iste sequi ex', 'blog_img_name' => 'principal'])
 @endsection

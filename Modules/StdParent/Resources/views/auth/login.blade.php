@@ -1,10 +1,6 @@
 @extends('core::layouts.master')
 @section('title') Parent/Guardian Sign In @endsection
 
-@section('header')
-    @include('core::inc.header',['header_title'=>'Parent / Guardian Login','header_sub_title'=>'','header_url'=>''])
-@endsection
-
 @section('main')
 <div class="xs:px-2 md:px-8 py-3">
     <button class="px-4 py-3 bg-red-700 hover:bg-red-800 text-red-100 text-xs rounded font-semibold" type="button" onclick="window.history.back()">
@@ -14,10 +10,10 @@
 <div class="flex flex-col justify-center items-center md:p-1 xs:p-2">
     <div class="flex flex-col justify-center items-center space-y-6">
         <a href="/" class="">
-            <img src="{{ asset('storage/images/school/png/college-logo.png') }}" alt="logo" class="w-24 h-24">
+            <img src="{{ asset('storage/images/png/college-logo.png') }}" alt="logo" class="w-24 h-24">
         </a>
         <header class="font-bold font-sans text-xl">
-            Account login
+            Parent Account login
         </header>
     </div>
     <div class="flex flex-col xs:w-full md:w-1/4 mt-2">
@@ -25,7 +21,7 @@
             @csrf
             <div class="flex flex-col py-1">
                 <label for="username" class="py-1 font-medium">
-                   Username/Em-ail
+                   Username/E-mail
                 </label>
                 <input type="text" id="username" name="username"  placeholder="adamsmith123" class="border border-gray-400 placeholder-gray-800 rounded-lg w-full p-2">
             </div>
