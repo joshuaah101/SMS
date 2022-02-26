@@ -1,6 +1,6 @@
-<nav class="flex justify-between items-center py-2 md:py-2 w-full px-2 md:px-8 bg-blue-800 fixed">
+<nav class="flex justify-between items-center py-2 md:py-2 w-full px-2 md:px-8 bg-blue-80 fixed z-10 transition duration-300" id="navbar">
     <a href="{{ url('/') }}">
-        <img src="{{ asset('/storage/images/png/college-logo.png') }}" class="w-16 h-12 md:w-20 md:h-16"
+        <img src="{{ asset('/storage/images/png/college-logo.png') }}" class="w-16 h-12 md:w-20 md:h-16 transition duration-500" id="nav-logo"
         alt="{{ config('app.name') }} logo" title="{{ config('app.name') }}"/>
     </a>
     
@@ -28,17 +28,17 @@
     </div>--}}
 
     <div class="py-1">
-        <div class="flex justify-between items-center space-x-8 md:px-8 md:py-1">
+        <div class="flex justify-between items-center space-x-8 md:px-8 md:py-1 text-white">
             <div class="hidden md:flex text-md items-center font-sans space-x-1">
                 <a href="{{ url('/') }}"
-                    class="{{ request()->is('/') ? 'text-white font-bold border-b-2 py-2 border-white hover:border-blue-700 transition duration-300' : 'text-white hover:text-gray-900 py-3 transition duration-500 ' }} font-semibold px-4">
+                    class="{{ request()->is('/') ? 'border-b-2 py-2 border-white hover:border-blue-700 transition duration-300' : 'hover:text-gray-900 py-3 transition duration-500 ' }} font-semibold px-4">
                     Home
                 </a>
 
                 <div class="flex flex-col text-left">
-                    <button type="button" class="flex items-center text-white hover:text-gray-900 font-semibold transition duration-500 ease-in-out px-4" data-dropdown-toggle="dropdownAbout">
+                    <button type="button" class="flex items-center hover:text-gray-900 font-semibold transition duration-500 ease-in-out px-4" data-dropdown-toggle="dropdownAbout">
                         About
-                        <svg class="h-4 w-4 animate-pulse text-white ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <svg class="h-4 w-4 animate-pulse ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </button>
@@ -65,23 +65,23 @@
                     </div>
                 </div>
 
-                <a href="#" class="flex items-center text-white hover:text-gray-900 font-semibold transition duration-500 ease-in-out px-4">
+                <a href="#" class="flex items-center  hover:text-gray-900 font-semibold transition duration-500 ease-in-out px-4">
                     Academics
-                    <svg class="h-4 w-4 animate-pulse text-white ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <svg class="h-4 w-4 animate-pulse ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
                 </a>
 
                 <div class="flex flex-col text-left">
-                    <button type="button" class="flex items-center text-white hover:text-gray-900 font-semibold transition duration-500 ease-in-out px-4" data-dropdown-toggle="dropdownAdministration">
+                    <button type="button" class="flex items-center hover:text-gray-900 font-semibold transition duration-500 ease-in-out px-4" data-dropdown-toggle="dropdownAdministration">
                         Administration
-                        <svg class="h-4 w-4 animate-pulse text-white ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <svg class="h-4 w-4 animate-pulse ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </button>
 
                     {{-- dropdown menu --}}
-                    <div id="dropdownAdministration" class="z-10 right-0 left-0 mt-8 w-1/6 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div id="dropdownAdministration" class="z-10 right-0 left-0 mt-8 w-1/6 rounded shadow-lg ring-1 ring-black ring-opacity-5 divide-y bg-white divide-gray-100 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="grid grid-cols-1 gap-8 px-6 py-4">
                             <div class="space-y-8">
                                 <div class="py-1">
@@ -107,14 +107,14 @@
                 </div>
 
                 <a href="{{ url('admissions') }}"
-                    class="{{ request()->is('admissions*') ? 'text-white font-bold border-b-2 py-2 border-white hover:border-blue-700 transition duration-300' : 'text-white hover:text-gray-900 py-3 transition duration-500 ' }} font-semibold px-4">
+                    class="{{ request()->is('admissions*') ? 'border-b-2 py-2 border-white hover:border-blue-700 transition duration-300' : ' hover:text-gray-900 py-3 transition duration-500 ' }} font-semibold px-4">
                     Admissions
                 </a>
 
                 <div class="flex flex-col text-left">
-                    <button type="button" class="flex items-center text-white hover:text-gray-900 font-semibold transition duration-500 ease-in-out px-4" data-dropdown-toggle="dropdownPortal">
+                    <button type="button" class="flex items-center  hover:text-gray-900 font-semibold transition duration-500 ease-in-out px-4" data-dropdown-toggle="dropdownPortal">
                         Portal
-                        <svg class="h-4 w-4 animate-pulse text-white ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <svg class="h-4 w-4 animate-pulse  ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </button>
@@ -143,9 +143,9 @@
                 </div>
 
                 <div class="flex flex-col text-left">
-                    <button type="button" class="flex items-center text-white hover:text-gray-900 font-semibold transition duration-500 ease-in-out px-4" aria-expanded="true" aria-haspopup="true" data-dropdown-toggle="dropdownUnit">
+                    <button type="button" class="flex items-center  hover:text-gray-900 font-semibold transition duration-500 ease-in-out px-4" aria-expanded="true" aria-haspopup="true" data-dropdown-toggle="dropdownUnit">
                         Units
-                        <svg class="h-4 w-4 animate-pulse text-white ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <svg class="h-4 w-4 animate-pulse  ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </button>

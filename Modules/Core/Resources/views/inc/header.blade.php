@@ -1,5 +1,5 @@
 @isset($header_title)
-    <div class="w-full h-screen py-2 bg-cover bg-center bg-fixed font-sans" style="background-image: linear-gradient(to bottom, rgb(190, 24, 93, .5),rgb(0, 0, 255, .3)),url('{{ isset($header_bg_img) && $header_bg_img != '' ? asset('storage/images/jpg/'.$header_bg_img.'.jpg') : '' }}');">
+    <div class="w-full h-screen py-2 bg-cover bg-center bg-fixed font-sans" style="background-image: linear-gradient(to bottom, rgba(92, 80, 204, 0.5),rgba(26, 26, 235, 0.316)),url('{{ isset($header_bg_img) && $header_bg_img != '' ? asset('storage/images/jpg/'.$header_bg_img.'.jpg') : '' }}');">
         <div class="w-full h-full flex {{ isset($header_class)&&$header_class!=''?$header_class:' items-center' }} ">
             <div class="max-w-4xl px-8 flex flex-col drop-shadow-lg leading-loose">
                 <h1 class="text-3xl md:text-6xl font-black {{ isset($header_title_class) && $header_title_class != '' ? $header_title_class : 'text-blue-800' }}">

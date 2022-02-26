@@ -34,6 +34,54 @@ body{
     font-family: 'Poppins', 'Open Sans', 'Oxygen','Truculenta', 'Nunito';
 }
 
+
+.mySlider
+{
+    display: none;
+}
+
+.fade
+{
+    animation-name: fade;
+    -webkit-animation-name: fade;
+    -moz-animation-name: fade;
+    
+    animation-duration: .9;
+    -webkit-animation-duration: .9;
+    -moz-animation-duration: .9;
+}
+
+@keyframes fade {
+    0% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: .7;
+    }
+}
+
+@-moz-keyframes fade {
+    0% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: .7;
+    }
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: .7;
+    }
+}
+
+
 @media (max-width: 768px) {
     .dashboard-main-content{
         width: 100%;

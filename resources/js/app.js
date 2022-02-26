@@ -27,75 +27,51 @@ const showTime = () => {
     time.innerHTML =  hour + ' : ' + minute + ' : ' + second
 }
 
-setInterval(() => {
-    showTime()
-}, 1000);
+// setInterval(() => {
+//     showTime()
+// }, 1000);
 
 
-//banner slider
-$(function(){
-    var cont=0;
-    function loopSlider(){
-      var xx= setInterval(function(){
-            switch(cont)
-            {
-            case 0:{
-                $("#slider-1").fadeOut(400);
-                $("#slider-2").delay(200).fadeIn(400);
-                $("#sButton1").removeClass("bg-pink-800");
-                $("#sButton2").addClass("bg-pink-800");
-            cont=1;
-            
-            break;
-            }
-            case 1:
-            {
-            
-                $("#slider-2").fadeOut(400);
-                $("#slider-1").delay(200).fadeIn(400);
-                $("#sButton2").removeClass("bg-pink-800");
-                $("#sButton1").addClass("bg-pink-800");
-               
-            cont=0;
-            
-            break;
-            }
-            
-            
-            }},6000);
+//simple banner slideshow
+let sliderIndex = 0
+
+
+let slider = document.getElementsByClassName("mySlider")
+
+const showSlider = () => {
     
+    for(let i = 0; i < slider.length; i++){
+        slider[i].style.display = 'none'
     }
     
-    function reInitLoop(time){
-        clearInterval(xx);
-        setTimeout(loopSlider(),time);
+    sliderIndex++
+    
+    if(sliderIndex > slider.length){
+        sliderIndex = 1
     }
     
+    slider[sliderIndex-1].style.display = 'block'
     
-    
-    function sliderButton1(){
-        $("#slider-2").fadeOut(400);
-        $("#slider-1").delay(400).fadeIn(400);
-        $("#sButton2").removeClass("bg-pink-800");
-        $("#sButton1").addClass("bg-pink-800");
-        reInitLoop(4000);
-        cont=0
-        
-        }
-        
-    function sliderButton2(){
-        $("#slider-1").fadeOut(400);
-        $("#slider-2").delay(400).fadeIn(400);
-        $("#sButton1").removeClass("bg-pink-800");
-        $("#sButton2").addClass("bg-pink-800");
-        reInitLoop(4000);
-        cont=1
-    
+}
+
+setInterval(showSlider, 5000)
+
+showSlider()
+
+//navbar
+
+let navbar = document.getElementById('navbar')
+let navLogo = document.getElementById('nav-logo')
+
+window.addEventListener('scroll', () => {
+    if(document.documentElement.scrollTop > 30){
+        // navbar.classList.remove("py-2", "md:py-2")
+        navbar.classList.add('bg-blue-800')
+        navLogo.classList.add('absolute')
+    }else{
+        // navbar.classList.add('py-2', 'md:py-2')
+        navbar.classList.remove('bg-blue-800')
+        navLogo.classList.remove('absolute')
+
     }
-    
-        $("#slider-2").hide();
-        $("#sButton1").addClass("bg-pink-800");
-        
-        loopSlider();
-       
 })

@@ -5,29 +5,41 @@
     @include('core::inc.top_nav')
 @endsection --}}
 
-@section('nav')
-    @include('core::inc.nav')
-@endsection
-
 @section('header')
-<div class="sliderAx">
-    <div id="slider-1">
-        <div class="bg-cover bg-top h-screen object-cover bg-no-repeat" style="background-image: url({{ asset('storage/images/jpg/pic4.jpg') }})">
-            {{-- <div class="md:w-1/2">
+<div class="relative w-full">
+    @section('nav')
+        @include('core::inc.homepage-nav')
+    @endsection
+
+    <div class="mySlider fade">
+        {{-- <img src="{{ asset('storage/images/jpg/pic4.jpg') }}" class="bg-cover bg-center bg-no-repeat box-border w-full h-[60vh] object-cove" alt="Slider image" > --}}
+        <div class="bg-cover w-full h-screen box-border bg-no-repeat" style="background-image: url({{ asset('storage/images/jpg/pic4.jpg') }})">
+             {{-- <div class="md:w-1/2">
                 <p class="font-bold text-sm uppercase">Services</p>
                 <p class="text-3xl font-bold">Hello world</p>
                 <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
                 <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
-            </div>   --}}
+            </div>    --}}
         </div>
     </div>
 
-    <div id="slider-2">
-        <div class="bg-cover bg-top h-screen object-cover bg-no-repeat" style="background-image: url({{ asset('storage/images/jpg/pic2.jpg') }})">
+    <div class="mySlider fade">
+        {{-- <img src="{{ asset('storage/images/jpg/pic2.jpg') }}" class="bg-cover bg-center bg-no-repeat box-border w-full h-[60vh] object-cove" alt="Slider image" > --}}
+        <div class="bg-cover w-full h-screen box-border bg-no-repeat" style="background-image: url({{ asset('storage/images/jpg/pic2.jpg') }})">
+             {{-- <p class="font-bold text-sm uppercase">Services</p>
+            <p class="text-3xl font-bold">Hello world</p>
+            <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+            <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>  --}}
+        </div> 
+    </div>
+
+    <div class="mySlider fade">
+        {{-- <img src="{{ asset('storage/images/jpg/pic3.jpg') }}" class="bg-cover bg-center bg-no-repeat box-border w-full h-[60vh] object-cove" alt="Slider image" > --}}
+        <div class="bg-cover w-full h-screen box-border bg-no-repeat" style="background-image: url({{ asset('storage/images/jpg/pic3.jpg') }})">
             {{-- <p class="font-bold text-sm uppercase">Services</p>
             <p class="text-3xl font-bold">Hello world</p>
             <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
-            <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a> --}}
+            <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>  --}}
         </div>
     </div>
     
