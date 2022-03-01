@@ -231,8 +231,8 @@
             {{-- secondary nav --}}
             {{-- mobile button goes here --}}
             <div class="md:hidden flex items-center">
-                <button class="text-gray-100 hover:text-gray-300 font-semibold" id="menu-button" aria-expanded="true" aria-haspopup="true" data-dropdown-toggle="dropdownMobileMenu">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-8" viewBox="0 0 20 20" fill="currentColor">
+                <button class="text-gray-100 hover:text-gray-300 font-semibold w-16 h-12 flex items-center justify-center rounded" aria-expanded="true" aria-haspopup="true"  id="menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-12" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
                     </svg>
                 </button>
@@ -240,45 +240,132 @@
         </div>
     </div>
 
-    {{-- mobile menu --}}
-    <div class="md:hidden z-10 p-5 mt-8 w-screen shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="dropdownMobileMenu">
-        <div class="flex flex-col space-y-2 text-sm">
-            <a href="{{ url('/') }}"
-                class="text-black font-bold">
-                Home
-            </a>
-            <div class="flex">
-                {{-- dropdown button --}}
-                <a href="#" class="text-black font-bold flex space-x-2 items-center py-3 px-4" data-dropdown-toggle="MobiledropdownAbout" aria-expanded="true" aria-haspopup="true">
-                    About
-                    <svg class="h-4 w-4 text-pink-700 border border-blue-700 rounded-full ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </a>
-
-                {{-- dropdown menu --}}
-                <div id="MobiledropdownAbout" class="mt-8 w-1/3 shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                    <div class="block px-6 py-4 space-y-2">
-                        <a href="#" class="text-gray-700 block px-4 py-1 text-sm hover:text-gray-900 transition duration-300 ease-linear" tabindex="-1" id="menu-item-0">
-                            About Faith in Christ Group Of Schools
-                        </a>
-                        <a href="#" class="text-gray-700 block px-4 py-1 text-sm hover:text-gray-900 transition duration-300 ease-linear" tabindex="-1" id="menu-item-1">
-                            Our Philosophy
-                        </a>
-                        <a href="#" class="text-gray-700 block px-4 py-1 text-sm hover:text-gray-900 transition duration-300 ease-linear" tabindex="-1" id="menu-item-1">
-                            Objectives
-                        </a>
-                        <a href="#" class="text-gray-700 block px-4 py-1 text-sm hover:text-gray-900 transition duration-300 ease-linear" tabindex="-1" id="menu-item-1">
-                            Vision
-                        </a>
-                        <a href="#" class="text-gray-700 block px-4 py-1 text-sm hover:text-gray-900 transition duration-300 ease-linear" tabindex="-1" id="menu-item-1">
-                            Management
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            
-        </div>
-    </div>
 </nav>   
+{{-- mobile menu --}}
+<div class="show-menu" id="overlay">
+    <button type="button" class="flex items-center justify-center h-12 w-12 rounded hover:bg-red-500 hover:text-red-100 text-red-500 border-2 border-red-500 text-3xl font-bold absolute top-4 right-5" id="close-menu" title="Close Menu">
+        X
+    </button>
+    <div class="absolute top-20 text-slate-700 flex flex-col items-center justify-center spacey-2">
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+        <a href="#" class="p-2">
+            Test
+        </a>
+    </div>
+</div>
