@@ -4106,6 +4106,15 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // requir
 // })
 
 
+var menuBtn = document.getElementById('menu-btn');
+var mobileMenu = document.getElementById('overlay');
+var closeMenu = document.getElementById('close-menu');
+menuBtn.addEventListener('click', function () {
+  mobileMenu.style.height = "100%";
+});
+closeMenu.addEventListener('click', function () {
+  mobileMenu.style.height = "0";
+});
 var time = document.querySelector('#dashboard-time');
 var date = new Date();
 var hour = date.getHours();
@@ -4136,10 +4145,12 @@ var showSlider = function showSlider() {
   }
 
   slider[sliderIndex - 1].style.display = 'block';
-};
+  setTimeout(showSlider, 9000);
+}; // showSlider()
 
-setInterval(showSlider, 5000);
-showSlider(); //navbar
+
+window.addEventListener('load', showSlider); //###############################################################################
+//navbar
 
 var navbar = document.getElementById('navbar');
 var navLogo = document.getElementById('nav-logo');
@@ -4147,11 +4158,13 @@ window.addEventListener('scroll', function () {
   if (document.documentElement.scrollTop > 30) {
     // navbar.classList.remove("py-2", "md:py-2")
     navbar.classList.add('bg-blue-800');
+    navbar.classList.remove('py-2', 'md:py-2');
     navLogo.classList.add('absolute');
   } else {
     // navbar.classList.add('py-2', 'md:py-2')
     navbar.classList.remove('bg-blue-800');
     navLogo.classList.remove('absolute');
+    navbar.classList.add('py-2', 'md:py-2');
   }
 });
 

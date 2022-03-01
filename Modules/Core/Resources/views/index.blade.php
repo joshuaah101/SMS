@@ -13,33 +13,61 @@
 
     <div class="mySlider fade">
         {{-- <img src="{{ asset('storage/images/jpg/pic4.jpg') }}" class="bg-cover bg-center bg-no-repeat box-border w-full h-[60vh] object-cove" alt="Slider image" > --}}
-        <div class="bg-cover w-full h-screen box-border bg-no-repeat" style="background-image: url({{ asset('storage/images/jpg/pic4.jpg') }})">
-             {{-- <div class="md:w-1/2">
-                <p class="font-bold text-sm uppercase">Services</p>
-                <p class="text-3xl font-bold">Hello world</p>
-                <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
-                <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
-            </div>    --}}
+        <div class="bg-cover w-full h-screen bg-fixed bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(31, 74, 216, 0.4) 20%, rgba(221, 23, 122, 0.2) 80%), url({{ asset('storage/images/jpg/pic4.jpg') }})">
+            <div class="top-28 sm:top-1/3 px-8 md:px-12 relative">
+                <div class="space-y-4 md:space-y-8 absolute hidden slider-caption">
+                    <header class="text-3xl md:text-5xl text-white font-semibold opacity-90 w-4/5 md:w-full">
+                        {{ config('app.name') }}
+                    </header>
+    
+                    <header class="text-white font-semibold text-sm md:text-xl w-11/12">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam itaque voluptates ad dolores? Corrupti dolorum at, ea vel non expedita voluptas reprehenderit quasi, quis tenetur error dolore sit esse saepe?
+                    </header>
+                    <a href="#" class="bg-pink-800 w-1/2 md:w-1/6 hover:bg-pink-700 text-pink-100 py-3 md:py-4 px-6 rounded font-bold text-xs md:text-sm flex justify-center">
+                        Get started &Gt;
+                    </a>
+                </div>
+           </div>
         </div>
     </div>
 
     <div class="mySlider fade">
         {{-- <img src="{{ asset('storage/images/jpg/pic2.jpg') }}" class="bg-cover bg-center bg-no-repeat box-border w-full h-[60vh] object-cove" alt="Slider image" > --}}
-        <div class="bg-cover w-full h-screen box-border bg-no-repeat" style="background-image: url({{ asset('storage/images/jpg/pic2.jpg') }})">
-             {{-- <p class="font-bold text-sm uppercase">Services</p>
-            <p class="text-3xl font-bold">Hello world</p>
-            <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
-            <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>  --}}
+        <div class="bg-cover w-full h-screen bg-fixed bg-no-repeat" style="background: linear-gradient(to bottom, rgba(31, 74, 216, 0.4) 20%, rgba(221, 23, 122, 0.2) 80%), url({{ asset('storage/images/jpg/pic2.jpg') }})">
+           <div class="top-28 sm:top-1/3 px-8 md:px-12 relative">
+                <div class="space-y-4 md:space-y-8 absolute hidden slider-caption">
+                    <header class="text-3xl md:text-5xl text-white font-semibold opacity-90 w-4/5 md:w-full">
+                        {{ config('app.name') }}
+                    </header>
+    
+                    <header class="text-white font-semibold text-sm md:text-xl w-11/12">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam itaque voluptates ad dolores? Corrupti dolorum at, ea vel non expedita voluptas reprehenderit quasi, quis tenetur error dolore sit esse saepe?
+                    </header>
+                    <a href="#" class="bg-pink-800 w-1/2 md:w-1/6 hover:bg-pink-700 text-pink-100 py-3 md:py-4 px-6 rounded font-bold text-xs md:text-sm flex justify-center">
+                        Get started &Gt;
+                    </a>
+                </div>
+           </div>
         </div> 
     </div>
 
     <div class="mySlider fade">
         {{-- <img src="{{ asset('storage/images/jpg/pic3.jpg') }}" class="bg-cover bg-center bg-no-repeat box-border w-full h-[60vh] object-cove" alt="Slider image" > --}}
-        <div class="bg-cover w-full h-screen box-border bg-no-repeat" style="background-image: url({{ asset('storage/images/jpg/pic3.jpg') }})">
-            {{-- <p class="font-bold text-sm uppercase">Services</p>
-            <p class="text-3xl font-bold">Hello world</p>
-            <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
-            <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>  --}}
+        <div class="bg-cover w-full h-screen bg-fixed bg-no-repeat" style="background: linear-gradient(to bottom, rgba(31, 74, 216, 0.4) 20%, rgba(221, 23, 122, 0.2) 80%), url({{ asset('storage/images/jpg/pic3.jpg') }})">
+           <div class="top-28 sm:top-1/3 px-8 md:px-12 relative">
+                <div class="space-y-4 md:space-y-8 absolute hidden slider-caption">
+                    <header class="text-3xl md:text-5xl text-white font-semibold opacity-90 w-4/5 md:w-full">
+                        {{ config('app.name') }}
+                    </header>
+    
+                    <header class="text-white font-semibold text-sm md:text-xl w-11/12">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam itaque voluptates ad dolores? Corrupti dolorum at, ea vel non expedita voluptas reprehenderit quasi, quis tenetur error dolore sit esse saepe?
+                    </header>
+                    <a href="#" class="bg-pink-800 w-1/2 md:w-1/6 hover:bg-pink-700 text-pink-100 py-3 md:py-4 px-6 rounded font-bold text-xs md:text-sm flex justify-center">
+                        Get started &Gt;
+                    </a>
+                </div>
+           </div>
         </div>
     </div>
     
@@ -56,8 +84,8 @@
 
 @section('main')
 <main class="w-full">
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-y-0 px-8 py-12 md:gap-x-8">
-        <div class="flex flex-col justify-center items-center space-y-3 hover:bg-blue-700 hover:text-white p-8 transition duration-500">
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-y-8 md:gap-y-0 px-8 md:px-24 py-12 md:gap-x-12">
+        <div class="flex flex-col justify-center items-center space-y-3 p-8 md:p-12 border-2 rounded md:rounded-b-full shadow-inner">
             <div class="bg-white p-2 rounded">
                 <img src="{{ asset('storage/images/png/nursery-logo.png') }}" class="w-32 h-auto" alt="Faith in Christ Nursery School" title="Faith in Christ Nursery School">
             </div>
@@ -68,7 +96,7 @@
                 Children admitted are usually between the ages of two and five (2 – 5 year olds) for the Pre-school and Reception classes
             </p>
         </div>
-        <div class="flex flex-col justify-center items-center space-y-3 hover:bg-pink-700 hover:text-white p-8 transition duration-500">
+        <div class="flex flex-col justify-center items-center space-y-3 p-8 md:p-12 border-2 rounded md:rounded-b-full shadow-inner">
             <div class="bg-white p-2 rounded">
                 <img src="{{ asset('storage/images/png/college-logo.png') }}" class="w-32 h-auto" alt="Faith in Christ Primary School" title="Faith in Christ Primary School">
             </div>
@@ -79,7 +107,7 @@
                 The ages for the Primary classes are between five and six years (5 – 6 year olds).
             </p>
         </div>
-        <div class="flex flex-col justify-center items-center space-y-3 hover:bg-blue-700 hover:text-white p-8 transition duration-500">
+        <div class="flex flex-col justify-center items-center space-y-3 p-8 md:p-12 border-2 rounded md:rounded-b-full shadow-inner">
             <div class="bg-white p-2 rounded">
                 <img src="{{ asset('storage/images/png/college-logo.png') }}" class="w-32 h-auto" alt="Faith in Christ College" title="Faith in Christ College">
             </div>
@@ -92,7 +120,7 @@
         </div>
     </section>
 
-    <div class="flex flex-col px-8 py-24 font-sans bg-no-repeat bg-fixed bg-center bg-cover" style="background: url({{ asset('storage/images/jpg/pic3.jpg') }})">
+    <div class="flex flex-col px-8 py-24  bg-no-repeat bg-fixed bg-center bg-cover" style="background: url({{ asset('storage/images/jpg/pic3.jpg') }})">
         <div class="flex flex-col space-y-5">
             <div class="flex flex-col space-y-2">
                 <h1 class="font-semibold text-blue-100 text-4xl">
@@ -119,7 +147,7 @@
                 <header class="font-semibold text-2xl text-gray-700">
                     meet the proprietress
                 </header>
-                <p class="font-bold text-md font-sans text-blue-700 mt-2">
+                <p class="font-bold text-md    text-blue-700 mt-2">
                     Pastor Mrs. Christiana Abosede Ojo-akinyemi
                     <hr class="border-pink-700 border mt-2 w-1/3">
                 </p>
@@ -138,7 +166,7 @@
                 <header class="font-semibold text-2xl text-gray-700">
                     meet the principal
                 </header>
-                <p class="font-bold text-md font-sans text-blue-700 mt-2">
+                <p class="font-bold text-md    text-blue-700 mt-2">
                     mr. afolabi sunday paul
                     <hr class="border-pink-700 border mt-2 w-1/3">
                 </p>
@@ -154,7 +182,7 @@
     </div>
 
 
-    <header class="font-semibold text-2xl md:text-4xl text-gray-700 uppercase px-8 md:ml-10 mt-24">
+    <header class="font-semibold text-2xl text-gray-700 uppercase px-8 md:ml-10 mt-24">
         News and events
         <hr class="border-pink-700 border mt-2 w-1/3">
     </header>

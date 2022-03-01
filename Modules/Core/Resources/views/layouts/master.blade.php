@@ -14,7 +14,7 @@
     @include('core::inc.links')
     {{-- @livewireStyles --}}
 </head>
-<body class="antialiased leading-none bg-gray-50 text-gray-700">
+<body class="antialiased leading-none bg-gray-50 text-gray-700 font-sans scroll-smooth">
     {{-- @yield('top_nav') --}}
     @yield('nav')
     @yield('header')
