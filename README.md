@@ -1,62 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Welcome to NOUN ATTENDANCE MANAGEMENT
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## About
 
-## About Laravel
+This app is created as a web management application for noun. It focuses on handling all registration process,
+attendance registering, creation of faculty, programs, departments, semesters, records for each semester and attendance
+under each semester record. It also provides ability for inapp notification but due to the scope of the project, email
+notification is not implemented.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Frameworks
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This project is build using Angular 13 framework of javascript and Laravel framework of php.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Installation
 
-## Learning Laravel
+Before Installation, make sure your local machine has [nodejs]('https://nodejs.org/en/download/') installed
+and [composer]('https://getcomposer.org/download').
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Extract all the content of this application into your local server folder e.g If you have xampp installed on your pc,
+   then you should copy the project folder to your htdocs folder but if you are using wamp, copy it to your www folder
+   in your wamp server.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. Go to your ```localhost/phpmyadmin``` and create a new empty database called
+   ```laravel_noun```
+3. Open a terminal in the root folder of this project and test if your npm and composer is working by first typing the
+   codes below:
 
-## Laravel Sponsors
+```
+npm -v
+composer -v
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+This two commands should show you the current versions of both apps installed on your machine else read up on how to fix
+issues on that.
 
-### Premium Partners
+4. Once your composer and nodeJs is working fine, run the following commands in two separate terminals in the root
+   folder of the project.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+```
+composer install
+npm i && npm run prod
+```
 
-## Contributing
+this commands will compile the assets of the app and install it in the project folder. Also navigate to resources/angular folder and run ```npm i && npm i @angular/cli -g``` to provide you with the angular command cli for compiling angular assets
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+5. If commands run well without any error, then install demo records for testing purposes by running the command
+   ```php artisan migrate:fresh --seed``` in the terminal
 
-## Code of Conduct
+6. If the command runs successfully without any errors, run ```php artisan storage:link``` to link  your storage folder to your public folder. Last step is to run two commands in the two separate
+   terminals to help you test the project in the browser.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+php artisan serve
+cd resources/angular && ng serve
+```
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This two commands will run the project app and keep them open as long as you do not close them. This concludes the steps
+for testing your app on your local machine. 
